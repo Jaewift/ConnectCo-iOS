@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="d61-zl-xou">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Chatting View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ChattingVC" id="Y6W-OH-hqX" customClass="ChattingViewController" customModule="ConneCo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q8l-dG-Y0d">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="95"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="채팅" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bRz-5n-vKQ">
+                                        <rect key="frame" x="179.33333333333334" y="58" width="34.666666666666657" height="24"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XqP-JY-chP">
+                                        <rect key="frame" x="303" y="50" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="Chw-g9-WKq"/>
+                                            <constraint firstAttribute="width" constant="35" id="lbI-aL-rP9"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="ConneCo_search"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZgF-rA-dbf">
+                                        <rect key="frame" x="338" y="50" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="35" id="WPl-ym-yXm"/>
+                                            <constraint firstAttribute="height" constant="35" id="ZPj-lW-fQe"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="ConneCo_alarm"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.2895924151" green="0.60887163879999995" blue="0.97259002920000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="XqP-JY-chP" firstAttribute="top" secondItem="q8l-dG-Y0d" secondAttribute="top" constant="50" id="8eK-74-HMD"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZgF-rA-dbf" secondAttribute="trailing" constant="20" id="Dqh-zg-IH5"/>
+                                    <constraint firstItem="bRz-5n-vKQ" firstAttribute="centerX" secondItem="q8l-dG-Y0d" secondAttribute="centerX" id="JCl-Cm-DKx"/>
+                                    <constraint firstItem="ZgF-rA-dbf" firstAttribute="leading" secondItem="XqP-JY-chP" secondAttribute="trailing" id="M0z-ay-EVq"/>
+                                    <constraint firstAttribute="height" constant="95" id="X3f-u1-beV"/>
+                                    <constraint firstItem="ZgF-rA-dbf" firstAttribute="top" secondItem="q8l-dG-Y0d" secondAttribute="top" constant="50" id="Ypb-pr-H8B"/>
+                                    <constraint firstItem="bRz-5n-vKQ" firstAttribute="top" secondItem="q8l-dG-Y0d" secondAttribute="top" constant="58" id="b8p-co-Efj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="q8l-dG-Y0d" secondAttribute="trailing" id="gOH-js-JSu"/>
+                            <constraint firstItem="q8l-dG-Y0d" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="rPM-eW-MBE"/>
+                            <constraint firstItem="q8l-dG-Y0d" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="wN9-oQ-LAl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Gsw-Z8-kxI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1063.3587786259541" y="3.5211267605633805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="x5P-KI-fyh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="d61-zl-xou" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="adh-bE-mTD">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="Ukg-8w-WCw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZmW-CS-1X1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.64122137404578" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ConneCo_alarm" width="24" height="24"/>
+        <image name="ConneCo_search" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

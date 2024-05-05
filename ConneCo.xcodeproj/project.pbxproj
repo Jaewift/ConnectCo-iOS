@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8DED54F1BAD90A7982C0337D /* Pods_ConneCo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72495B1F4C79D1052C5C6835 /* Pods_ConneCo.framework */; };
+		C7043D4D2BC2D90000DC5C6A /* UMCpractice1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7043D4C2BC2D90000DC5C6A /* UMCpractice1ViewController.swift */; };
+		C7360EC62BE74CA50039BA32 /* StoreEnrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7360EC52BE74CA50039BA32 /* StoreEnrollViewController.swift */; };
+		C7360EC82BE752A50039BA32 /* MyPickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7360EC72BE752A50039BA32 /* MyPickViewController.swift */; };
+		C7360ECA2BE7533A0039BA32 /* EventPickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7360EC92BE7533A0039BA32 /* EventPickViewController.swift */; };
+		C7360ECC2BE753440039BA32 /* CouponPickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7360ECB2BE753440039BA32 /* CouponPickViewController.swift */; };
+		C7360ECE2BE753500039BA32 /* StorePickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7360ECD2BE753500039BA32 /* StorePickViewController.swift */; };
+		C74F0C1A2BE25BD3006F3EEF /* TabbarShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74F0C192BE25BD3006F3EEF /* TabbarShadow.swift */; };
+		C74F0C1C2BE26968006F3EEF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74F0C1B2BE26968006F3EEF /* LoginViewController.swift */; };
+		C7581EA72BD8F01B00997F8D /* Event.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7581EA62BD8F01B00997F8D /* Event.storyboard */; };
+		C7581EA92BD8F02900997F8D /* Coupon.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7581EA82BD8F02900997F8D /* Coupon.storyboard */; };
+		C7581EAB2BD8F03300997F8D /* Mypage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7581EAA2BD8F03300997F8D /* Mypage.storyboard */; };
+		C7581EAD2BD8F04400997F8D /* MypageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7581EAC2BD8F04400997F8D /* MypageViewController.swift */; };
+		C7581EAF2BD8F04F00997F8D /* CouponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7581EAE2BD8F04F00997F8D /* CouponViewController.swift */; };
+		C7581EB12BD8F05A00997F8D /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7581EB02BD8F05A00997F8D /* EventViewController.swift */; };
+		C78365A82BB96EAB00CE0196 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78365A72BB96EAB00CE0196 /* MapViewController.swift */; };
+		C78365AA2BB96F1000CE0196 /* ChattingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78365A92BB96F1000CE0196 /* ChattingViewController.swift */; };
+		C79D4B612BE4BF38003E78E5 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79D4B602BE4BF38003E78E5 /* StartViewController.swift */; };
+		C79D4B632BE4BF86003E78E5 /* MyStoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79D4B622BE4BF86003E78E5 /* MyStoreTableViewCell.swift */; };
+		C79D4B652BE4BF99003E78E5 /* MyCouponTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79D4B642BE4BF99003E78E5 /* MyCouponTableViewCell.swift */; };
+		C79D4B672BE4BFA9003E78E5 /* MyEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79D4B662BE4BFA9003E78E5 /* MyEventTableViewCell.swift */; };
+		C7A9CB402BDF9E0C001803DA /* ScissorsRockPaperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A9CB3F2BDF9E0C001803DA /* ScissorsRockPaperViewController.swift */; };
+		C7F22A842BB81CAB006B86C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F22A832BB81CAB006B86C2 /* AppDelegate.swift */; };
+		C7F22A862BB81CAB006B86C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F22A852BB81CAB006B86C2 /* SceneDelegate.swift */; };
+		C7F22A882BB81CAB006B86C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F22A872BB81CAB006B86C2 /* ViewController.swift */; };
+		C7F22A8B2BB81CAB006B86C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7F22A892BB81CAB006B86C2 /* Main.storyboard */; };
+		C7F22A8D2BB81CAE006B86C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7F22A8C2BB81CAE006B86C2 /* Assets.xcassets */; };
+		C7F22A902BB81CAE006B86C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7F22A8E2BB81CAE006B86C2 /* LaunchScreen.storyboard */; };
+		C7F22A982BB81D75006B86C2 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7F22A972BB81D75006B86C2 /* Map.storyboard */; };
+		C7F22A9A2BB81D81006B86C2 /* Chatting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7F22A992BB81D81006B86C2 /* Chatting.storyboard */; };
+		C7F22A9C2BB8272B006B86C2 /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F22A9B2BB8272B006B86C2 /* MainTabViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3757150C910394F25F2CFEC2 /* Pods-ConneCo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConneCo.release.xcconfig"; path = "Target Support Files/Pods-ConneCo/Pods-ConneCo.release.xcconfig"; sourceTree = "<group>"; };
+		72495B1F4C79D1052C5C6835 /* Pods_ConneCo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConneCo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF5ABCD57BB627FFB83B86E5 /* Pods-ConneCo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConneCo.debug.xcconfig"; path = "Target Support Files/Pods-ConneCo/Pods-ConneCo.debug.xcconfig"; sourceTree = "<group>"; };
+		C7043D4C2BC2D90000DC5C6A /* UMCpractice1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMCpractice1ViewController.swift; sourceTree = "<group>"; };
+		C7360EC52BE74CA50039BA32 /* StoreEnrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreEnrollViewController.swift; sourceTree = "<group>"; };
+		C7360EC72BE752A50039BA32 /* MyPickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPickViewController.swift; sourceTree = "<group>"; };
+		C7360EC92BE7533A0039BA32 /* EventPickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventPickViewController.swift; sourceTree = "<group>"; };
+		C7360ECB2BE753440039BA32 /* CouponPickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponPickViewController.swift; sourceTree = "<group>"; };
+		C7360ECD2BE753500039BA32 /* StorePickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorePickViewController.swift; sourceTree = "<group>"; };
+		C74F0C192BE25BD3006F3EEF /* TabbarShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarShadow.swift; sourceTree = "<group>"; };
+		C74F0C1B2BE26968006F3EEF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C7581EA62BD8F01B00997F8D /* Event.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Event.storyboard; sourceTree = "<group>"; };
+		C7581EA82BD8F02900997F8D /* Coupon.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Coupon.storyboard; sourceTree = "<group>"; };
+		C7581EAA2BD8F03300997F8D /* Mypage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mypage.storyboard; sourceTree = "<group>"; };
+		C7581EAC2BD8F04400997F8D /* MypageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageViewController.swift; sourceTree = "<group>"; };
+		C7581EAE2BD8F04F00997F8D /* CouponViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponViewController.swift; sourceTree = "<group>"; };
+		C7581EB02BD8F05A00997F8D /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		C78365A72BB96EAB00CE0196 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		C78365A92BB96F1000CE0196 /* ChattingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingViewController.swift; sourceTree = "<group>"; };
+		C79D4B602BE4BF38003E78E5 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		C79D4B622BE4BF86003E78E5 /* MyStoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStoreTableViewCell.swift; sourceTree = "<group>"; };
+		C79D4B642BE4BF99003E78E5 /* MyCouponTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCouponTableViewCell.swift; sourceTree = "<group>"; };
+		C79D4B662BE4BFA9003E78E5 /* MyEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEventTableViewCell.swift; sourceTree = "<group>"; };
+		C7A9CB3F2BDF9E0C001803DA /* ScissorsRockPaperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScissorsRockPaperViewController.swift; sourceTree = "<group>"; };
+		C7F22A802BB81CAB006B86C2 /* ConneCo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConneCo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7F22A832BB81CAB006B86C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C7F22A852BB81CAB006B86C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C7F22A872BB81CAB006B86C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C7F22A8A2BB81CAB006B86C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C7F22A8C2BB81CAE006B86C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C7F22A8F2BB81CAE006B86C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C7F22A912BB81CAE006B86C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7F22A972BB81D75006B86C2 /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
+		C7F22A992BB81D81006B86C2 /* Chatting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chatting.storyboard; sourceTree = "<group>"; };
+		C7F22A9B2BB8272B006B86C2 /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C7F22A7D2BB81CAB006B86C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DED54F1BAD90A7982C0337D /* Pods_ConneCo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		45EB2CBF7F45EE6FF69BD4D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72495B1F4C79D1052C5C6835 /* Pods_ConneCo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE0BFEB5B944536399BBFB07 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BF5ABCD57BB627FFB83B86E5 /* Pods-ConneCo.debug.xcconfig */,
+				3757150C910394F25F2CFEC2 /* Pods-ConneCo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C7043D4B2BC2D8C700DC5C6A /* UMCPractice1 */ = {
+			isa = PBXGroup;
+			children = (
+				C7043D4C2BC2D90000DC5C6A /* UMCpractice1ViewController.swift */,
+				C7A9CB3F2BDF9E0C001803DA /* ScissorsRockPaperViewController.swift */,
+			);
+			path = UMCPractice1;
+			sourceTree = "<group>";
+		};
+		C7581EA32BD8EFBB00997F8D /* CouponScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C7581EA82BD8F02900997F8D /* Coupon.storyboard */,
+				C7581EAE2BD8F04F00997F8D /* CouponViewController.swift */,
+			);
+			path = CouponScreen;
+			sourceTree = "<group>";
+		};
+		C7581EA42BD8EFBE00997F8D /* EventScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C7581EA62BD8F01B00997F8D /* Event.storyboard */,
+				C7581EB02BD8F05A00997F8D /* EventViewController.swift */,
+			);
+			path = EventScreen;
+			sourceTree = "<group>";
+		};
+		C7581EA52BD8EFC000997F8D /* MypageScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C7581EAA2BD8F03300997F8D /* Mypage.storyboard */,
+				C79D4B602BE4BF38003E78E5 /* StartViewController.swift */,
+				C74F0C1B2BE26968006F3EEF /* LoginViewController.swift */,
+				C7581EAC2BD8F04400997F8D /* MypageViewController.swift */,
+				C79D4B622BE4BF86003E78E5 /* MyStoreTableViewCell.swift */,
+				C79D4B642BE4BF99003E78E5 /* MyCouponTableViewCell.swift */,
+				C79D4B662BE4BFA9003E78E5 /* MyEventTableViewCell.swift */,
+				C7360EC52BE74CA50039BA32 /* StoreEnrollViewController.swift */,
+				C7360EC72BE752A50039BA32 /* MyPickViewController.swift */,
+				C7360EC92BE7533A0039BA32 /* EventPickViewController.swift */,
+				C7360ECB2BE753440039BA32 /* CouponPickViewController.swift */,
+				C7360ECD2BE753500039BA32 /* StorePickViewController.swift */,
+			);
+			path = MypageScreen;
+			sourceTree = "<group>";
+		};
+		C78365AB2BB96FFA00CE0196 /* MapScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C7F22A972BB81D75006B86C2 /* Map.storyboard */,
+				C78365A72BB96EAB00CE0196 /* MapViewController.swift */,
+			);
+			path = MapScreen;
+			sourceTree = "<group>";
+		};
+		C78365AC2BB9702200CE0196 /* ChattingScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C7F22A992BB81D81006B86C2 /* Chatting.storyboard */,
+				C78365A92BB96F1000CE0196 /* ChattingViewController.swift */,
+			);
+			path = ChattingScreen;
+			sourceTree = "<group>";
+		};
+		C7F22A772BB81CAB006B86C2 = {
+			isa = PBXGroup;
+			children = (
+				C7F22A822BB81CAB006B86C2 /* ConneCo */,
+				C7F22A812BB81CAB006B86C2 /* Products */,
+				BE0BFEB5B944536399BBFB07 /* Pods */,
+				45EB2CBF7F45EE6FF69BD4D4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C7F22A812BB81CAB006B86C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C7F22A802BB81CAB006B86C2 /* ConneCo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C7F22A822BB81CAB006B86C2 /* ConneCo */ = {
+			isa = PBXGroup;
+			children = (
+				C7043D4B2BC2D8C700DC5C6A /* UMCPractice1 */,
+				C7581EA42BD8EFBE00997F8D /* EventScreen */,
+				C7581EA32BD8EFBB00997F8D /* CouponScreen */,
+				C78365AB2BB96FFA00CE0196 /* MapScreen */,
+				C78365AC2BB9702200CE0196 /* ChattingScreen */,
+				C7581EA52BD8EFC000997F8D /* MypageScreen */,
+				C7F22A832BB81CAB006B86C2 /* AppDelegate.swift */,
+				C7F22A852BB81CAB006B86C2 /* SceneDelegate.swift */,
+				C7F22A872BB81CAB006B86C2 /* ViewController.swift */,
+				C7F22A892BB81CAB006B86C2 /* Main.storyboard */,
+				C7F22A8C2BB81CAE006B86C2 /* Assets.xcassets */,
+				C7F22A8E2BB81CAE006B86C2 /* LaunchScreen.storyboard */,
+				C7F22A912BB81CAE006B86C2 /* Info.plist */,
+				C7F22A9B2BB8272B006B86C2 /* MainTabViewController.swift */,
+				C74F0C192BE25BD3006F3EEF /* TabbarShadow.swift */,
+			);
+			path = ConneCo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C7F22A7F2BB81CAB006B86C2 /* ConneCo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7F22A942BB81CAE006B86C2 /* Build configuration list for PBXNativeTarget "ConneCo" */;
+			buildPhases = (
+				D4A4B160DD08DEAE277C5B21 /* [CP] Check Pods Manifest.lock */,
+				C7F22A7C2BB81CAB006B86C2 /* Sources */,
+				C7F22A7D2BB81CAB006B86C2 /* Frameworks */,
+				C7F22A7E2BB81CAB006B86C2 /* Resources */,
+				F959A2B39CA62FEBDAC9865D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ConneCo;
+			productName = ConneCo;
+			productReference = C7F22A802BB81CAB006B86C2 /* ConneCo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C7F22A782BB81CAB006B86C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					C7F22A7F2BB81CAB006B86C2 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = C7F22A7B2BB81CAB006B86C2 /* Build configuration list for PBXProject "ConneCo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C7F22A772BB81CAB006B86C2;
+			productRefGroup = C7F22A812BB81CAB006B86C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C7F22A7F2BB81CAB006B86C2 /* ConneCo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C7F22A7E2BB81CAB006B86C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7F22A902BB81CAE006B86C2 /* LaunchScreen.storyboard in Resources */,
+				C7F22A8D2BB81CAE006B86C2 /* Assets.xcassets in Resources */,
+				C7581EA92BD8F02900997F8D /* Coupon.storyboard in Resources */,
+				C7581EAB2BD8F03300997F8D /* Mypage.storyboard in Resources */,
+				C7F22A8B2BB81CAB006B86C2 /* Main.storyboard in Resources */,
+				C7F22A982BB81D75006B86C2 /* Map.storyboard in Resources */,
+				C7F22A9A2BB81D81006B86C2 /* Chatting.storyboard in Resources */,
+				C7581EA72BD8F01B00997F8D /* Event.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D4A4B160DD08DEAE277C5B21 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ConneCo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F959A2B39CA62FEBDAC9865D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ConneCo/Pods-ConneCo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ConneCo/Pods-ConneCo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ConneCo/Pods-ConneCo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C7F22A7C2BB81CAB006B86C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C78365AA2BB96F1000CE0196 /* ChattingViewController.swift in Sources */,
+				C79D4B632BE4BF86003E78E5 /* MyStoreTableViewCell.swift in Sources */,
+				C7360ECC2BE753440039BA32 /* CouponPickViewController.swift in Sources */,
+				C79D4B672BE4BFA9003E78E5 /* MyEventTableViewCell.swift in Sources */,
+				C79D4B612BE4BF38003E78E5 /* StartViewController.swift in Sources */,
+				C79D4B652BE4BF99003E78E5 /* MyCouponTableViewCell.swift in Sources */,
+				C7F22A882BB81CAB006B86C2 /* ViewController.swift in Sources */,
+				C7360ECE2BE753500039BA32 /* StorePickViewController.swift in Sources */,
+				C7360EC82BE752A50039BA32 /* MyPickViewController.swift in Sources */,
+				C7360EC62BE74CA50039BA32 /* StoreEnrollViewController.swift in Sources */,
+				C7581EAF2BD8F04F00997F8D /* CouponViewController.swift in Sources */,
+				C74F0C1A2BE25BD3006F3EEF /* TabbarShadow.swift in Sources */,
+				C7043D4D2BC2D90000DC5C6A /* UMCpractice1ViewController.swift in Sources */,
+				C7A9CB402BDF9E0C001803DA /* ScissorsRockPaperViewController.swift in Sources */,
+				C7360ECA2BE7533A0039BA32 /* EventPickViewController.swift in Sources */,
+				C7F22A9C2BB8272B006B86C2 /* MainTabViewController.swift in Sources */,
+				C7581EB12BD8F05A00997F8D /* EventViewController.swift in Sources */,
+				C7F22A842BB81CAB006B86C2 /* AppDelegate.swift in Sources */,
+				C78365A82BB96EAB00CE0196 /* MapViewController.swift in Sources */,
+				C7F22A862BB81CAB006B86C2 /* SceneDelegate.swift in Sources */,
+				C74F0C1C2BE26968006F3EEF /* LoginViewController.swift in Sources */,
+				C7581EAD2BD8F04400997F8D /* MypageViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C7F22A892BB81CAB006B86C2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7F22A8A2BB81CAB006B86C2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C7F22A8E2BB81CAE006B86C2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7F22A8F2BB81CAE006B86C2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C7F22A922BB81CAE006B86C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C7F22A932BB81CAE006B86C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C7F22A952BB81CAE006B86C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF5ABCD57BB627FFB83B86E5 /* Pods-ConneCo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R8ZX684WX2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ConneCo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JKPARK.ConneCo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C7F22A962BB81CAE006B86C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3757150C910394F25F2CFEC2 /* Pods-ConneCo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R8ZX684WX2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ConneCo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JKPARK.ConneCo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C7F22A7B2BB81CAB006B86C2 /* Build configuration list for PBXProject "ConneCo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7F22A922BB81CAE006B86C2 /* Debug */,
+				C7F22A932BB81CAE006B86C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7F22A942BB81CAE006B86C2 /* Build configuration list for PBXNativeTarget "ConneCo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7F22A952BB81CAE006B86C2 /* Debug */,
+				C7F22A962BB81CAE006B86C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C7F22A782BB81CAB006B86C2 /* Project object */;
+}
