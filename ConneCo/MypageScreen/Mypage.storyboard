@@ -586,7 +586,11 @@
                             <constraint firstAttribute="bottom" secondItem="dfg-kS-nUF" secondAttribute="bottom" id="rSj-1l-AeK"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="00d-r4-Y1C"/>
                     <size key="freeformSize" width="393" height="1226"/>
+                    <connections>
+                        <outlet property="StoreTableView" destination="344-MM-Qae" id="o7q-EM-7pu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sir-vB-LiU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1121,7 +1125,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="PtC-VT-Hld"/>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="jAn-xC-LJG"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eKY-6z-JoC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1140,7 +1144,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="689"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="81" id="UEC-B5-t0j">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CouponPick_TableViewCell" rowHeight="81" id="UEC-B5-t0j" customClass="CouponPickTableViewCell" customModule="ConneCo" customModuleProvider="target">
                                         <rect key="frame" x="20" y="55.333332061767578" width="353" height="81"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UEC-B5-t0j" id="I1m-uU-cMN">
@@ -1214,7 +1218,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="689"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="81" id="UoD-JL-kVJ">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventPick_TableViewCell" rowHeight="81" id="UoD-JL-kVJ" customClass="EventPickTableViewCell" customModule="ConneCo" customModuleProvider="target">
                                         <rect key="frame" x="20" y="55.333332061767578" width="353" height="81"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UoD-JL-kVJ" id="13Z-oY-2pT">
@@ -1288,7 +1292,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="689"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="81" id="A0C-vW-PQh">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StorePick_TableViewCell" rowHeight="81" id="A0C-vW-PQh" customClass="StorePickTableViewCell" customModule="ConneCo" customModuleProvider="target">
                                         <rect key="frame" x="20" y="55.333332061767578" width="353" height="81"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="A0C-vW-PQh" id="iCr-XG-zOU">
