@@ -172,10 +172,10 @@
             </objects>
             <point key="canvasLocation" x="1351.9083969465648" y="994.36619718309862"/>
         </scene>
-        <!--MypageVC-->
+        <!--StartVC-->
         <scene sceneID="MJt-of-7bK">
             <objects>
-                <viewControllerPlaceholder storyboardName="Mypage" referencedIdentifier="MypageVC" id="RbE-zM-sP1" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Mypage" referencedIdentifier="StartVC" id="RbE-zM-sP1" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="pTk-hi-MHv"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U36-yg-Cf7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

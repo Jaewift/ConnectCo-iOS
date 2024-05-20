@@ -8,7 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		8DED54F1BAD90A7982C0337D /* Pods_ConneCo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72495B1F4C79D1052C5C6835 /* Pods_ConneCo.framework */; };
+		C7006F2F2BFA596400AB1E82 /* SponsorAskInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7006F2E2BFA596400AB1E82 /* SponsorAskInfoViewController.swift */; };
+		C7006F312BFA597100AB1E82 /* EventEnrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7006F302BFA597100AB1E82 /* EventEnrollViewController.swift */; };
 		C7043D4D2BC2D90000DC5C6A /* UMCpractice1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7043D4C2BC2D90000DC5C6A /* UMCpractice1ViewController.swift */; };
+		C70D88432BF516F100205D9B /* CouponEnrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70D88422BF516F100205D9B /* CouponEnrollViewController.swift */; };
+		C70D88452BF5173D00205D9B /* SponsorApplyInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70D88442BF5173D00205D9B /* SponsorApplyInfoViewController.swift */; };
 		C72FD0552BF3C2330030A834 /* StoreDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72FD0542BF3C2330030A834 /* StoreDetailViewController.swift */; };
 		C72FD0572BF3C2590030A834 /* CouponRecommendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72FD0562BF3C2590030A834 /* CouponRecommendTableViewCell.swift */; };
 		C72FD0592BF3C2680030A834 /* CouponListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72FD0582BF3C2680030A834 /* CouponListTableViewCell.swift */; };
@@ -38,6 +42,7 @@
 		C7581EB12BD8F05A00997F8D /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7581EB02BD8F05A00997F8D /* EventViewController.swift */; };
 		C78365A82BB96EAB00CE0196 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78365A72BB96EAB00CE0196 /* MapViewController.swift */; };
 		C78365AA2BB96F1000CE0196 /* ChattingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78365A92BB96F1000CE0196 /* ChattingViewController.swift */; };
+		C78CAE662BFB5748004583D3 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78CAE652BFB5748004583D3 /* SearchViewController.swift */; };
 		C79D4B612BE4BF38003E78E5 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79D4B602BE4BF38003E78E5 /* StartViewController.swift */; };
 		C79D4B632BE4BF86003E78E5 /* MyStoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79D4B622BE4BF86003E78E5 /* MyStoreTableViewCell.swift */; };
 		C79D4B652BE4BF99003E78E5 /* MyCouponTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79D4B642BE4BF99003E78E5 /* MyCouponTableViewCell.swift */; };
@@ -58,7 +63,11 @@
 		3757150C910394F25F2CFEC2 /* Pods-ConneCo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConneCo.release.xcconfig"; path = "Target Support Files/Pods-ConneCo/Pods-ConneCo.release.xcconfig"; sourceTree = "<group>"; };
 		72495B1F4C79D1052C5C6835 /* Pods_ConneCo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConneCo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF5ABCD57BB627FFB83B86E5 /* Pods-ConneCo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConneCo.debug.xcconfig"; path = "Target Support Files/Pods-ConneCo/Pods-ConneCo.debug.xcconfig"; sourceTree = "<group>"; };
+		C7006F2E2BFA596400AB1E82 /* SponsorAskInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsorAskInfoViewController.swift; sourceTree = "<group>"; };
+		C7006F302BFA597100AB1E82 /* EventEnrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventEnrollViewController.swift; sourceTree = "<group>"; };
 		C7043D4C2BC2D90000DC5C6A /* UMCpractice1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMCpractice1ViewController.swift; sourceTree = "<group>"; };
+		C70D88422BF516F100205D9B /* CouponEnrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponEnrollViewController.swift; sourceTree = "<group>"; };
+		C70D88442BF5173D00205D9B /* SponsorApplyInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsorApplyInfoViewController.swift; sourceTree = "<group>"; };
 		C72FD0542BF3C2330030A834 /* StoreDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreDetailViewController.swift; sourceTree = "<group>"; };
 		C72FD0562BF3C2590030A834 /* CouponRecommendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponRecommendTableViewCell.swift; sourceTree = "<group>"; };
 		C72FD0582BF3C2680030A834 /* CouponListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponListTableViewCell.swift; sourceTree = "<group>"; };
@@ -88,6 +97,7 @@
 		C7581EB02BD8F05A00997F8D /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 		C78365A72BB96EAB00CE0196 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		C78365A92BB96F1000CE0196 /* ChattingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingViewController.swift; sourceTree = "<group>"; };
+		C78CAE652BFB5748004583D3 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		C79D4B602BE4BF38003E78E5 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		C79D4B622BE4BF86003E78E5 /* MyStoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStoreTableViewCell.swift; sourceTree = "<group>"; };
 		C79D4B642BE4BF99003E78E5 /* MyCouponTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCouponTableViewCell.swift; sourceTree = "<group>"; };
@@ -154,6 +164,8 @@
 				C738DF392BEFC48900BA2BE6 /* CouponDetailViewController.swift */,
 				C72FD0542BF3C2330030A834 /* StoreDetailViewController.swift */,
 				C72FD05A2BF3C28F0030A834 /* StoreCouponListTableViewCell.swift */,
+				C70D88422BF516F100205D9B /* CouponEnrollViewController.swift */,
+				C70D88442BF5173D00205D9B /* SponsorApplyInfoViewController.swift */,
 			);
 			path = CouponScreen;
 			sourceTree = "<group>";
@@ -169,6 +181,9 @@
 				C72FD0622BF3C3880030A834 /* UniViewController.swift */,
 				C72FD0642BF3C39A0030A834 /* UniEventListTableViewCell.swift */,
 				C72FD0662BF3C40B0030A834 /* SponsorInfoViewController.swift */,
+				C7006F2E2BFA596400AB1E82 /* SponsorAskInfoViewController.swift */,
+				C7006F302BFA597100AB1E82 /* EventEnrollViewController.swift */,
+				C78CAE652BFB5748004583D3 /* SearchViewController.swift */,
 			);
 			path = EventScreen;
 			sourceTree = "<group>";
@@ -380,6 +395,7 @@
 				C79D4B672BE4BFA9003E78E5 /* MyEventTableViewCell.swift in Sources */,
 				C79D4B612BE4BF38003E78E5 /* StartViewController.swift in Sources */,
 				C72FD0592BF3C2680030A834 /* CouponListTableViewCell.swift in Sources */,
+				C7006F312BFA597100AB1E82 /* EventEnrollViewController.swift in Sources */,
 				C72FD0612BF3C3740030A834 /* EventDetailViewController.swift in Sources */,
 				C72FD0652BF3C39A0030A834 /* UniEventListTableViewCell.swift in Sources */,
 				C72FD0672BF3C40B0030A834 /* SponsorInfoViewController.swift in Sources */,
@@ -387,9 +403,12 @@
 				C79D4B652BE4BF99003E78E5 /* MyCouponTableViewCell.swift in Sources */,
 				C7F22A882BB81CAB006B86C2 /* ViewController.swift in Sources */,
 				C7360ECE2BE753500039BA32 /* StorePickViewController.swift in Sources */,
+				C70D88452BF5173D00205D9B /* SponsorApplyInfoViewController.swift in Sources */,
 				C7360EC82BE752A50039BA32 /* MyPickViewController.swift in Sources */,
 				C72FD0552BF3C2330030A834 /* StoreDetailViewController.swift in Sources */,
+				C70D88432BF516F100205D9B /* CouponEnrollViewController.swift in Sources */,
 				C72FD0632BF3C3880030A834 /* UniViewController.swift in Sources */,
+				C7006F2F2BFA596400AB1E82 /* SponsorAskInfoViewController.swift in Sources */,
 				C7360EC62BE74CA50039BA32 /* StoreEnrollViewController.swift in Sources */,
 				C7581EAF2BD8F04F00997F8D /* CouponViewController.swift in Sources */,
 				C72FD05D2BF3C33F0030A834 /* EventRecommendTableViewCell.swift in Sources */,
@@ -398,6 +417,7 @@
 				C7A9CB402BDF9E0C001803DA /* ScissorsRockPaperViewController.swift in Sources */,
 				C7360ECA2BE7533A0039BA32 /* EventPickViewController.swift in Sources */,
 				C72FD05F2BF3C34B0030A834 /* EventListTableViewCell.swift in Sources */,
+				C78CAE662BFB5748004583D3 /* SearchViewController.swift in Sources */,
 				C72FD0692BF3C4870030A834 /* EventPickTableViewCell.swift in Sources */,
 				C7F22A9C2BB8272B006B86C2 /* MainTabViewController.swift in Sources */,
 				C7581EB12BD8F05A00997F8D /* EventViewController.swift in Sources */,
