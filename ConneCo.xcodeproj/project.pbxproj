@@ -42,6 +42,11 @@
 		C7581EB12BD8F05A00997F8D /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7581EB02BD8F05A00997F8D /* EventViewController.swift */; };
 		C78365A82BB96EAB00CE0196 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78365A72BB96EAB00CE0196 /* MapViewController.swift */; };
 		C78365AA2BB96F1000CE0196 /* ChattingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78365A92BB96F1000CE0196 /* ChattingViewController.swift */; };
+		C7893CB82BFBA2D700EAE77E /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7893CB72BFBA2D700EAE77E /* BaseURL.swift */; };
+		C7893CBA2BFBA4CF00EAE77E /* CouponAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7893CB92BFBA4CF00EAE77E /* CouponAPI.swift */; };
+		C7893CBC2BFBA4DA00EAE77E /* EventAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7893CBB2BFBA4DA00EAE77E /* EventAPI.swift */; };
+		C7893CBE2BFBA4E300EAE77E /* LoginAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7893CBD2BFBA4E300EAE77E /* LoginAPI.swift */; };
+		C7893CC02BFBA4ED00EAE77E /* StoreAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7893CBF2BFBA4ED00EAE77E /* StoreAPI.swift */; };
 		C78CAE662BFB5748004583D3 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78CAE652BFB5748004583D3 /* SearchViewController.swift */; };
 		C79D4B612BE4BF38003E78E5 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79D4B602BE4BF38003E78E5 /* StartViewController.swift */; };
 		C79D4B632BE4BF86003E78E5 /* MyStoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79D4B622BE4BF86003E78E5 /* MyStoreTableViewCell.swift */; };
@@ -97,6 +102,11 @@
 		C7581EB02BD8F05A00997F8D /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 		C78365A72BB96EAB00CE0196 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		C78365A92BB96F1000CE0196 /* ChattingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingViewController.swift; sourceTree = "<group>"; };
+		C7893CB72BFBA2D700EAE77E /* BaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseURL.swift; sourceTree = "<group>"; };
+		C7893CB92BFBA4CF00EAE77E /* CouponAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponAPI.swift; sourceTree = "<group>"; };
+		C7893CBB2BFBA4DA00EAE77E /* EventAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventAPI.swift; sourceTree = "<group>"; };
+		C7893CBD2BFBA4E300EAE77E /* LoginAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAPI.swift; sourceTree = "<group>"; };
+		C7893CBF2BFBA4ED00EAE77E /* StoreAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreAPI.swift; sourceTree = "<group>"; };
 		C78CAE652BFB5748004583D3 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		C79D4B602BE4BF38003E78E5 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		C79D4B622BE4BF86003E78E5 /* MyStoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStoreTableViewCell.swift; sourceTree = "<group>"; };
@@ -228,6 +238,18 @@
 			path = ChattingScreen;
 			sourceTree = "<group>";
 		};
+		C7893CB62BFBA2BB00EAE77E /* API */ = {
+			isa = PBXGroup;
+			children = (
+				C7893CB72BFBA2D700EAE77E /* BaseURL.swift */,
+				C7893CBD2BFBA4E300EAE77E /* LoginAPI.swift */,
+				C7893CBB2BFBA4DA00EAE77E /* EventAPI.swift */,
+				C7893CB92BFBA4CF00EAE77E /* CouponAPI.swift */,
+				C7893CBF2BFBA4ED00EAE77E /* StoreAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		C7F22A772BB81CAB006B86C2 = {
 			isa = PBXGroup;
 			children = (
@@ -249,6 +271,7 @@
 		C7F22A822BB81CAB006B86C2 /* ConneCo */ = {
 			isa = PBXGroup;
 			children = (
+				C7893CB62BFBA2BB00EAE77E /* API */,
 				C7043D4B2BC2D8C700DC5C6A /* UMCPractice1 */,
 				C7581EA42BD8EFBE00997F8D /* EventScreen */,
 				C7581EA32BD8EFBB00997F8D /* CouponScreen */,
@@ -390,12 +413,14 @@
 			files = (
 				C78365AA2BB96F1000CE0196 /* ChattingViewController.swift in Sources */,
 				C79D4B632BE4BF86003E78E5 /* MyStoreTableViewCell.swift in Sources */,
+				C7893CB82BFBA2D700EAE77E /* BaseURL.swift in Sources */,
 				C72FD06B2BF3C4930030A834 /* CouponPickTableViewCell.swift in Sources */,
 				C7360ECC2BE753440039BA32 /* CouponPickViewController.swift in Sources */,
 				C79D4B672BE4BFA9003E78E5 /* MyEventTableViewCell.swift in Sources */,
 				C79D4B612BE4BF38003E78E5 /* StartViewController.swift in Sources */,
 				C72FD0592BF3C2680030A834 /* CouponListTableViewCell.swift in Sources */,
 				C7006F312BFA597100AB1E82 /* EventEnrollViewController.swift in Sources */,
+				C7893CBC2BFBA4DA00EAE77E /* EventAPI.swift in Sources */,
 				C72FD0612BF3C3740030A834 /* EventDetailViewController.swift in Sources */,
 				C72FD0652BF3C39A0030A834 /* UniEventListTableViewCell.swift in Sources */,
 				C72FD0672BF3C40B0030A834 /* SponsorInfoViewController.swift in Sources */,
@@ -408,6 +433,8 @@
 				C72FD0552BF3C2330030A834 /* StoreDetailViewController.swift in Sources */,
 				C70D88432BF516F100205D9B /* CouponEnrollViewController.swift in Sources */,
 				C72FD0632BF3C3880030A834 /* UniViewController.swift in Sources */,
+				C7893CC02BFBA4ED00EAE77E /* StoreAPI.swift in Sources */,
+				C7893CBE2BFBA4E300EAE77E /* LoginAPI.swift in Sources */,
 				C7006F2F2BFA596400AB1E82 /* SponsorAskInfoViewController.swift in Sources */,
 				C7360EC62BE74CA50039BA32 /* StoreEnrollViewController.swift in Sources */,
 				C7581EAF2BD8F04F00997F8D /* CouponViewController.swift in Sources */,
@@ -428,6 +455,7 @@
 				C74F0C1C2BE26968006F3EEF /* LoginViewController.swift in Sources */,
 				C7581EAD2BD8F04400997F8D /* MypageViewController.swift in Sources */,
 				C72FD0572BF3C2590030A834 /* CouponRecommendTableViewCell.swift in Sources */,
+				C7893CBA2BFBA4CF00EAE77E /* CouponAPI.swift in Sources */,
 				C738DF3A2BEFC48900BA2BE6 /* CouponDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
