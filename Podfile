@@ -8,5 +8,7 @@ target 'ConneCo' do
   # Pods for ConneCo
 
   pod 'NMapsMap'
+  pod 'Tabman', '~> 3.2'
+  pod 'Alamofire'
 
 end

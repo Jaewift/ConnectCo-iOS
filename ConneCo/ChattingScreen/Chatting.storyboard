@@ -55,6 +55,10 @@
                                     <constraint firstItem="bRz-5n-vKQ" firstAttribute="top" secondItem="q8l-dG-Y0d" secondAttribute="top" constant="58" id="b8p-co-Efj"/>
                                 </constraints>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="badal" translatesAutoresizingMaskIntoConstraints="NO" id="wdS-b0-yCX">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -92,6 +96,7 @@
     <resources>
         <image name="ConneCo_alarm" width="24" height="24"/>
         <image name="ConneCo_search" width="24" height="24"/>
+        <image name="badal" width="1125" height="2436"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
