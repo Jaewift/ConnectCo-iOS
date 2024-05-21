@@ -42,10 +42,13 @@
 		C7581EB12BD8F05A00997F8D /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7581EB02BD8F05A00997F8D /* EventViewController.swift */; };
 		C78365A82BB96EAB00CE0196 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78365A72BB96EAB00CE0196 /* MapViewController.swift */; };
 		C78365AA2BB96F1000CE0196 /* ChattingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78365A92BB96F1000CE0196 /* ChattingViewController.swift */; };
+		C788F1B62BFC55A400472F31 /* EventPickAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C788F1B52BFC55A400472F31 /* EventPickAPI.swift */; };
+		C788F1B82BFC594500472F31 /* KakaoLoginAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C788F1B72BFC594500472F31 /* KakaoLoginAPI.swift */; };
+		C788F1BA2BFC594F00472F31 /* NaverLoginAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C788F1B92BFC594F00472F31 /* NaverLoginAPI.swift */; };
 		C7893CB82BFBA2D700EAE77E /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7893CB72BFBA2D700EAE77E /* BaseURL.swift */; };
 		C7893CBA2BFBA4CF00EAE77E /* CouponAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7893CB92BFBA4CF00EAE77E /* CouponAPI.swift */; };
 		C7893CBC2BFBA4DA00EAE77E /* EventAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7893CBB2BFBA4DA00EAE77E /* EventAPI.swift */; };
-		C7893CBE2BFBA4E300EAE77E /* LoginAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7893CBD2BFBA4E300EAE77E /* LoginAPI.swift */; };
+		C7893CBE2BFBA4E300EAE77E /* GoogleLoginAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7893CBD2BFBA4E300EAE77E /* GoogleLoginAPI.swift */; };
 		C7893CC02BFBA4ED00EAE77E /* StoreAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7893CBF2BFBA4ED00EAE77E /* StoreAPI.swift */; };
 		C78CAE662BFB5748004583D3 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78CAE652BFB5748004583D3 /* SearchViewController.swift */; };
 		C79D4B612BE4BF38003E78E5 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79D4B602BE4BF38003E78E5 /* StartViewController.swift */; };
@@ -102,10 +105,13 @@
 		C7581EB02BD8F05A00997F8D /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 		C78365A72BB96EAB00CE0196 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		C78365A92BB96F1000CE0196 /* ChattingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingViewController.swift; sourceTree = "<group>"; };
+		C788F1B52BFC55A400472F31 /* EventPickAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventPickAPI.swift; sourceTree = "<group>"; };
+		C788F1B72BFC594500472F31 /* KakaoLoginAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoLoginAPI.swift; sourceTree = "<group>"; };
+		C788F1B92BFC594F00472F31 /* NaverLoginAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverLoginAPI.swift; sourceTree = "<group>"; };
 		C7893CB72BFBA2D700EAE77E /* BaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseURL.swift; sourceTree = "<group>"; };
 		C7893CB92BFBA4CF00EAE77E /* CouponAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponAPI.swift; sourceTree = "<group>"; };
 		C7893CBB2BFBA4DA00EAE77E /* EventAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventAPI.swift; sourceTree = "<group>"; };
-		C7893CBD2BFBA4E300EAE77E /* LoginAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAPI.swift; sourceTree = "<group>"; };
+		C7893CBD2BFBA4E300EAE77E /* GoogleLoginAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleLoginAPI.swift; sourceTree = "<group>"; };
 		C7893CBF2BFBA4ED00EAE77E /* StoreAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreAPI.swift; sourceTree = "<group>"; };
 		C78CAE652BFB5748004583D3 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		C79D4B602BE4BF38003E78E5 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
@@ -238,14 +244,49 @@
 			path = ChattingScreen;
 			sourceTree = "<group>";
 		};
+		C788F1B12BFC553B00472F31 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				C7893CBB2BFBA4DA00EAE77E /* EventAPI.swift */,
+				C788F1B52BFC55A400472F31 /* EventPickAPI.swift */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		C788F1B22BFC554800472F31 /* Logins */ = {
+			isa = PBXGroup;
+			children = (
+				C7893CBD2BFBA4E300EAE77E /* GoogleLoginAPI.swift */,
+				C788F1B72BFC594500472F31 /* KakaoLoginAPI.swift */,
+				C788F1B92BFC594F00472F31 /* NaverLoginAPI.swift */,
+			);
+			path = Logins;
+			sourceTree = "<group>";
+		};
+		C788F1B32BFC554F00472F31 /* Coupons */ = {
+			isa = PBXGroup;
+			children = (
+				C7893CB92BFBA4CF00EAE77E /* CouponAPI.swift */,
+			);
+			path = Coupons;
+			sourceTree = "<group>";
+		};
+		C788F1B42BFC555700472F31 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				C7893CBF2BFBA4ED00EAE77E /* StoreAPI.swift */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
 		C7893CB62BFBA2BB00EAE77E /* API */ = {
 			isa = PBXGroup;
 			children = (
 				C7893CB72BFBA2D700EAE77E /* BaseURL.swift */,
-				C7893CBD2BFBA4E300EAE77E /* LoginAPI.swift */,
-				C7893CBB2BFBA4DA00EAE77E /* EventAPI.swift */,
-				C7893CB92BFBA4CF00EAE77E /* CouponAPI.swift */,
-				C7893CBF2BFBA4ED00EAE77E /* StoreAPI.swift */,
+				C788F1B22BFC554800472F31 /* Logins */,
+				C788F1B12BFC553B00472F31 /* Events */,
+				C788F1B32BFC554F00472F31 /* Coupons */,
+				C788F1B42BFC555700472F31 /* Stores */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -429,12 +470,14 @@
 				C7F22A882BB81CAB006B86C2 /* ViewController.swift in Sources */,
 				C7360ECE2BE753500039BA32 /* StorePickViewController.swift in Sources */,
 				C70D88452BF5173D00205D9B /* SponsorApplyInfoViewController.swift in Sources */,
+				C788F1BA2BFC594F00472F31 /* NaverLoginAPI.swift in Sources */,
 				C7360EC82BE752A50039BA32 /* MyPickViewController.swift in Sources */,
 				C72FD0552BF3C2330030A834 /* StoreDetailViewController.swift in Sources */,
 				C70D88432BF516F100205D9B /* CouponEnrollViewController.swift in Sources */,
 				C72FD0632BF3C3880030A834 /* UniViewController.swift in Sources */,
 				C7893CC02BFBA4ED00EAE77E /* StoreAPI.swift in Sources */,
-				C7893CBE2BFBA4E300EAE77E /* LoginAPI.swift in Sources */,
+				C7893CBE2BFBA4E300EAE77E /* GoogleLoginAPI.swift in Sources */,
+				C788F1B82BFC594500472F31 /* KakaoLoginAPI.swift in Sources */,
 				C7006F2F2BFA596400AB1E82 /* SponsorAskInfoViewController.swift in Sources */,
 				C7360EC62BE74CA50039BA32 /* StoreEnrollViewController.swift in Sources */,
 				C7581EAF2BD8F04F00997F8D /* CouponViewController.swift in Sources */,
@@ -453,6 +496,7 @@
 				C78365A82BB96EAB00CE0196 /* MapViewController.swift in Sources */,
 				C7F22A862BB81CAB006B86C2 /* SceneDelegate.swift in Sources */,
 				C74F0C1C2BE26968006F3EEF /* LoginViewController.swift in Sources */,
+				C788F1B62BFC55A400472F31 /* EventPickAPI.swift in Sources */,
 				C7581EAD2BD8F04400997F8D /* MypageViewController.swift in Sources */,
 				C72FD0572BF3C2590030A834 /* CouponRecommendTableViewCell.swift in Sources */,
 				C7893CBA2BFBA4CF00EAE77E /* CouponAPI.swift in Sources */,

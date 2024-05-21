@@ -1,5 +1,5 @@
 //
-//  StoreAPI.swift
+//  NaverLoginAPI.swift
 //  ConneCo
 //
 //  Created by jaegu park on 5/21/24.
@@ -8,23 +8,18 @@
 import Foundation
 import Alamofire
 
-struct RebornModel:Encodable {
-    var storeIdx:Int
-    var productName:String?
-    var productGuide:String?
-    var productComment:String?
-    var productImg:String?
-    var productLimitTime:String?
-    var productCnt:Int
+struct NaverModel:Encodable {
+    var accessToken:String?
 }
 
-class APIHandlerPost {
-    static let instance = APIHandlerPost()
+class APINaverPost {
+    static let instance = APINaverPost()
     
-    func SendingPostReborn(parameters: RebornModel, handler: @escaping (_ result: RebornresultModel)->(Void)) {
-        let url = APIConstants.storeURL
+    func SendingPostReborn(token: String, parameters: NaverModel, handler: @escaping (_ result: NaverResultModel)->(Void)) {
+        let url = APIConstants.loginURL + "/naver"
         let headers:HTTPHeaders = [
-            "content-type": "application/json"
+            "content-type": "application/json",
+            "X-ACCESS-TOKEN": "\(token)"
         ]
         
         AF.request(url, method: .post, parameters: parameters, encoder: JSONParameterEncoder.default, headers: headers).response { responce in
@@ -35,7 +30,7 @@ class APIHandlerPost {
                     let json = try JSONSerialization.jsonObject(with: data!, options: .fragmentsAllowed)
                     print(json)
                     
-                    let jsonresult = try JSONDecoder().decode(RebornresultModel.self, from: data!)
+                    let jsonresult = try JSONDecoder().decode(NaverResultModel.self, from: data!)
                     handler(jsonresult)
                     print(jsonresult)
                 } catch {
@@ -48,13 +43,15 @@ class APIHandlerPost {
     }
 }
 
-struct RebornresultModel: Codable {
+struct NaverResultModel: Codable {
     var isSuccess:Bool
     var code:Int
     var message:String
-    var result: RebornResult
+    var result:NaverResult
 }
 
-struct RebornResult: Codable {
-    var rebornIdx:Int
+struct NaverResult: Codable {
+    var memberId:String
+    var accessToken:String
+    var refreshToken:String
 }
