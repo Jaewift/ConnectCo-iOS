@@ -8,22 +8,21 @@
 import UIKit
 
 class EventPickViewController: UIViewController {
+    
+    @IBOutlet weak var EventPickTableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        EventPickTableView.rowHeight = UITableView.automaticDimension
+        EventPickTableView.estimatedRowHeight = UITableView.automaticDimension
+        
+        EventPickTableView.delegate = self
+        EventPickTableView.dataSource = self
+        
+        EventPickTableView.layer.masksToBounds = true// any value you want
+        EventPickTableView.layer.shadowOpacity = 0.12// any value you want
+        EventPickTableView.layer.shadowRadius = 10 // any value you want
+        EventPickTableView.layer.shadowOffset = .init(width: 5, height: 10)
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

@@ -8,11 +8,21 @@
 import UIKit
 
 class StorePickViewController: UIViewController {
-
+    
+    @IBOutlet weak var StorePickTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        StorePickTableView.rowHeight = UITableView.automaticDimension
+        StorePickTableView.estimatedRowHeight = UITableView.automaticDimension
+        
+        StorePickTableView.delegate = self
+        StorePickTableView.dataSource = self
+        StorePickTableView.layer.masksToBounds = true// any value you want
+        StorePickTableView.layer.shadowOpacity = 0.12// any value you want
+        StorePickTableView.layer.shadowRadius = 10 // any value you want
+        StorePickTableView.layer.shadowOffset = .init(width: 5, height: 10)
     }
     
 

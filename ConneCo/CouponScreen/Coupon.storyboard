@@ -333,8 +333,8 @@
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.96094137430000004" green="0.9603591561" blue="0.98039489980000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="trailing" secondItem="PAf-Pb-4mW" secondAttribute="trailing" constant="16" id="5Ia-mP-8qm"/>
                                                     <constraint firstItem="CJq-4h-INN" firstAttribute="centerY" secondItem="dr8-Sp-yiZ" secondAttribute="centerY" id="8OQ-V5-Q15"/>
+                                                    <constraint firstAttribute="trailing" secondItem="PAf-Pb-4mW" secondAttribute="trailing" constant="16" id="JFz-JS-HUX"/>
                                                     <constraint firstItem="CJq-4h-INN" firstAttribute="leading" secondItem="dr8-Sp-yiZ" secondAttribute="leading" constant="24" id="Kyy-OY-Nhy"/>
                                                     <constraint firstAttribute="height" constant="43" id="RBv-PQ-q03"/>
                                                     <constraint firstItem="PAf-Pb-4mW" firstAttribute="centerY" secondItem="dr8-Sp-yiZ" secondAttribute="centerY" id="heP-Gf-VBA"/>
@@ -523,7 +523,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CyJ-WX-t6F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1620.6106870229007" y="6.6901408450704229"/>
+            <point key="canvasLocation" x="1621" y="7"/>
         </scene>
         <!--Store Detail View Controller-->
         <scene sceneID="3yj-Z5-lZa">
@@ -818,11 +818,12 @@
                             <constraint firstAttribute="bottom" secondItem="4WD-rY-IOq" secondAttribute="bottom" id="ztd-uU-kas"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="xs3-jK-hzL"/>
                     <size key="freeformSize" width="393" height="1396"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e7v-Jh-dS9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2272.5190839694656" y="188.73239436619718"/>
+            <point key="canvasLocation" x="2268" y="188"/>
         </scene>
         <!--Coupon Enroll View Controller-->
         <scene sceneID="E1b-zO-pUU">
@@ -1139,7 +1140,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XwT-St-NhZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2924.4274809160306" y="19.014084507042256"/>
+            <point key="canvasLocation" x="2915" y="18"/>
         </scene>
         <!--Sponsor Apply Info View Controller-->
         <scene sceneID="cON-1A-XvF">
@@ -1398,7 +1399,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9vc-ss-nuo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3555" y="-3"/>
+            <point key="canvasLocation" x="3561" y="-4"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8bM-z6-07k">
@@ -1411,7 +1412,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="Vm2-MQ-Xrw"/>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="YWQ-WZ-30I"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wwn-Y9-Q92" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

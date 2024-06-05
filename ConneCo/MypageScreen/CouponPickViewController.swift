@@ -8,11 +8,21 @@
 import UIKit
 
 class CouponPickViewController: UIViewController {
-
+    
+    @IBOutlet weak var CouponPickTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        CouponPickTableView.rowHeight = UITableView.automaticDimension
+        CouponPickTableView.estimatedRowHeight = UITableView.automaticDimension
+        
+        CouponPickTableView.delegate = self
+        CouponPickTableView.dataSource = self
+        CouponPickTableView.layer.masksToBounds = true// any value you want
+        CouponPickTableView.layer.shadowOpacity = 0.12// any value you want
+        CouponPickTableView.layer.shadowRadius = 10 // any value you want
+        CouponPickTableView.layer.shadowOffset = .init(width: 5, height: 10)
     }
     
 

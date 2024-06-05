@@ -252,7 +252,7 @@
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" image="ConneCo_Tap"/>
                                                                         <connections>
-                                                                            <action selector="Pick_Tapped:" destination="xQc-Cc-MFK" eventType="touchUpInside" id="eF1-Ne-oQS"/>
+                                                                            <action selector="Pick_Tapped:" destination="xQc-Cc-MFK" eventType="touchUpInside" id="epV-AT-xTB"/>
                                                                         </connections>
                                                                     </button>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="찜한 목록" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XdO-p9-okh">
@@ -656,6 +656,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="ConneCo_AddImage"/>
+                                <connections>
+                                    <action selector="camera_Tapped:" destination="Gii-Fe-aJG" eventType="touchUpInside" id="WGS-2j-g0K"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="가게 이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JCc-x2-Uvr">
                                 <rect key="frame" x="24" y="203" width="60" height="20"/>
@@ -775,6 +778,9 @@
                                     <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="16"/>
                                     <color key="baseBackgroundColor" red="0.2895924151" green="0.60887163879999995" blue="0.97259002920000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="Enroll_Complete:" destination="Gii-Fe-aJG" eventType="touchUpInside" id="sHJ-Wl-zuD"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ConneCo_Store_Default" translatesAutoresizingMaskIntoConstraints="NO" id="4it-0A-NNg">
                                 <rect key="frame" x="94" y="118" width="65" height="65"/>
@@ -804,6 +810,15 @@
                                     <constraint firstAttribute="height" constant="65" id="Ye7-IJ-ZHh"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eNV-O7-83k">
+                                <rect key="frame" x="74" y="112" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="Upt-92-aLX"/>
+                                    <constraint firstAttribute="height" constant="20" id="YQY-4D-6jv"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="ConneCo_Delete"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="V2c-Tt-dcs"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -844,10 +859,12 @@
                             <constraint firstItem="Y2i-mb-QM0" firstAttribute="top" secondItem="KZ5-9c-VQ2" secondAttribute="bottom" constant="23" id="i1p-rA-2a6"/>
                             <constraint firstItem="kEC-sW-lsD" firstAttribute="leading" secondItem="V2c-Tt-dcs" secondAttribute="leading" constant="24" id="lCa-sa-Jcq"/>
                             <constraint firstItem="2uC-1Y-mDG" firstAttribute="leading" secondItem="V2c-Tt-dcs" secondAttribute="leading" constant="24" id="lVs-xL-wHK"/>
+                            <constraint firstItem="eNV-O7-83k" firstAttribute="top" secondItem="KZ5-9c-VQ2" secondAttribute="bottom" constant="17" id="lbX-cr-MFN"/>
                             <constraint firstItem="4it-0A-NNg" firstAttribute="leading" secondItem="Y2i-mb-QM0" secondAttribute="trailing" constant="5" id="mJf-vo-PAX"/>
                             <constraint firstItem="uNA-hr-vwi" firstAttribute="leading" secondItem="g2s-Df-LcX" secondAttribute="trailing" constant="5" id="nap-eQ-Lrl"/>
                             <constraint firstItem="TGp-qj-ua1" firstAttribute="top" secondItem="KTX-UZ-EEx" secondAttribute="bottom" constant="5" id="qPx-eM-wLr"/>
                             <constraint firstItem="V2c-Tt-dcs" firstAttribute="trailing" secondItem="G2q-ST-YBN" secondAttribute="trailing" constant="24" id="rKZ-bh-bij"/>
+                            <constraint firstItem="4it-0A-NNg" firstAttribute="leading" secondItem="eNV-O7-83k" secondAttribute="trailing" id="raL-IH-har"/>
                             <constraint firstItem="G2q-ST-YBN" firstAttribute="leading" secondItem="V2c-Tt-dcs" secondAttribute="leading" constant="24" id="ryI-dV-mEw"/>
                             <constraint firstItem="KZ5-9c-VQ2" firstAttribute="trailing" secondItem="V2c-Tt-dcs" secondAttribute="trailing" id="tdj-rh-ubO"/>
                             <constraint firstItem="Rp6-vJ-ZgK" firstAttribute="top" secondItem="wYV-rN-dDi" secondAttribute="bottom" constant="5" id="v3L-B5-kMd"/>
@@ -857,6 +874,15 @@
                             <constraint firstItem="V2c-Tt-dcs" firstAttribute="trailing" secondItem="Rp6-vJ-ZgK" secondAttribute="trailing" constant="24" id="zjW-ij-MZ4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="CameraButton" destination="gjr-Gq-5yg" id="rKE-3y-0Ie"/>
+                        <outlet property="ImageLabel1" destination="e2l-QR-yQO" id="1Rw-3W-6vB"/>
+                        <outlet property="fifthImageView" destination="gME-eI-klX" id="C9i-Bq-ZnZ"/>
+                        <outlet property="firstImageView" destination="Y2i-mb-QM0" id="MOI-C2-jIs"/>
+                        <outlet property="fourthImageView" destination="uNA-hr-vwi" id="CsM-JD-E7R"/>
+                        <outlet property="secondImageView" destination="4it-0A-NNg" id="z52-nt-Bj1"/>
+                        <outlet property="thirdImageView" destination="g2s-Df-LcX" id="p17-h3-s9m"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LTi-th-pz3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -909,6 +935,9 @@
                                     <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="15"/>
                                     <color key="baseBackgroundColor" red="0.2895924151" green="0.60887163879999995" blue="0.97259002920000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="CouponPick_Tapped:" destination="Inh-Un-bLv" eventType="touchUpInside" id="hpT-vH-xNc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HsQ-uC-lTo">
                                 <rect key="frame" x="254.66666666666663" y="115" width="98" height="24"/>
@@ -921,6 +950,9 @@
                                     <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="15"/>
                                     <color key="baseBackgroundColor" red="0.2895924151" green="0.60887163879999995" blue="0.97259002920000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="StorePick_Tapped:" destination="Inh-Un-bLv" eventType="touchUpInside" id="7Tb-ss-LCO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8oF-Gd-2HX">
                                 <rect key="frame" x="40.666666666666657" y="115" width="98" height="24"/>
@@ -933,6 +965,9 @@
                                     <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="15"/>
                                     <color key="baseBackgroundColor" red="0.2895924151" green="0.60887163879999995" blue="0.97259002920000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="EventPick_Tapped:" destination="Inh-Un-bLv" eventType="touchUpInside" id="Gm5-8Q-XGA"/>
+                                </connections>
                             </button>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="how-d1-Pop">
                                 <rect key="frame" x="0.0" y="163" width="393" height="689"/>
@@ -980,8 +1015,11 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="CouponPickButton" destination="kK0-Gu-6Un" id="ROh-cb-pRU"/>
                         <outlet property="CouponPickView" destination="Nvy-R9-Mvv" id="fkC-hS-hFu"/>
+                        <outlet property="EventPickButton" destination="8oF-Gd-2HX" id="ceG-Ge-xlM"/>
                         <outlet property="EventPickView" destination="how-d1-Pop" id="hpa-3D-Tnn"/>
+                        <outlet property="StorePickButton" destination="HsQ-uC-lTo" id="pi2-DD-q0j"/>
                         <outlet property="StorePickView" destination="hNs-QW-AGi" id="a5J-io-ydh"/>
                     </connections>
                 </viewController>
@@ -1125,9 +1163,9 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="TPX-Id-baD">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="689"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CouponPick_TableViewCell" rowHeight="81" id="UEC-B5-t0j" customClass="CouponPickTableViewCell" customModule="ConneCo" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventPick_TableViewCell" rowHeight="81" id="UEC-B5-t0j" customClass="EventPickTableViewCell" customModule="ConneCo" customModuleProvider="target">
                                         <rect key="frame" x="20" y="55.333332061767578" width="353" height="81"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UEC-B5-t0j" id="I1m-uU-cMN">
@@ -1184,6 +1222,9 @@
                             <constraint firstAttribute="trailing" secondItem="TPX-Id-baD" secondAttribute="trailing" id="rei-0f-WFU"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="EventPickTableView" destination="TPX-Id-baD" id="aM2-HV-JTp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2wY-XO-8i2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1199,9 +1240,9 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ZiO-42-uSN">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="689"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventPick_TableViewCell" rowHeight="81" id="UoD-JL-kVJ" customClass="EventPickTableViewCell" customModule="ConneCo" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CouponPick_TableViewCell" rowHeight="81" id="UoD-JL-kVJ" customClass="CouponPickTableViewCell" customModule="ConneCo" customModuleProvider="target">
                                         <rect key="frame" x="20" y="55.333332061767578" width="353" height="81"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UoD-JL-kVJ" id="13Z-oY-2pT">
@@ -1258,6 +1299,9 @@
                             <constraint firstAttribute="bottom" secondItem="ZiO-42-uSN" secondAttribute="bottom" id="yOp-d2-AzQ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="CouponPickTableView" destination="ZiO-42-uSN" id="SgP-E9-YxJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Yt-Wr-MQo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1273,7 +1317,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="J53-4g-ocp">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="689"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StorePick_TableViewCell" rowHeight="81" id="A0C-vW-PQh" customClass="StorePickTableViewCell" customModule="ConneCo" customModuleProvider="target">
                                         <rect key="frame" x="20" y="55.333332061767578" width="353" height="81"/>
@@ -1332,6 +1376,9 @@
                             <constraint firstAttribute="trailing" secondItem="J53-4g-ocp" secondAttribute="trailing" id="ide-lB-66W"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="StorePickTableView" destination="J53-4g-ocp" id="ks2-4h-FHi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4x0-FE-jGB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1345,6 +1392,7 @@
         <image name="ConneCo_Back" width="36" height="36"/>
         <image name="ConneCo_Back_White" width="36" height="36"/>
         <image name="ConneCo_Default" width="32" height="32"/>
+        <image name="ConneCo_Delete" width="24" height="24"/>
         <image name="ConneCo_GoogleLogin1" width="50" height="50"/>
         <image name="ConneCo_GoogleLogin2" width="20" height="20"/>
         <image name="ConneCo_KakaoLogin1" width="50.5" height="50"/>

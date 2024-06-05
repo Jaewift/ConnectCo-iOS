@@ -37,15 +37,14 @@ class MypageViewController: UIViewController {
         navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     
-    @IBAction func Pick_Tapped(_ sender: Any) {
-        guard let rvc = self.storyboard?.instantiateViewController(withIdentifier: "MyPickVC") as? MyPickViewController else {return}
+    @IBAction func Store_Add(_ sender: Any) {
+        guard let rvc = self.storyboard?.instantiateViewController(withIdentifier: "StoreEnrollVC") as? StoreEnrollViewController else {return}
         
         self.navigationController?.pushViewController(rvc, animated: true)
     }
     
-    
-    @IBAction func Store_Add(_ sender: Any) {
-        guard let rvc = self.storyboard?.instantiateViewController(withIdentifier: "StoreEnrollVC") as? StoreEnrollViewController else {return}
+    @IBAction func Pick_Tapped(_ sender: Any) {
+        guard let rvc = self.storyboard?.instantiateViewController(withIdentifier: "MyPickVC") as? MyPickViewController else {return}
         
         self.navigationController?.pushViewController(rvc, animated: true)
     }

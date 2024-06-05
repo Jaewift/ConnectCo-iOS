@@ -8,22 +8,33 @@
 import UIKit
 
 class UniViewController: UIViewController {
-
+    
+    @IBOutlet weak var UniEventTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        UniEventTableView.delegate = self
+        UniEventTableView.dataSource = self
+        UniEventTableView.layer.masksToBounds = true// any value you want
+        UniEventTableView.layer.shadowOpacity = 0.3// any value you want
+        UniEventTableView.layer.shadowRadius = 5 // any value you want
+        UniEventTableView.layer.shadowOffset = .init(width: 0, height: 2)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.setNavigationBarHidden(true, animated: false)
     }
-    */
 
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        navigationController?.setNavigationBarHidden(false, animated: false)
+    }
+    
+    @IBAction func back_Tapped(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
 }

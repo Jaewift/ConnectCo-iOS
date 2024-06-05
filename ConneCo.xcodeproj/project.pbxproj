@@ -56,6 +56,8 @@
 		C79D4B652BE4BF99003E78E5 /* MyCouponTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79D4B642BE4BF99003E78E5 /* MyCouponTableViewCell.swift */; };
 		C79D4B672BE4BFA9003E78E5 /* MyEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79D4B662BE4BFA9003E78E5 /* MyEventTableViewCell.swift */; };
 		C7A9CB402BDF9E0C001803DA /* ScissorsRockPaperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A9CB3F2BDF9E0C001803DA /* ScissorsRockPaperViewController.swift */; };
+		C7C556492C06CA89004E3752 /* EventRecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C556482C06CA89004E3752 /* EventRecommendViewController.swift */; };
+		C7C5564B2C06CA95004E3752 /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C5564A2C06CA95004E3752 /* EventListViewController.swift */; };
 		C7F22A842BB81CAB006B86C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F22A832BB81CAB006B86C2 /* AppDelegate.swift */; };
 		C7F22A862BB81CAB006B86C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F22A852BB81CAB006B86C2 /* SceneDelegate.swift */; };
 		C7F22A882BB81CAB006B86C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F22A872BB81CAB006B86C2 /* ViewController.swift */; };
@@ -65,6 +67,7 @@
 		C7F22A982BB81D75006B86C2 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7F22A972BB81D75006B86C2 /* Map.storyboard */; };
 		C7F22A9A2BB81D81006B86C2 /* Chatting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7F22A992BB81D81006B86C2 /* Chatting.storyboard */; };
 		C7F22A9C2BB8272B006B86C2 /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F22A9B2BB8272B006B86C2 /* MainTabViewController.swift */; };
+		C7F2826A2C06D1A000E1659C /* EventImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F282692C06D1A000E1659C /* EventImageCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -119,6 +122,8 @@
 		C79D4B642BE4BF99003E78E5 /* MyCouponTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCouponTableViewCell.swift; sourceTree = "<group>"; };
 		C79D4B662BE4BFA9003E78E5 /* MyEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEventTableViewCell.swift; sourceTree = "<group>"; };
 		C7A9CB3F2BDF9E0C001803DA /* ScissorsRockPaperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScissorsRockPaperViewController.swift; sourceTree = "<group>"; };
+		C7C556482C06CA89004E3752 /* EventRecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRecommendViewController.swift; sourceTree = "<group>"; };
+		C7C5564A2C06CA95004E3752 /* EventListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewController.swift; sourceTree = "<group>"; };
 		C7F22A802BB81CAB006B86C2 /* ConneCo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConneCo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F22A832BB81CAB006B86C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7F22A852BB81CAB006B86C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +135,7 @@
 		C7F22A972BB81D75006B86C2 /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		C7F22A992BB81D81006B86C2 /* Chatting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chatting.storyboard; sourceTree = "<group>"; };
 		C7F22A9B2BB8272B006B86C2 /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
+		C7F282692C06D1A000E1659C /* EventImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventImageCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,9 +197,12 @@
 			children = (
 				C7581EA62BD8F01B00997F8D /* Event.storyboard */,
 				C7581EB02BD8F05A00997F8D /* EventViewController.swift */,
+				C7C556482C06CA89004E3752 /* EventRecommendViewController.swift */,
+				C7C5564A2C06CA95004E3752 /* EventListViewController.swift */,
 				C72FD05C2BF3C33F0030A834 /* EventRecommendTableViewCell.swift */,
 				C72FD05E2BF3C34B0030A834 /* EventListTableViewCell.swift */,
 				C72FD0602BF3C3740030A834 /* EventDetailViewController.swift */,
+				C7F282692C06D1A000E1659C /* EventImageCollectionViewCell.swift */,
 				C72FD0622BF3C3880030A834 /* UniViewController.swift */,
 				C72FD0642BF3C39A0030A834 /* UniEventListTableViewCell.swift */,
 				C72FD0662BF3C40B0030A834 /* SponsorInfoViewController.swift */,
@@ -486,8 +495,10 @@
 				C7043D4D2BC2D90000DC5C6A /* UMCpractice1ViewController.swift in Sources */,
 				C7A9CB402BDF9E0C001803DA /* ScissorsRockPaperViewController.swift in Sources */,
 				C7360ECA2BE7533A0039BA32 /* EventPickViewController.swift in Sources */,
+				C7C5564B2C06CA95004E3752 /* EventListViewController.swift in Sources */,
 				C72FD05F2BF3C34B0030A834 /* EventListTableViewCell.swift in Sources */,
 				C78CAE662BFB5748004583D3 /* SearchViewController.swift in Sources */,
+				C7C556492C06CA89004E3752 /* EventRecommendViewController.swift in Sources */,
 				C72FD0692BF3C4870030A834 /* EventPickTableViewCell.swift in Sources */,
 				C7F22A9C2BB8272B006B86C2 /* MainTabViewController.swift in Sources */,
 				C7581EB12BD8F05A00997F8D /* EventViewController.swift in Sources */,
@@ -499,6 +510,7 @@
 				C788F1B62BFC55A400472F31 /* EventPickAPI.swift in Sources */,
 				C7581EAD2BD8F04400997F8D /* MypageViewController.swift in Sources */,
 				C72FD0572BF3C2590030A834 /* CouponRecommendTableViewCell.swift in Sources */,
+				C7F2826A2C06D1A000E1659C /* EventImageCollectionViewCell.swift in Sources */,
 				C7893CBA2BFBA4CF00EAE77E /* CouponAPI.swift in Sources */,
 				C738DF3A2BEFC48900BA2BE6 /* CouponDetailViewController.swift in Sources */,
 			);
