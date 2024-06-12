@@ -6,13 +6,25 @@
 //
 
 import UIKit
+import NMapsMap
 
 class StoreDetailViewController: UIViewController {
-
+    
+    @IBOutlet weak var StoreCouponListTableView: UITableView!
+    @IBOutlet weak var StoreMapView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let mapView = NMFMapView(frame: self.StoreMapView.frame)
+        view.addSubview(mapView)
+        
+        StoreCouponListTableView.delegate = self
+        StoreCouponListTableView.dataSource = self
+        StoreCouponListTableView.layer.masksToBounds = true// any value you want
+        StoreCouponListTableView.layer.shadowOpacity = 0.3// any value you want
+        StoreCouponListTableView.layer.shadowRadius = 5 // any value you want
+        StoreCouponListTableView.layer.shadowOffset = .init(width: 0, height: 2)
     }
     
 

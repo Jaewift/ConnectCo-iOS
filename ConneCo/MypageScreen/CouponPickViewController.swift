@@ -19,10 +19,10 @@ class CouponPickViewController: UIViewController {
         
         CouponPickTableView.delegate = self
         CouponPickTableView.dataSource = self
-        CouponPickTableView.layer.masksToBounds = true// any value you want
-        CouponPickTableView.layer.shadowOpacity = 0.12// any value you want
-        CouponPickTableView.layer.shadowRadius = 10 // any value you want
-        CouponPickTableView.layer.shadowOffset = .init(width: 5, height: 10)
+        CouponPickTableView.layer.masksToBounds = false// any value you want
+        CouponPickTableView.layer.shadowOpacity = 0.3// any value you want
+        CouponPickTableView.layer.shadowRadius = 5 // any value you want
+        CouponPickTableView.layer.shadowOffset = .init(width: 0, height: 2)
     }
     
 

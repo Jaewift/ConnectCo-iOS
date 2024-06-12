@@ -13,6 +13,8 @@
 		C7043D4D2BC2D90000DC5C6A /* UMCpractice1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7043D4C2BC2D90000DC5C6A /* UMCpractice1ViewController.swift */; };
 		C70D88432BF516F100205D9B /* CouponEnrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70D88422BF516F100205D9B /* CouponEnrollViewController.swift */; };
 		C70D88452BF5173D00205D9B /* SponsorApplyInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70D88442BF5173D00205D9B /* SponsorApplyInfoViewController.swift */; };
+		C7296C7B2C19864D0022C5E3 /* CouponRecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7296C7A2C19864D0022C5E3 /* CouponRecommendViewController.swift */; };
+		C7296C7D2C19865C0022C5E3 /* CouponListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7296C7C2C19865C0022C5E3 /* CouponListViewController.swift */; };
 		C72FD0552BF3C2330030A834 /* StoreDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72FD0542BF3C2330030A834 /* StoreDetailViewController.swift */; };
 		C72FD0572BF3C2590030A834 /* CouponRecommendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72FD0562BF3C2590030A834 /* CouponRecommendTableViewCell.swift */; };
 		C72FD0592BF3C2680030A834 /* CouponListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72FD0582BF3C2680030A834 /* CouponListTableViewCell.swift */; };
@@ -79,6 +81,8 @@
 		C7043D4C2BC2D90000DC5C6A /* UMCpractice1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMCpractice1ViewController.swift; sourceTree = "<group>"; };
 		C70D88422BF516F100205D9B /* CouponEnrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponEnrollViewController.swift; sourceTree = "<group>"; };
 		C70D88442BF5173D00205D9B /* SponsorApplyInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsorApplyInfoViewController.swift; sourceTree = "<group>"; };
+		C7296C7A2C19864D0022C5E3 /* CouponRecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponRecommendViewController.swift; sourceTree = "<group>"; };
+		C7296C7C2C19865C0022C5E3 /* CouponListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponListViewController.swift; sourceTree = "<group>"; };
 		C72FD0542BF3C2330030A834 /* StoreDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreDetailViewController.swift; sourceTree = "<group>"; };
 		C72FD0562BF3C2590030A834 /* CouponRecommendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponRecommendTableViewCell.swift; sourceTree = "<group>"; };
 		C72FD0582BF3C2680030A834 /* CouponListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponListTableViewCell.swift; sourceTree = "<group>"; };
@@ -181,6 +185,8 @@
 			children = (
 				C7581EA82BD8F02900997F8D /* Coupon.storyboard */,
 				C7581EAE2BD8F04F00997F8D /* CouponViewController.swift */,
+				C7296C7A2C19864D0022C5E3 /* CouponRecommendViewController.swift */,
+				C7296C7C2C19865C0022C5E3 /* CouponListViewController.swift */,
 				C72FD0562BF3C2590030A834 /* CouponRecommendTableViewCell.swift */,
 				C72FD0582BF3C2680030A834 /* CouponListTableViewCell.swift */,
 				C738DF392BEFC48900BA2BE6 /* CouponDetailViewController.swift */,
@@ -463,6 +469,7 @@
 			files = (
 				C78365AA2BB96F1000CE0196 /* ChattingViewController.swift in Sources */,
 				C79D4B632BE4BF86003E78E5 /* MyStoreTableViewCell.swift in Sources */,
+				C7296C7D2C19865C0022C5E3 /* CouponListViewController.swift in Sources */,
 				C7893CB82BFBA2D700EAE77E /* BaseURL.swift in Sources */,
 				C72FD06B2BF3C4930030A834 /* CouponPickTableViewCell.swift in Sources */,
 				C7360ECC2BE753440039BA32 /* CouponPickViewController.swift in Sources */,
@@ -513,6 +520,7 @@
 				C7F2826A2C06D1A000E1659C /* EventImageCollectionViewCell.swift in Sources */,
 				C7893CBA2BFBA4CF00EAE77E /* CouponAPI.swift in Sources */,
 				C738DF3A2BEFC48900BA2BE6 /* CouponDetailViewController.swift in Sources */,
+				C7296C7B2C19864D0022C5E3 /* CouponRecommendViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

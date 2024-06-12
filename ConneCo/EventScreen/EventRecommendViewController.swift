@@ -20,5 +20,6 @@ class EventRecommendViewController: UIViewController {
         EventRecommendTableView.layer.shadowOpacity = 0.3// any value you want
         EventRecommendTableView.layer.shadowRadius = 5 // any value you want
         EventRecommendTableView.layer.shadowOffset = .init(width: 0, height: 2)
+        EventRecommendTableView.contentInset = UIEdgeInsets(top: 5, left: 0, bottom: 0, right: 0)
     }
 }

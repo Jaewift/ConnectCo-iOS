@@ -19,10 +19,9 @@ class EventPickViewController: UIViewController {
         
         EventPickTableView.delegate = self
         EventPickTableView.dataSource = self
-        
-        EventPickTableView.layer.masksToBounds = true// any value you want
-        EventPickTableView.layer.shadowOpacity = 0.12// any value you want
-        EventPickTableView.layer.shadowRadius = 10 // any value you want
-        EventPickTableView.layer.shadowOffset = .init(width: 5, height: 10)
+        EventPickTableView.layer.masksToBounds = false// any value you want
+        EventPickTableView.layer.shadowOpacity = 0.3// any value you want
+        EventPickTableView.layer.shadowRadius = 5 // any value you want
+        EventPickTableView.layer.shadowOffset = .init(width: 0, height: 2)
     }
 }

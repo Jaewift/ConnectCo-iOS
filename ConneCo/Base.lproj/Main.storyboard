@@ -16,10 +16,10 @@
             </objects>
             <point key="canvasLocation" x="2138" y="-1608"/>
         </scene>
-        <!--StoreDetailVC-->
+        <!--CouponVC-->
         <scene sceneID="1jU-7G-SFk">
             <objects>
-                <viewControllerPlaceholder storyboardName="Coupon" referencedIdentifier="StoreDetailVC" id="R3K-h9-eOv" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Coupon" referencedIdentifier="CouponVC" id="R3K-h9-eOv" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="owB-7A-gqs"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="est-5l-zrw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

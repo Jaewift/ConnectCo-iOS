@@ -1467,28 +1467,28 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIF-aL-yJv">
-                                                        <rect key="frame" x="303" y="185" width="35" height="35"/>
+                                                        <rect key="frame" x="313" y="187" width="30" height="30"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="35" id="RXn-SF-rxp"/>
-                                                            <constraint firstAttribute="width" constant="35" id="v4r-c4-Won"/>
+                                                            <constraint firstAttribute="height" constant="30" id="RXn-SF-rxp"/>
+                                                            <constraint firstAttribute="width" constant="30" id="v4r-c4-Won"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" image="ConneCo_search"/>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2C3-OU-pMe">
-                                                        <rect key="frame" x="338" y="185" width="35" height="35"/>
+                                                        <rect key="frame" x="343" y="187" width="30" height="30"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="35" id="gnq-e9-AtZ"/>
-                                                            <constraint firstAttribute="height" constant="35" id="r6s-Sl-h4A"/>
+                                                            <constraint firstAttribute="width" constant="30" id="gnq-e9-AtZ"/>
+                                                            <constraint firstAttribute="height" constant="30" id="r6s-Sl-h4A"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" image="ConneCo_alarm"/>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czp-3S-gjt">
-                                                        <rect key="frame" x="268" y="185" width="35" height="35"/>
+                                                        <rect key="frame" x="283" y="187" width="30" height="30"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="35" id="0Nb-VV-xPG"/>
-                                                            <constraint firstAttribute="height" constant="35" id="u5D-wp-aoL"/>
+                                                            <constraint firstAttribute="width" constant="30" id="0Nb-VV-xPG"/>
+                                                            <constraint firstAttribute="height" constant="30" id="u5D-wp-aoL"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" image="ConneCo_plus"/>
@@ -1502,12 +1502,12 @@
                                                     <constraint firstItem="CDn-DY-k0C" firstAttribute="leading" secondItem="YTX-Gp-nj0" secondAttribute="leading" constant="26" id="0On-Gq-1KN"/>
                                                     <constraint firstAttribute="height" constant="230" id="2M7-mF-AGM"/>
                                                     <constraint firstAttribute="bottom" secondItem="CDn-DY-k0C" secondAttribute="bottom" constant="16" id="73u-lz-2QS"/>
-                                                    <constraint firstAttribute="bottom" secondItem="czp-3S-gjt" secondAttribute="bottom" constant="10" id="AEk-CV-JIM"/>
+                                                    <constraint firstAttribute="bottom" secondItem="czp-3S-gjt" secondAttribute="bottom" constant="13" id="AEk-CV-JIM"/>
                                                     <constraint firstAttribute="trailing" secondItem="2C3-OU-pMe" secondAttribute="trailing" constant="20" id="Bam-rs-WdZ"/>
-                                                    <constraint firstAttribute="bottom" secondItem="2C3-OU-pMe" secondAttribute="bottom" constant="10" id="PHk-RZ-mP4"/>
+                                                    <constraint firstAttribute="bottom" secondItem="2C3-OU-pMe" secondAttribute="bottom" constant="13" id="PHk-RZ-mP4"/>
                                                     <constraint firstItem="2C3-OU-pMe" firstAttribute="leading" secondItem="YIF-aL-yJv" secondAttribute="trailing" id="i5x-0Y-6r3"/>
                                                     <constraint firstItem="YIF-aL-yJv" firstAttribute="leading" secondItem="czp-3S-gjt" secondAttribute="trailing" id="id5-2P-18f"/>
-                                                    <constraint firstAttribute="bottom" secondItem="YIF-aL-yJv" secondAttribute="bottom" constant="10" id="p53-Su-B85"/>
+                                                    <constraint firstAttribute="bottom" secondItem="YIF-aL-yJv" secondAttribute="bottom" constant="13" id="p53-Su-B85"/>
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="추천 이벤트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEF-t2-gzk">
@@ -1526,22 +1526,22 @@
                                                 <buttonConfiguration key="configuration" style="plain" image="ConneCo_Refresh"/>
                                             </button>
                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aAA-Sc-5KZ">
-                                                <rect key="frame" x="0.0" y="100" width="393" height="177"/>
+                                                <rect key="frame" x="0.0" y="100" width="393" height="190"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="177" id="MyL-Ix-OWi"/>
+                                                    <constraint firstAttribute="height" constant="190" id="MyL-Ix-OWi"/>
                                                 </constraints>
                                                 <connections>
                                                     <segue destination="46s-Jv-knq" kind="embed" id="gyz-Px-nwL"/>
                                                 </connections>
                                             </containerView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이벤트 목록" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PCM-ln-hep">
-                                                <rect key="frame" x="24" y="307" width="92" height="24"/>
+                                                <rect key="frame" x="24" y="320" width="92" height="24"/>
                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gfg-QE-vCZ">
-                                                <rect key="frame" x="294" y="304" width="75" height="30"/>
+                                                <rect key="frame" x="294" y="317" width="75" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="1ex-xN-iHQ"/>
                                                     <constraint firstAttribute="width" constant="75" id="n0b-W4-SOj"/>
@@ -1553,7 +1553,7 @@
                                                 </buttonConfiguration>
                                             </button>
                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Drb-z0-yuJ">
-                                                <rect key="frame" x="0.0" y="351" width="393" height="552"/>
+                                                <rect key="frame" x="0.0" y="364" width="393" height="539"/>
                                                 <connections>
                                                     <segue destination="yaM-lt-yTc" kind="embed" id="K9L-r4-dqO"/>
                                                 </connections>
@@ -1615,11 +1615,11 @@
             <objects>
                 <viewController storyboardIdentifier="EventRecommendVC" id="46s-Jv-knq" customClass="EventRecommendViewController" customModule="ConneCo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1eW-M1-NSb">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="177"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="190"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="yoc-GX-YJa">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="177"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="190"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventRecommend_TableViewCell" rowHeight="81" id="yNL-P3-gHP" customClass="EventRecommendTableViewCell" customModule="ConneCo" customModuleProvider="target">
@@ -1692,11 +1692,11 @@
             <objects>
                 <viewController storyboardIdentifier="EventListVC" id="yaM-lt-yTc" customClass="EventListViewController" customModule="ConneCo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z6y-bB-NZ9">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="552"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="539"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5lS-l7-wiR">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="552"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="539"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventList_TableViewCell" rowHeight="81" id="Ktz-Ze-cbf" customClass="EventListTableViewCell" customModule="ConneCo" customModuleProvider="target">
@@ -1762,7 +1762,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0zA-hx-T5K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="402" y="-551"/>
+            <point key="canvasLocation" x="408" y="-541"/>
         </scene>
     </scenes>
     <resources>

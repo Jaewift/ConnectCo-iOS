@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="95"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="쿠폰" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BIl-mk-N8F">
-                                        <rect key="frame" x="25.999999999999996" y="58" width="34.666666666666657" height="24"/>
+                                        <rect key="frame" x="26" y="55" width="34.666666666666629" height="24"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -64,7 +64,7 @@
                                     <constraint firstItem="f1l-gF-V3L" firstAttribute="top" secondItem="hsm-dm-FR6" secondAttribute="top" constant="52" id="XYa-hr-xyb"/>
                                     <constraint firstItem="bnQ-nc-Zhf" firstAttribute="leading" secondItem="f1l-gF-V3L" secondAttribute="trailing" id="fEj-rp-HDo"/>
                                     <constraint firstAttribute="height" constant="95" id="irr-9e-0wV"/>
-                                    <constraint firstItem="BIl-mk-N8F" firstAttribute="top" secondItem="hsm-dm-FR6" secondAttribute="top" constant="58" id="jx6-KY-RUl"/>
+                                    <constraint firstItem="BIl-mk-N8F" firstAttribute="top" secondItem="hsm-dm-FR6" secondAttribute="top" constant="55" id="jx6-KY-RUl"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="추천 쿠폰" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mqL-f0-pnB">
@@ -82,68 +82,14 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="ConneCo_Refresh"/>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="R2V-XI-n0r">
-                                <rect key="frame" x="0.0" y="159" width="393" height="177"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="177" id="72R-IN-0WC"/>
-                                </constraints>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CouponRecommend_TableViewCell" rowHeight="81" id="8hX-yc-nrG" customClass="CouponRecommendTableViewCell" customModule="ConneCo" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="55.333332061767578" width="353" height="81"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8hX-yc-nrG" id="SSK-6N-4TS">
-                                            <rect key="frame" x="0.0" y="0.0" width="353" height="81"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="호말" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GsH-Tp-g8C">
-                                                    <rect key="frame" x="94" y="9" width="21" height="14.666666666666664"/>
-                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="12"/>
-                                                    <color key="textColor" red="0.3999999762" green="0.3999999762" blue="0.3999999762" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="쿠키 무료 제공 쿠폰" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QzH-K6-wci">
-                                                    <rect key="frame" x="94" y="28.666666666666671" width="123.66666666666669" height="19.333333333333329"/>
-                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="16"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="신청마감일: 2023.12.29" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5qH-rx-12Y">
-                                                    <rect key="frame" x="97" y="57.999999999999993" width="114.33333333333331" height="14.666666666666664"/>
-                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="12"/>
-                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ConneCo_Store" translatesAutoresizingMaskIntoConstraints="NO" id="ubT-R1-Ggb">
-                                                    <rect key="frame" x="7" y="7" width="67" height="67"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="67" id="2tA-zs-cBA"/>
-                                                        <constraint firstAttribute="width" constant="67" id="9Ai-ae-wsn"/>
-                                                    </constraints>
-                                                </imageView>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="GsH-Tp-g8C" firstAttribute="top" secondItem="SSK-6N-4TS" secondAttribute="top" constant="9" id="Cla-4Y-xrk"/>
-                                                <constraint firstItem="ubT-R1-Ggb" firstAttribute="leading" secondItem="SSK-6N-4TS" secondAttribute="leading" constant="7" id="Pqn-1L-LgB"/>
-                                                <constraint firstItem="QzH-K6-wci" firstAttribute="leading" secondItem="ubT-R1-Ggb" secondAttribute="trailing" constant="20" id="SmZ-tS-uHg"/>
-                                                <constraint firstItem="QzH-K6-wci" firstAttribute="top" secondItem="GsH-Tp-g8C" secondAttribute="bottom" constant="5" id="TlW-d5-hXK"/>
-                                                <constraint firstItem="5qH-rx-12Y" firstAttribute="top" secondItem="QzH-K6-wci" secondAttribute="bottom" constant="10" id="WMx-VF-35f"/>
-                                                <constraint firstItem="GsH-Tp-g8C" firstAttribute="leading" secondItem="ubT-R1-Ggb" secondAttribute="trailing" constant="20" id="ahC-hj-Rwl"/>
-                                                <constraint firstItem="5qH-rx-12Y" firstAttribute="leading" secondItem="ubT-R1-Ggb" secondAttribute="trailing" constant="23" id="dgv-ba-HQ2"/>
-                                                <constraint firstItem="ubT-R1-Ggb" firstAttribute="centerY" secondItem="SSK-6N-4TS" secondAttribute="centerY" id="hqP-tC-2I8"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="쿠폰 목록" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ufB-ft-lKH">
-                                <rect key="frame" x="24" y="366" width="74.666666666666671" height="24"/>
+                                <rect key="frame" x="24" y="379" width="74.666666666666671" height="24"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UQN-KN-QJL">
-                                <rect key="frame" x="294" y="363" width="75" height="30"/>
+                                <rect key="frame" x="294" y="376" width="75" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="qK2-Mo-7du"/>
                                     <constraint firstAttribute="width" constant="75" id="t9T-b8-JK8"/>
@@ -154,79 +100,43 @@
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="f3b-vT-yY2">
-                                <rect key="frame" x="0.0" y="410" width="393" height="442"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CouponList_TableViewCell" rowHeight="81" id="gno-qm-zPv" customClass="CouponListTableViewCell" customModule="ConneCo" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="55.333332061767578" width="353" height="81"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gno-qm-zPv" id="9vx-uf-5jI">
-                                            <rect key="frame" x="0.0" y="0.0" width="353" height="81"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ConneCo_Store" translatesAutoresizingMaskIntoConstraints="NO" id="Wac-gi-7nn">
-                                                    <rect key="frame" x="7" y="7" width="67" height="67"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="67" id="Gxk-ja-zbC"/>
-                                                        <constraint firstAttribute="height" constant="67" id="hYC-13-LaT"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="호말" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xOC-6X-yT1">
-                                                    <rect key="frame" x="97" y="9" width="21" height="14.666666666666664"/>
-                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="12"/>
-                                                    <color key="textColor" red="0.3999999762" green="0.3999999762" blue="0.3999999762" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="마들렌 무료 제공 쿠폰" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqb-S8-Pb8">
-                                                    <rect key="frame" x="97.000000000000014" y="28.666666666666671" width="137.33333333333337" height="19.333333333333329"/>
-                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="16"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="신청마감일: 2023.12.29" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9SL-WU-VEL">
-                                                    <rect key="frame" x="97" y="57.999999999999993" width="114.33333333333331" height="14.666666666666664"/>
-                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="12"/>
-                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="eqb-S8-Pb8" firstAttribute="leading" secondItem="Wac-gi-7nn" secondAttribute="trailing" constant="23" id="6TK-0X-TNy"/>
-                                                <constraint firstItem="Wac-gi-7nn" firstAttribute="centerY" secondItem="9vx-uf-5jI" secondAttribute="centerY" id="Baf-oz-6M1"/>
-                                                <constraint firstItem="xOC-6X-yT1" firstAttribute="top" secondItem="9vx-uf-5jI" secondAttribute="top" constant="9" id="EfD-au-R7Y"/>
-                                                <constraint firstItem="9SL-WU-VEL" firstAttribute="top" secondItem="eqb-S8-Pb8" secondAttribute="bottom" constant="10" id="GMq-o6-Zqd"/>
-                                                <constraint firstItem="Wac-gi-7nn" firstAttribute="leading" secondItem="9vx-uf-5jI" secondAttribute="leading" constant="7" id="LVo-mY-vC1"/>
-                                                <constraint firstItem="xOC-6X-yT1" firstAttribute="leading" secondItem="Wac-gi-7nn" secondAttribute="trailing" constant="23" id="PPe-o9-QXk"/>
-                                                <constraint firstItem="9SL-WU-VEL" firstAttribute="leading" secondItem="Wac-gi-7nn" secondAttribute="trailing" constant="23" id="dOD-5w-Kbq"/>
-                                                <constraint firstItem="eqb-S8-Pb8" firstAttribute="top" secondItem="xOC-6X-yT1" secondAttribute="bottom" constant="5" id="q6M-qD-x3W"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s3M-Fw-8jv">
+                                <rect key="frame" x="0.0" y="159" width="393" height="190"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="190" id="Rcp-V1-Ibl"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="cI7-Ak-Fjp" kind="embed" id="9oJ-8i-nAa"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8or-cc-xBF">
+                                <rect key="frame" x="0.0" y="426" width="393" height="426"/>
+                                <connections>
+                                    <segue destination="YI3-YZ-NNO" kind="embed" id="YaR-NR-VJu"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="8or-cc-xBF" secondAttribute="bottom" id="1j2-dT-ToR"/>
+                            <constraint firstItem="8or-cc-xBF" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="3HQ-bI-yMN"/>
                             <constraint firstItem="hsm-dm-FR6" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="5e6-qD-ZLo"/>
                             <constraint firstItem="mqL-f0-pnB" firstAttribute="top" secondItem="hsm-dm-FR6" secondAttribute="bottom" constant="20" id="6pp-bm-W9y"/>
+                            <constraint firstItem="8or-cc-xBF" firstAttribute="top" secondItem="UQN-KN-QJL" secondAttribute="bottom" constant="20" id="88g-YI-ytT"/>
                             <constraint firstItem="ufB-ft-lKH" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="BTy-Y1-Kjs"/>
-                            <constraint firstItem="f3b-vT-yY2" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="CJ3-Sc-sIG"/>
                             <constraint firstItem="hsm-dm-FR6" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Ejg-kY-gik"/>
                             <constraint firstItem="hsm-dm-FR6" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="F6L-uK-RQ9"/>
-                            <constraint firstItem="f3b-vT-yY2" firstAttribute="top" secondItem="ufB-ft-lKH" secondAttribute="bottom" constant="20" id="L4Z-7E-4J3"/>
+                            <constraint firstItem="s3M-Fw-8jv" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Fln-st-6KD"/>
+                            <constraint firstItem="s3M-Fw-8jv" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="HxJ-W3-Pm7"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="UJi-XI-TpM" secondAttribute="trailing" constant="24" id="LT8-Wp-IZK"/>
                             <constraint firstItem="UJi-XI-TpM" firstAttribute="top" secondItem="hsm-dm-FR6" secondAttribute="bottom" constant="17" id="QDF-Za-dUM"/>
-                            <constraint firstItem="R2V-XI-n0r" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="QjU-Yu-uen"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="UQN-KN-QJL" secondAttribute="trailing" constant="24" id="RAH-5H-IBW"/>
-                            <constraint firstItem="UQN-KN-QJL" firstAttribute="top" secondItem="R2V-XI-n0r" secondAttribute="bottom" constant="27" id="ViX-lV-B7F"/>
-                            <constraint firstAttribute="bottom" secondItem="f3b-vT-yY2" secondAttribute="bottom" id="d3q-WF-0ad"/>
+                            <constraint firstItem="ufB-ft-lKH" firstAttribute="top" secondItem="s3M-Fw-8jv" secondAttribute="bottom" constant="30" id="cHY-3h-w8S"/>
                             <constraint firstItem="mqL-f0-pnB" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="e7J-Gp-FeU"/>
-                            <constraint firstItem="f3b-vT-yY2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="fZE-qf-IDa"/>
-                            <constraint firstItem="ufB-ft-lKH" firstAttribute="top" secondItem="R2V-XI-n0r" secondAttribute="bottom" constant="30" id="gkC-UU-DRT"/>
-                            <constraint firstItem="R2V-XI-n0r" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="qrR-dZ-ATQ"/>
-                            <constraint firstItem="R2V-XI-n0r" firstAttribute="top" secondItem="mqL-f0-pnB" secondAttribute="bottom" constant="20" id="rqe-s2-aJt"/>
+                            <constraint firstItem="8or-cc-xBF" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="f73-Yr-g2o"/>
+                            <constraint firstItem="UQN-KN-QJL" firstAttribute="top" secondItem="s3M-Fw-8jv" secondAttribute="bottom" constant="27" id="gM2-it-IsV"/>
+                            <constraint firstItem="s3M-Fw-8jv" firstAttribute="top" secondItem="mqL-f0-pnB" secondAttribute="bottom" constant="20" id="vFc-8g-XpL"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zEc-dw-S2t"/>
@@ -644,7 +554,7 @@
                                             </label>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Pe1-Ud-KJP">
                                                 <rect key="frame" x="0.0" y="514.66666666666663" width="393" height="177"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="177" id="16V-CC-Ivm"/>
                                                 </constraints>
@@ -655,6 +565,43 @@
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kii-Zs-qmE" id="vbq-5T-GKs">
                                                             <rect key="frame" x="0.0" y="0.0" width="353" height="81"/>
                                                             <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ConneCo_Store" translatesAutoresizingMaskIntoConstraints="NO" id="yNy-Eg-SQv">
+                                                                    <rect key="frame" x="7" y="7" width="67" height="67"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="67" id="XPA-Gm-Iu2"/>
+                                                                        <constraint firstAttribute="width" constant="67" id="pFQ-BZ-2OV"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="호말" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x3q-ry-bua">
+                                                                    <rect key="frame" x="97" y="9" width="21" height="14.666666666666664"/>
+                                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="12"/>
+                                                                    <color key="textColor" red="0.3999999762" green="0.3999999762" blue="0.3999999762" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="마들렌 무료 제공 쿠폰" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ncW-iP-HcV">
+                                                                    <rect key="frame" x="97.000000000000014" y="28.666666666666671" width="137.33333333333337" height="19.333333333333329"/>
+                                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="16"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="신청마감일: 2023.12.29" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hC-zZ-Z5I">
+                                                                    <rect key="frame" x="97" y="57.999999999999993" width="114.33333333333331" height="14.666666666666664"/>
+                                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="12"/>
+                                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="x3q-ry-bua" firstAttribute="top" secondItem="vbq-5T-GKs" secondAttribute="top" constant="9" id="4iA-Ty-KeJ"/>
+                                                                <constraint firstItem="yNy-Eg-SQv" firstAttribute="centerY" secondItem="vbq-5T-GKs" secondAttribute="centerY" id="5UV-QI-Dul"/>
+                                                                <constraint firstItem="8hC-zZ-Z5I" firstAttribute="leading" secondItem="yNy-Eg-SQv" secondAttribute="trailing" constant="23" id="J94-Nb-tcx"/>
+                                                                <constraint firstItem="ncW-iP-HcV" firstAttribute="top" secondItem="x3q-ry-bua" secondAttribute="bottom" constant="5" id="RjE-1Y-Cjm"/>
+                                                                <constraint firstItem="8hC-zZ-Z5I" firstAttribute="top" secondItem="ncW-iP-HcV" secondAttribute="bottom" constant="10" id="TaH-2C-U7z"/>
+                                                                <constraint firstItem="x3q-ry-bua" firstAttribute="leading" secondItem="yNy-Eg-SQv" secondAttribute="trailing" constant="23" id="UOt-aC-3MJ"/>
+                                                                <constraint firstItem="ncW-iP-HcV" firstAttribute="leading" secondItem="yNy-Eg-SQv" secondAttribute="trailing" constant="23" id="l4G-Ln-fO5"/>
+                                                                <constraint firstItem="yNy-Eg-SQv" firstAttribute="leading" secondItem="vbq-5T-GKs" secondAttribute="leading" constant="7" id="vA3-h2-Nd4"/>
+                                                            </constraints>
                                                         </tableViewCellContentView>
                                                     </tableViewCell>
                                                 </prototypes>
@@ -820,6 +767,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="xs3-jK-hzL"/>
                     <size key="freeformSize" width="393" height="1396"/>
+                    <connections>
+                        <outlet property="StoreCouponListTableView" destination="Pe1-Ud-KJP" id="9Ex-xQ-dlG"/>
+                        <outlet property="StoreMapView" destination="NDh-La-QNL" id="ikY-Mg-yvk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e7v-Jh-dS9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1404,10 +1355,9 @@
         <!--Navigation Controller-->
         <scene sceneID="8bM-z6-07k">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="82R-SL-ivt" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="82R-SL-ivt" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ONf-2D-1x1">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1418,6 +1368,158 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wwn-Y9-Q92" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="38.931297709923662" y="-2.1126760563380285"/>
+        </scene>
+        <!--Coupon Recommend View Controller-->
+        <scene sceneID="bKQ-HU-ENn">
+            <objects>
+                <viewController storyboardIdentifier="CouponRecommendVC" id="cI7-Ak-Fjp" customClass="CouponRecommendViewController" customModule="ConneCo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Yw9-Md-coa">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="190"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fyf-ww-7L7">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="190"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CouponRecommend_TableViewCell" rowHeight="81" id="eyK-4k-XRb" customClass="CouponRecommendTableViewCell" customModule="ConneCo" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="55.333332061767578" width="353" height="81"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eyK-4k-XRb" id="7Zh-Nn-eOE">
+                                            <rect key="frame" x="0.0" y="0.0" width="353" height="81"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ConneCo_Store" translatesAutoresizingMaskIntoConstraints="NO" id="ePk-pM-xJj">
+                                                    <rect key="frame" x="7" y="7" width="67" height="67"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="67" id="hJl-7m-chU"/>
+                                                        <constraint firstAttribute="height" constant="67" id="zjo-Gw-OEb"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="호말" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMz-Ef-bd8">
+                                                    <rect key="frame" x="97" y="9" width="21" height="14.666666666666664"/>
+                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="12"/>
+                                                    <color key="textColor" red="0.3999999762" green="0.3999999762" blue="0.3999999762" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="마들렌 무료 제공 쿠폰" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J9H-M5-TiT">
+                                                    <rect key="frame" x="97.000000000000014" y="28.666666666666671" width="137.33333333333337" height="19.333333333333329"/>
+                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="신청마감일: 2023.12.29" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kUc-uU-aAW">
+                                                    <rect key="frame" x="97" y="57.999999999999993" width="114.33333333333331" height="14.666666666666664"/>
+                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="12"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="kUc-uU-aAW" firstAttribute="top" secondItem="J9H-M5-TiT" secondAttribute="bottom" constant="10" id="9f5-cf-Ymc"/>
+                                                <constraint firstItem="kUc-uU-aAW" firstAttribute="leading" secondItem="ePk-pM-xJj" secondAttribute="trailing" constant="23" id="Duu-0N-ued"/>
+                                                <constraint firstItem="ePk-pM-xJj" firstAttribute="leading" secondItem="7Zh-Nn-eOE" secondAttribute="leading" constant="7" id="LrG-Ku-XM4"/>
+                                                <constraint firstItem="ePk-pM-xJj" firstAttribute="centerY" secondItem="7Zh-Nn-eOE" secondAttribute="centerY" id="ZEf-yf-hjq"/>
+                                                <constraint firstItem="gMz-Ef-bd8" firstAttribute="leading" secondItem="ePk-pM-xJj" secondAttribute="trailing" constant="23" id="ZOY-Rr-LcS"/>
+                                                <constraint firstItem="J9H-M5-TiT" firstAttribute="leading" secondItem="ePk-pM-xJj" secondAttribute="trailing" constant="23" id="e3K-XZ-OxV"/>
+                                                <constraint firstItem="gMz-Ef-bd8" firstAttribute="top" secondItem="7Zh-Nn-eOE" secondAttribute="top" constant="9" id="gpQ-EQ-Kr3"/>
+                                                <constraint firstItem="J9H-M5-TiT" firstAttribute="top" secondItem="gMz-Ef-bd8" secondAttribute="bottom" constant="5" id="sBd-xd-F4T"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fyf-ww-7L7" firstAttribute="leading" secondItem="Yw9-Md-coa" secondAttribute="leading" id="3Hr-9N-vUc"/>
+                            <constraint firstAttribute="trailing" secondItem="fyf-ww-7L7" secondAttribute="trailing" id="BJs-OV-XYj"/>
+                            <constraint firstItem="fyf-ww-7L7" firstAttribute="top" secondItem="Yw9-Md-coa" secondAttribute="top" id="ONV-yH-q2b"/>
+                            <constraint firstAttribute="bottom" secondItem="fyf-ww-7L7" secondAttribute="bottom" id="mua-Fs-GcT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="CouponRecommendTableView" destination="fyf-ww-7L7" id="IKg-qS-ali"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z4D-vR-tvB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="653" y="-415"/>
+        </scene>
+        <!--Coupon List View Controller-->
+        <scene sceneID="cAK-bm-2QP">
+            <objects>
+                <viewController storyboardIdentifier="CouponListVC" id="YI3-YZ-NNO" customClass="CouponListViewController" customModule="ConneCo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nBW-tE-cXt">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="426"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="zYV-7r-Brl">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="426"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CouponList_TableViewCell" rowHeight="81" id="otP-Td-h0X" customClass="CouponListTableViewCell" customModule="ConneCo" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="55.333332061767578" width="353" height="81"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="otP-Td-h0X" id="Vbu-EQ-kxa">
+                                            <rect key="frame" x="0.0" y="0.0" width="353" height="81"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ConneCo_Store" translatesAutoresizingMaskIntoConstraints="NO" id="Yj3-EY-aA7">
+                                                    <rect key="frame" x="7" y="7" width="67" height="67"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="67" id="DqA-CN-yeS"/>
+                                                        <constraint firstAttribute="height" constant="67" id="FDv-zd-Y8P"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="호말" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhg-Xg-dNl">
+                                                    <rect key="frame" x="97" y="9" width="21" height="14.666666666666664"/>
+                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="12"/>
+                                                    <color key="textColor" red="0.3999999762" green="0.3999999762" blue="0.3999999762" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="마들렌 무료 제공 쿠폰" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rLs-7d-ETK">
+                                                    <rect key="frame" x="97.000000000000014" y="28.666666666666671" width="137.33333333333337" height="19.333333333333329"/>
+                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="신청마감일: 2023.12.29" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uey-Jv-5op">
+                                                    <rect key="frame" x="97" y="57.999999999999993" width="114.33333333333331" height="14.666666666666664"/>
+                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="12"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="bhg-Xg-dNl" firstAttribute="top" secondItem="Vbu-EQ-kxa" secondAttribute="top" constant="9" id="39D-Nl-dht"/>
+                                                <constraint firstItem="rLs-7d-ETK" firstAttribute="leading" secondItem="Yj3-EY-aA7" secondAttribute="trailing" constant="23" id="608-l0-FIU"/>
+                                                <constraint firstItem="rLs-7d-ETK" firstAttribute="top" secondItem="bhg-Xg-dNl" secondAttribute="bottom" constant="5" id="Pkz-OZ-xHa"/>
+                                                <constraint firstItem="Yj3-EY-aA7" firstAttribute="centerY" secondItem="Vbu-EQ-kxa" secondAttribute="centerY" id="Z1Q-qW-ioH"/>
+                                                <constraint firstItem="bhg-Xg-dNl" firstAttribute="leading" secondItem="Yj3-EY-aA7" secondAttribute="trailing" constant="23" id="Z9S-Qf-MhJ"/>
+                                                <constraint firstItem="uey-Jv-5op" firstAttribute="top" secondItem="rLs-7d-ETK" secondAttribute="bottom" constant="10" id="g6C-2M-DNP"/>
+                                                <constraint firstItem="Yj3-EY-aA7" firstAttribute="leading" secondItem="Vbu-EQ-kxa" secondAttribute="leading" constant="7" id="kgO-XL-Tg4"/>
+                                                <constraint firstItem="uey-Jv-5op" firstAttribute="leading" secondItem="Yj3-EY-aA7" secondAttribute="trailing" constant="23" id="vC8-jJ-akY"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="zYV-7r-Brl" secondAttribute="bottom" id="1dQ-ov-j4h"/>
+                            <constraint firstItem="zYV-7r-Brl" firstAttribute="top" secondItem="nBW-tE-cXt" secondAttribute="top" id="T6B-Pr-USS"/>
+                            <constraint firstAttribute="trailing" secondItem="zYV-7r-Brl" secondAttribute="trailing" id="bWU-tt-hxY"/>
+                            <constraint firstItem="zYV-7r-Brl" firstAttribute="leading" secondItem="nBW-tE-cXt" secondAttribute="leading" id="bXe-5S-dX3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="CouponListTableView" destination="zYV-7r-Brl" id="r1w-OG-Y0B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1kb-CE-k85" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1283" y="-498"/>
         </scene>
     </scenes>
     <resources>

@@ -13,7 +13,7 @@ class UniViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         UniEventTableView.delegate = self
         UniEventTableView.dataSource = self
         UniEventTableView.layer.masksToBounds = true// any value you want
