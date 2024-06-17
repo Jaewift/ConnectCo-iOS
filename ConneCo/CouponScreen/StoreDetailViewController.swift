@@ -19,6 +19,9 @@ class StoreDetailViewController: UIViewController {
         let mapView = NMFMapView(frame: self.StoreMapView.frame)
         view.addSubview(mapView)
         
+        StoreCouponListTableView.rowHeight = UITableView.automaticDimension
+        StoreCouponListTableView.estimatedRowHeight = UITableView.automaticDimension
+        
         StoreCouponListTableView.delegate = self
         StoreCouponListTableView.dataSource = self
         StoreCouponListTableView.layer.masksToBounds = true// any value you want

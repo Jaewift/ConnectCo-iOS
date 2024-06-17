@@ -22,7 +22,7 @@ class MyStoreTableViewCell: UITableViewCell {
 
 }
 
-extension MypageViewController: UITableViewDelegate, UITableViewDataSource {
+extension MyStoreViewController: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 3

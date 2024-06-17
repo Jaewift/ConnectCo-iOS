@@ -14,6 +14,9 @@ class UniViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        UniEventTableView.rowHeight = UITableView.automaticDimension
+        UniEventTableView.estimatedRowHeight = UITableView.automaticDimension
+        
         UniEventTableView.delegate = self
         UniEventTableView.dataSource = self
         UniEventTableView.layer.masksToBounds = true// any value you want

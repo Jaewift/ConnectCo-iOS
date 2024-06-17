@@ -14,7 +14,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cer-Dq-Jdg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2138" y="-1608"/>
+            <point key="canvasLocation" x="2158" y="-1345"/>
         </scene>
         <!--CouponVC-->
         <scene sceneID="1jU-7G-SFk">
@@ -24,7 +24,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="est-5l-zrw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2139" y="-949"/>
+            <point key="canvasLocation" x="2144" y="-625"/>
         </scene>
         <!--MapVC-->
         <scene sceneID="CB9-yg-FSo">
@@ -34,17 +34,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nsa-X3-a4X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2140" y="-306"/>
-        </scene>
-        <!--ChattingVC-->
-        <scene sceneID="AfM-Y3-SDR">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Chatting" referencedIdentifier="ChattingVC" id="W2k-lJ-m8i" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="eQc-aE-68e"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KnJ-vL-g2K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2156" y="341"/>
+            <point key="canvasLocation" x="2152" y="80"/>
         </scene>
         <!--Main Tab View Controller-->
         <scene sceneID="fi0-3o-MZD">
@@ -59,7 +49,6 @@
                         <segue destination="blj-KK-4nG" kind="relationship" relationship="viewControllers" id="AEI-ym-TX7"/>
                         <segue destination="J2P-Zf-n2S" kind="relationship" relationship="viewControllers" id="pyn-WZ-E6D"/>
                         <segue destination="4ej-0H-XLt" kind="relationship" relationship="viewControllers" id="Cpf-Tb-B0Z"/>
-                        <segue destination="gFx-ff-ZX8" kind="relationship" relationship="viewControllers" id="YC3-sp-VTi"/>
                         <segue destination="diR-ns-2FP" kind="relationship" relationship="viewControllers" id="GY5-el-qgF"/>
                     </connections>
                 </tabBarController>
@@ -86,28 +75,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Ga-6m-CUB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1352" y="-306"/>
-        </scene>
-        <!--채팅-->
-        <scene sceneID="KVb-b2-UB2">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gFx-ff-ZX8" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="채팅" image="ConneCo_comment" id="boe-7H-BoD">
-                        <color key="badgeColor" red="0.67450982329999998" green="0.67450982329999998" blue="0.67450982329999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    </tabBarItem>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8xt-lh-igO">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="W2k-lJ-m8i" kind="relationship" relationship="rootViewController" id="WfK-fs-scU"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YrV-0c-lsW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1351.9083969465648" y="340.84507042253523"/>
+            <point key="canvasLocation" x="1352" y="80"/>
         </scene>
         <!--쿠폰-->
         <scene sceneID="Rop-xf-YXJ">
@@ -128,7 +96,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Pv-6L-Phr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1351.9083969465648" y="-948.59154929577471"/>
+            <point key="canvasLocation" x="1352" y="-624"/>
         </scene>
         <!--이벤트-->
         <scene sceneID="nu9-BZ-Ojq">
@@ -149,7 +117,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WaB-io-4bA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1352" y="-1608"/>
+            <point key="canvasLocation" x="1352" y="-1345"/>
         </scene>
         <!--마이페이지-->
         <scene sceneID="w3D-lT-H34">
@@ -170,7 +138,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GyQ-5C-fcJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1351.9083969465648" y="994.36619718309862"/>
+            <point key="canvasLocation" x="1352" y="802"/>
         </scene>
         <!--StartVC-->
         <scene sceneID="MJt-of-7bK">
@@ -180,11 +148,10 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U36-yg-Cf7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2156" y="994"/>
+            <point key="canvasLocation" x="2156" y="801"/>
         </scene>
     </scenes>
     <resources>
-        <image name="ConneCo_comment" width="30" height="30"/>
         <image name="ConneCo_coupon" width="30" height="30"/>
         <image name="ConneCo_event" width="30" height="30"/>
         <image name="ConneCo_location" width="30" height="30"/>
