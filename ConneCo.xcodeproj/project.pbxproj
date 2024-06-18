@@ -73,6 +73,10 @@
 		C79D4B652BE4BF99003E78E5 /* MyCouponTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79D4B642BE4BF99003E78E5 /* MyCouponTableViewCell.swift */; };
 		C79D4B672BE4BFA9003E78E5 /* MyEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79D4B662BE4BFA9003E78E5 /* MyEventTableViewCell.swift */; };
 		C7A9CB402BDF9E0C001803DA /* ScissorsRockPaperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A9CB3F2BDF9E0C001803DA /* ScissorsRockPaperViewController.swift */; };
+		C7C4D30C2C218750006CAA19 /* SponsorActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C4D30B2C218750006CAA19 /* SponsorActivityViewController.swift */; };
+		C7C4D30E2C218781006CAA19 /* EventActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C4D30D2C218781006CAA19 /* EventActivityViewController.swift */; };
+		C7C4D3102C218834006CAA19 /* EventActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C4D30F2C218834006CAA19 /* EventActivityTableViewCell.swift */; };
+		C7C4D3122C218FBF006CAA19 /* StoreAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C4D3112C218FBF006CAA19 /* StoreAddressViewController.swift */; };
 		C7C556492C06CA89004E3752 /* EventRecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C556482C06CA89004E3752 /* EventRecommendViewController.swift */; };
 		C7C5564B2C06CA95004E3752 /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C5564A2C06CA95004E3752 /* EventListViewController.swift */; };
 		C7F22A842BB81CAB006B86C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F22A832BB81CAB006B86C2 /* AppDelegate.swift */; };
@@ -156,6 +160,10 @@
 		C79D4B642BE4BF99003E78E5 /* MyCouponTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCouponTableViewCell.swift; sourceTree = "<group>"; };
 		C79D4B662BE4BFA9003E78E5 /* MyEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEventTableViewCell.swift; sourceTree = "<group>"; };
 		C7A9CB3F2BDF9E0C001803DA /* ScissorsRockPaperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScissorsRockPaperViewController.swift; sourceTree = "<group>"; };
+		C7C4D30B2C218750006CAA19 /* SponsorActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsorActivityViewController.swift; sourceTree = "<group>"; };
+		C7C4D30D2C218781006CAA19 /* EventActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventActivityViewController.swift; sourceTree = "<group>"; };
+		C7C4D30F2C218834006CAA19 /* EventActivityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventActivityTableViewCell.swift; sourceTree = "<group>"; };
+		C7C4D3112C218FBF006CAA19 /* StoreAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreAddressViewController.swift; sourceTree = "<group>"; };
 		C7C556482C06CA89004E3752 /* EventRecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRecommendViewController.swift; sourceTree = "<group>"; };
 		C7C5564A2C06CA95004E3752 /* EventListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewController.swift; sourceTree = "<group>"; };
 		C7F22A802BB81CAB006B86C2 /* ConneCo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConneCo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -263,6 +271,7 @@
 				C745A1062C20042100E9D51A /* MyEventViewController.swift */,
 				C79D4B662BE4BFA9003E78E5 /* MyEventTableViewCell.swift */,
 				C7360EC52BE74CA50039BA32 /* StoreEnrollViewController.swift */,
+				C7C4D3112C218FBF006CAA19 /* StoreAddressViewController.swift */,
 				C7360EC72BE752A50039BA32 /* MyPickViewController.swift */,
 				C7360EC92BE7533A0039BA32 /* EventPickViewController.swift */,
 				C7360ECB2BE753440039BA32 /* CouponPickViewController.swift */,
@@ -271,7 +280,10 @@
 				C72FD06A2BF3C4930030A834 /* CouponPickTableViewCell.swift */,
 				C72FD06C2BF3C49F0030A834 /* StorePickTableViewCell.swift */,
 				C745A1002C1FFE8B00E9D51A /* ActivityViewController.swift */,
+				C7C4D30B2C218750006CAA19 /* SponsorActivityViewController.swift */,
 				C75B46632C20597A001F0EFD /* SponsorActivityTableViewCell.swift */,
+				C7C4D30D2C218781006CAA19 /* EventActivityViewController.swift */,
+				C7C4D30F2C218834006CAA19 /* EventActivityTableViewCell.swift */,
 				C75B46572C203B71001F0EFD /* ApplyEventViewController.swift */,
 				C75B46592C2047C5001F0EFD /* NewApplyEventViewController.swift */,
 				C75B46652C2059FC001F0EFD /* NewApplyEventTableViewCell.swift */,
@@ -279,8 +291,8 @@
 				C75B46672C205A18001F0EFD /* CompleteApplyEventTableViewCell.swift */,
 				C75B465D2C204E64001F0EFD /* ApplyCouponViewController.swift */,
 				C75B465F2C2054B7001F0EFD /* NewApplyCouponViewController.swift */,
-				C75B46612C2054D0001F0EFD /* CompleteApplyCouponViewController.swift */,
 				C75B46692C205A78001F0EFD /* NewApplyCouponTableViewCell.swift */,
+				C75B46612C2054D0001F0EFD /* CompleteApplyCouponViewController.swift */,
 				C75B466B2C205DE5001F0EFD /* CompleteApplyCouponTableViewCell.swift */,
 			);
 			path = MypageScreen;
@@ -518,10 +530,12 @@
 				C7893CB82BFBA2D700EAE77E /* BaseURL.swift in Sources */,
 				C72FD06B2BF3C4930030A834 /* CouponPickTableViewCell.swift in Sources */,
 				C7360ECC2BE753440039BA32 /* CouponPickViewController.swift in Sources */,
+				C7C4D3122C218FBF006CAA19 /* StoreAddressViewController.swift in Sources */,
 				C79D4B672BE4BFA9003E78E5 /* MyEventTableViewCell.swift in Sources */,
 				C79D4B612BE4BF38003E78E5 /* StartViewController.swift in Sources */,
 				C72FD0592BF3C2680030A834 /* CouponListTableViewCell.swift in Sources */,
 				C7006F312BFA597100AB1E82 /* EventEnrollViewController.swift in Sources */,
+				C7C4D3102C218834006CAA19 /* EventActivityTableViewCell.swift in Sources */,
 				C7893CBC2BFBA4DA00EAE77E /* EventAPI.swift in Sources */,
 				C75B46602C2054B7001F0EFD /* NewApplyCouponViewController.swift in Sources */,
 				C72FD0612BF3C3740030A834 /* EventDetailViewController.swift in Sources */,
@@ -534,6 +548,7 @@
 				C70D88452BF5173D00205D9B /* SponsorApplyInfoViewController.swift in Sources */,
 				C75B46582C203B71001F0EFD /* ApplyEventViewController.swift in Sources */,
 				C788F1BA2BFC594F00472F31 /* NaverLoginAPI.swift in Sources */,
+				C7C4D30E2C218781006CAA19 /* EventActivityViewController.swift in Sources */,
 				C7360EC82BE752A50039BA32 /* MyPickViewController.swift in Sources */,
 				C72FD0552BF3C2330030A834 /* StoreDetailViewController.swift in Sources */,
 				C70D88432BF516F100205D9B /* CouponEnrollViewController.swift in Sources */,
@@ -566,6 +581,7 @@
 				C75B465E2C204E64001F0EFD /* ApplyCouponViewController.swift in Sources */,
 				C7581EB12BD8F05A00997F8D /* EventViewController.swift in Sources */,
 				C7F22A842BB81CAB006B86C2 /* AppDelegate.swift in Sources */,
+				C7C4D30C2C218750006CAA19 /* SponsorActivityViewController.swift in Sources */,
 				C745A1012C1FFE8B00E9D51A /* ActivityViewController.swift in Sources */,
 				C75B46622C2054D0001F0EFD /* CompleteApplyCouponViewController.swift in Sources */,
 				C72FD05B2BF3C28F0030A834 /* StoreCouponListTableViewCell.swift in Sources */,

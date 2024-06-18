@@ -7,11 +7,16 @@
 
 import UIKit
 
-class StoreEnrollViewController: UIViewController {
+class StoreEnrollViewController: UIViewController, SampleProtocol4, UITextFieldDelegate {
     
     let imagePickerController = UIImagePickerController()
     
     var storeData: StoreResultModel!
+    
+    func addressSend(data: String) {
+        addressTextField.text = "  " + data
+        addressTextField.sizeToFit()
+    }
     
     @IBOutlet weak var firstImageView: UIImageView!
     @IBOutlet weak var secondImageView: UIImageView!
@@ -21,10 +26,16 @@ class StoreEnrollViewController: UIViewController {
     @IBOutlet weak var CameraButton: UIButton!
     @IBOutlet weak var ImageLabel1: UILabel!
     
+    @IBOutlet weak var seachButton: UIButton!
+    @IBOutlet weak var addressTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         enrollAlertEvent()
+        
+        addressTextField.delegate = self
+        
         self.imagePickerController.delegate = self
     }
     
@@ -54,6 +65,15 @@ class StoreEnrollViewController: UIViewController {
     
     @IBAction func camera_Tapped(_ sender: Any) {
         openAlbum()
+    }
+    
+    @IBAction func addressButton(_ sender: Any) {
+        guard let svc2 = self.storyboard?.instantiateViewController(identifier: "StoreAddressVC") as? StoreAddressViewController else {
+            return
+        }
+        svc2.delegate = self
+        
+        self.present(svc2, animated: true)
     }
     
     @IBAction func Enroll_Complete(_ sender: Any) {
