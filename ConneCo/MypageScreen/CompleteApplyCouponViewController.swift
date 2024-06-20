@@ -8,22 +8,20 @@
 import UIKit
 
 class CompleteApplyCouponViewController: UIViewController {
-
+    
+    @IBOutlet weak var CompleteApplyCouponTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        CompleteApplyCouponTableView.rowHeight = UITableView.automaticDimension
+        CompleteApplyCouponTableView.estimatedRowHeight = UITableView.automaticDimension
+        
+        CompleteApplyCouponTableView.delegate = self
+        CompleteApplyCouponTableView.dataSource = self
+        CompleteApplyCouponTableView.layer.masksToBounds = false// any value you want
+        CompleteApplyCouponTableView.layer.shadowOpacity = 0.3// any value you want
+        CompleteApplyCouponTableView.layer.shadowRadius = 5 // any value you want
+        CompleteApplyCouponTableView.layer.shadowOffset = .init(width: 0, height: 2)
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

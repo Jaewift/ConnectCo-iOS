@@ -8,22 +8,20 @@
 import UIKit
 
 class EventActivityViewController: UIViewController {
-
+    
+    @IBOutlet weak var EventActivityTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        EventActivityTableView.rowHeight = UITableView.automaticDimension
+        EventActivityTableView.estimatedRowHeight = UITableView.automaticDimension
+        
+        EventActivityTableView.delegate = self
+        EventActivityTableView.dataSource = self
+        EventActivityTableView.layer.masksToBounds = false// any value you want
+        EventActivityTableView.layer.shadowOpacity = 0.3// any value you want
+        EventActivityTableView.layer.shadowRadius = 5 // any value you want
+        EventActivityTableView.layer.shadowOffset = .init(width: 0, height: 2)
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

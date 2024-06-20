@@ -21,3 +21,28 @@ class NewApplyCouponTableViewCell: UITableViewCell {
     }
 
 }
+
+extension NewApplyCouponViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 129
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        .leastNormalMagnitude
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell: NewApplyCouponTableViewCell = tableView.dequeueReusableCell(withIdentifier: "NewApplyCoupon_TableViewCell", for: indexPath) as! NewApplyCouponTableViewCell
+        
+        return cell
+    }
+}

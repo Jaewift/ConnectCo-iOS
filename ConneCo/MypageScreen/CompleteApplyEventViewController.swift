@@ -8,22 +8,21 @@
 import UIKit
 
 class CompleteApplyEventViewController: UIViewController {
-
+    
+    @IBOutlet weak var CompleteApplyEventTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        CompleteApplyEventTableView.rowHeight = UITableView.automaticDimension
+        CompleteApplyEventTableView.estimatedRowHeight = UITableView.automaticDimension
+        
+        CompleteApplyEventTableView.delegate = self
+        CompleteApplyEventTableView.dataSource = self
+        CompleteApplyEventTableView.layer.masksToBounds = false// any value you want
+        CompleteApplyEventTableView.layer.shadowOpacity = 0.3// any value you want
+        CompleteApplyEventTableView.layer.shadowRadius = 5 // any value you want
+        CompleteApplyEventTableView.layer.shadowOffset = .init(width: 0, height: 2)
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

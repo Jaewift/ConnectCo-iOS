@@ -25,8 +25,7 @@ class StoreEnrollViewController: UIViewController, SampleProtocol4, UITextFieldD
     @IBOutlet weak var fifthImageView: UIImageView!
     @IBOutlet weak var CameraButton: UIButton!
     @IBOutlet weak var ImageLabel1: UILabel!
-    
-    @IBOutlet weak var seachButton: UIButton!
+    @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var addressTextField: UITextField!
     
     override func viewDidLoad() {
