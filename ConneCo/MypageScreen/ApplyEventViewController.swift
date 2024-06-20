@@ -12,10 +12,10 @@ class ApplyEventViewController: UIViewController {
     @IBOutlet weak var newApplyView: UIView!
     @IBOutlet weak var CompleteApplyView: UIView!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        newApplyView.alpha = 1
+        CompleteApplyView.alpha = 0
     }
 }

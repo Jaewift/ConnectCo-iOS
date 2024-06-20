@@ -1,0 +1,10 @@
+//
+//  Config.xcconfig
+//  ConneCo
+//
+//  Created by jaegu park on 6/20/24.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+KAKAO_NATIVE_APP_KEY = a73e12a656f91dfc55abbc159ecc36f7

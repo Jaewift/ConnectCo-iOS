@@ -32,4 +32,8 @@ class LoginViewController: UIViewController {
         
         self.navigationController?.pushViewController(rvc, animated: true)
     }
+    
+    @IBAction func kakao_Login(_ sender: Any) {
+        KakaoAuthVM.handleKakaLogin()
+    }
 }

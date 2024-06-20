@@ -15,7 +15,8 @@ class ActivityViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        SponsorApplyView.alpha = 1
+        EventApplyView.alpha = 0
     }
 
 }
