@@ -1110,7 +1110,7 @@
                                 </buttonConfiguration>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="QO5-9p-OzP">
-                                <rect key="frame" x="0.0" y="224" width="393" height="628"/>
+                                <rect key="frame" x="0.0" y="229" width="393" height="623"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="UniEventList_TableViewCell" rowHeight="81" id="lEK-BU-WJZ" customClass="UniEventListTableViewCell" customModule="ConneCo" customModuleProvider="target">
@@ -1171,7 +1171,7 @@
                             <constraint firstItem="LVM-0b-D3g" firstAttribute="trailing" secondItem="qhC-XW-QrV" secondAttribute="trailing" constant="24" id="AIY-Ba-jsv"/>
                             <constraint firstItem="KWL-UP-u3j" firstAttribute="top" secondItem="DdN-kn-4ML" secondAttribute="top" id="MKz-cR-H7E"/>
                             <constraint firstItem="KWL-UP-u3j" firstAttribute="trailing" secondItem="LVM-0b-D3g" secondAttribute="trailing" id="RC8-Fw-mnV"/>
-                            <constraint firstItem="QO5-9p-OzP" firstAttribute="top" secondItem="2Wk-lG-yen" secondAttribute="bottom" constant="10" id="ShA-Xi-nAH"/>
+                            <constraint firstItem="QO5-9p-OzP" firstAttribute="top" secondItem="2Wk-lG-yen" secondAttribute="bottom" constant="15" id="ShA-Xi-nAH"/>
                             <constraint firstItem="2Wk-lG-yen" firstAttribute="top" secondItem="KWL-UP-u3j" secondAttribute="bottom" constant="31" id="Z1q-Vj-lhV"/>
                             <constraint firstItem="QO5-9p-OzP" firstAttribute="trailing" secondItem="LVM-0b-D3g" secondAttribute="trailing" id="bXq-B4-R83"/>
                             <constraint firstItem="qhC-XW-QrV" firstAttribute="top" secondItem="KWL-UP-u3j" secondAttribute="bottom" constant="27" id="pW0-NK-2WO"/>
@@ -1458,16 +1458,16 @@
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="903"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YTX-Gp-nj0">
-                                                <rect key="frame" x="0.0" y="-194" width="393" height="230"/>
+                                                <rect key="frame" x="0.0" y="-219" width="393" height="270"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이벤트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDn-DY-k0C">
-                                                        <rect key="frame" x="26" y="190" width="52" height="24"/>
+                                                        <rect key="frame" x="26" y="230" width="52" height="24"/>
                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIF-aL-yJv">
-                                                        <rect key="frame" x="313" y="187" width="30" height="30"/>
+                                                        <rect key="frame" x="313" y="227" width="30" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="RXn-SF-rxp"/>
                                                             <constraint firstAttribute="width" constant="30" id="v4r-c4-Won"/>
@@ -1476,7 +1476,7 @@
                                                         <buttonConfiguration key="configuration" style="plain" image="ConneCo_search"/>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2C3-OU-pMe">
-                                                        <rect key="frame" x="343" y="187" width="30" height="30"/>
+                                                        <rect key="frame" x="343" y="227" width="30" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="30" id="gnq-e9-AtZ"/>
                                                             <constraint firstAttribute="height" constant="30" id="r6s-Sl-h4A"/>
@@ -1485,7 +1485,7 @@
                                                         <buttonConfiguration key="configuration" style="plain" image="ConneCo_alarm"/>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czp-3S-gjt">
-                                                        <rect key="frame" x="283" y="187" width="30" height="30"/>
+                                                        <rect key="frame" x="283" y="227" width="30" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="30" id="0Nb-VV-xPG"/>
                                                             <constraint firstAttribute="height" constant="30" id="u5D-wp-aoL"/>
@@ -1500,7 +1500,7 @@
                                                 <color key="backgroundColor" red="0.2895924151" green="0.60887163879999995" blue="0.97259002920000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstItem="CDn-DY-k0C" firstAttribute="leading" secondItem="YTX-Gp-nj0" secondAttribute="leading" constant="26" id="0On-Gq-1KN"/>
-                                                    <constraint firstAttribute="height" constant="230" id="2M7-mF-AGM"/>
+                                                    <constraint firstAttribute="height" constant="270" id="2M7-mF-AGM"/>
                                                     <constraint firstAttribute="bottom" secondItem="CDn-DY-k0C" secondAttribute="bottom" constant="16" id="73u-lz-2QS"/>
                                                     <constraint firstAttribute="bottom" secondItem="czp-3S-gjt" secondAttribute="bottom" constant="13" id="AEk-CV-JIM"/>
                                                     <constraint firstAttribute="trailing" secondItem="2C3-OU-pMe" secondAttribute="trailing" constant="20" id="Bam-rs-WdZ"/>
@@ -1511,13 +1511,13 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="추천 이벤트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEF-t2-gzk">
-                                                <rect key="frame" x="24" y="56" width="92" height="24"/>
+                                                <rect key="frame" x="24" y="71" width="92" height="24"/>
                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IiZ-zH-8bu">
-                                                <rect key="frame" x="339" y="53" width="30" height="30"/>
+                                                <rect key="frame" x="339" y="68" width="30" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="VAM-yG-V8N"/>
                                                     <constraint firstAttribute="width" constant="30" id="pEq-PC-Upc"/>
@@ -1526,7 +1526,7 @@
                                                 <buttonConfiguration key="configuration" style="plain" image="ConneCo_Refresh"/>
                                             </button>
                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aAA-Sc-5KZ">
-                                                <rect key="frame" x="0.0" y="100" width="393" height="190"/>
+                                                <rect key="frame" x="0.0" y="110" width="393" height="190"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="190" id="MyL-Ix-OWi"/>
                                                 </constraints>
@@ -1535,13 +1535,13 @@
                                                 </connections>
                                             </containerView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이벤트 목록" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PCM-ln-hep">
-                                                <rect key="frame" x="24" y="320" width="92" height="24"/>
+                                                <rect key="frame" x="24" y="330" width="92" height="24"/>
                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gfg-QE-vCZ">
-                                                <rect key="frame" x="294" y="317" width="75" height="30"/>
+                                                <rect key="frame" x="294" y="327" width="75" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="1ex-xN-iHQ"/>
                                                     <constraint firstAttribute="width" constant="75" id="n0b-W4-SOj"/>
@@ -1553,7 +1553,7 @@
                                                 </buttonConfiguration>
                                             </button>
                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Drb-z0-yuJ">
-                                                <rect key="frame" x="0.0" y="364" width="393" height="539"/>
+                                                <rect key="frame" x="0.0" y="369" width="393" height="534"/>
                                                 <connections>
                                                     <segue destination="yaM-lt-yTc" kind="embed" id="K9L-r4-dqO"/>
                                                 </connections>
@@ -1561,7 +1561,7 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstItem="Drb-z0-yuJ" firstAttribute="top" secondItem="PCM-ln-hep" secondAttribute="bottom" constant="20" id="017-GQ-pIp"/>
+                                            <constraint firstItem="Drb-z0-yuJ" firstAttribute="top" secondItem="PCM-ln-hep" secondAttribute="bottom" constant="15" id="017-GQ-pIp"/>
                                             <constraint firstItem="Gfg-QE-vCZ" firstAttribute="top" secondItem="aAA-Sc-5KZ" secondAttribute="bottom" constant="27" id="8Bv-gT-OTh"/>
                                             <constraint firstAttribute="trailing" secondItem="aAA-Sc-5KZ" secondAttribute="trailing" id="8ZB-aK-KW8"/>
                                             <constraint firstItem="wEF-t2-gzk" firstAttribute="leading" secondItem="IMk-uA-H99" secondAttribute="leading" constant="24" id="BPE-Yz-2XX"/>
@@ -1574,10 +1574,10 @@
                                             <constraint firstItem="wEF-t2-gzk" firstAttribute="top" secondItem="YTX-Gp-nj0" secondAttribute="bottom" constant="20" id="Y8X-Ot-o16"/>
                                             <constraint firstItem="Drb-z0-yuJ" firstAttribute="leading" secondItem="IMk-uA-H99" secondAttribute="leading" id="cO6-Nr-CDU"/>
                                             <constraint firstAttribute="trailing" secondItem="IiZ-zH-8bu" secondAttribute="trailing" constant="24" id="fOy-Q3-Mlm"/>
-                                            <constraint firstItem="YTX-Gp-nj0" firstAttribute="top" secondItem="IMk-uA-H99" secondAttribute="top" constant="-194" id="fzQ-ub-fyY"/>
+                                            <constraint firstItem="YTX-Gp-nj0" firstAttribute="top" secondItem="IMk-uA-H99" secondAttribute="top" constant="-219" id="fzQ-ub-fyY"/>
                                             <constraint firstItem="IiZ-zH-8bu" firstAttribute="top" secondItem="YTX-Gp-nj0" secondAttribute="bottom" constant="17" id="q1z-Lk-bUf"/>
                                             <constraint firstItem="aAA-Sc-5KZ" firstAttribute="leading" secondItem="IMk-uA-H99" secondAttribute="leading" id="q63-zn-2FZ"/>
-                                            <constraint firstItem="aAA-Sc-5KZ" firstAttribute="top" secondItem="wEF-t2-gzk" secondAttribute="bottom" constant="20" id="tLV-Fm-UFX"/>
+                                            <constraint firstItem="aAA-Sc-5KZ" firstAttribute="top" secondItem="wEF-t2-gzk" secondAttribute="bottom" constant="15" id="tLV-Fm-UFX"/>
                                             <constraint firstAttribute="trailing" secondItem="Gfg-QE-vCZ" secondAttribute="trailing" constant="24" id="w6L-cQ-v2d"/>
                                         </constraints>
                                     </view>
@@ -1685,18 +1685,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mft-lo-N56" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-236" y="-418"/>
+            <point key="canvasLocation" x="-237" y="-420"/>
         </scene>
         <!--Event List View Controller-->
         <scene sceneID="soL-rc-pY3">
             <objects>
                 <viewController storyboardIdentifier="EventListVC" id="yaM-lt-yTc" customClass="EventListViewController" customModule="ConneCo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z6y-bB-NZ9">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="539"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="534"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5lS-l7-wiR">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="539"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="534"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventList_TableViewCell" rowHeight="81" id="Ktz-Ze-cbf" customClass="EventListTableViewCell" customModule="ConneCo" customModuleProvider="target">

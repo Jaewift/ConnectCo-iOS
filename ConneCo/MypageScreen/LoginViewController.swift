@@ -6,13 +6,17 @@
 //
 
 import UIKit
+import KakaoSDKAuth
+import KakaoSDKUser
 
 class LoginViewController: UIViewController {
-
+    
+    @IBOutlet weak var kakaoLogin: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        kakaoLogin.addTarget(self, action: #selector(kakao_Tapped), for: .touchUpInside)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -33,7 +37,18 @@ class LoginViewController: UIViewController {
         self.navigationController?.pushViewController(rvc, animated: true)
     }
     
-    @IBAction func kakao_Login(_ sender: Any) {
-        KakaoAuthVM.handleKakaLogin()
+    @objc func kakao_Tapped() {
+        UserApi.shared.loginWithKakaoTalk {(oauthToken, error) in
+            if let error = error {
+                print(error)
+            }
+            else {
+                print("loginWithKakaoTalk() success.")
+                
+                //do something
+                _ = oauthToken
+            }
+        }
     }
+    
 }

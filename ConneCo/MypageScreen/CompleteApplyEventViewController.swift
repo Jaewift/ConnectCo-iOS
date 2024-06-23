@@ -23,6 +23,7 @@ class CompleteApplyEventViewController: UIViewController {
         CompleteApplyEventTableView.layer.shadowOpacity = 0.3// any value you want
         CompleteApplyEventTableView.layer.shadowRadius = 5 // any value you want
         CompleteApplyEventTableView.layer.shadowOffset = .init(width: 0, height: 2)
+        CompleteApplyEventTableView.contentInset = UIEdgeInsets(top: 5, left: 0, bottom: 0, right: 0)
     }
 
 }

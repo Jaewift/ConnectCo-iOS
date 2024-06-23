@@ -23,6 +23,7 @@ class UniViewController: UIViewController {
         UniEventTableView.layer.shadowOpacity = 0.3// any value you want
         UniEventTableView.layer.shadowRadius = 5 // any value you want
         UniEventTableView.layer.shadowOffset = .init(width: 0, height: 2)
+        UniEventTableView.contentInset = UIEdgeInsets(top: 5, left: 0, bottom: 0, right: 0)
     }
     
     override func viewWillAppear(_ animated: Bool) {

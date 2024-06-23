@@ -51,7 +51,9 @@ open class TMChevronBarIndicator: TMBarIndicator {
     }
     /// Color of the chevron.
     open override var tintColor: UIColor! {
-        didSet {}
+        didSet {
+            chevronLayer.fillColor = tintColor.cgColor
+        }
     }
     
     // MARK: Lifecycle
@@ -75,11 +77,6 @@ open class TMChevronBarIndicator: TMBarIndicator {
         
         chevronLayer.fillColor = tintColor.cgColor
         chevronContainer.layer.addSublayer(chevronLayer)
-    }
-
-    open override func tintColorDidChange() {
-        super.tintColorDidChange()
-        chevronLayer.fillColor = tintColor.cgColor
     }
     
     // MARK: Layout

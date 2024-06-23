@@ -23,5 +23,6 @@ class EventActivityViewController: UIViewController {
         EventActivityTableView.layer.shadowOpacity = 0.3// any value you want
         EventActivityTableView.layer.shadowRadius = 5 // any value you want
         EventActivityTableView.layer.shadowOffset = .init(width: 0, height: 2)
+        EventActivityTableView.contentInset = UIEdgeInsets(top: 5, left: 0, bottom: 0, right: 0)
     }
 }

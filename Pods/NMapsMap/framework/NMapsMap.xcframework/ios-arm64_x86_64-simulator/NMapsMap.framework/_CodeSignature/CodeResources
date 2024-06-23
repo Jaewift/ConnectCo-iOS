@@ -334,7 +334,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		U26Jd2sPElME5E1iTAEyGni8g5Y=
+		VdWrarqS6BR+fYQ/qoC8qDzMPPg=
 		</data>
 		<key>LICENSE</key>
 		<data>
@@ -383,6 +383,10 @@
 		<key>NOTICE</key>
 		<data>
 		67sFJW1LDxsofqcP6Y5E9gv93SA=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		WUzlo9yuzUIablSaE8SOtJtaKcU=
 		</data>
 		<key>default.metallib</key>
 		<data>
@@ -1504,6 +1508,17 @@
 			<key>hash2</key>
 			<data>
 			KuQaxf6soaLfEq4hJMQnVC+2cdIDRndA3mi1KALLmLA=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WUzlo9yuzUIablSaE8SOtJtaKcU=
+			</data>
+			<key>hash2</key>
+			<data>
+			9RwclF8BBGjUbLk7FGdCT/g4e10tnOoOXZo2NUvebpg=
 			</data>
 		</dict>
 		<key>default.metallib</key>

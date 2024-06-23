@@ -3,11 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8DED54F1BAD90A7982C0337D /* Pods_ConneCo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72495B1F4C79D1052C5C6835 /* Pods_ConneCo.framework */; };
+		02109FA217FE0BFD9AB32033 /* Pods_ConneCo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DDAB9EF9E2DEB91DC6B8CB0 /* Pods_ConneCo.framework */; };
 		C7006F2F2BFA596400AB1E82 /* SponsorAskInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7006F2E2BFA596400AB1E82 /* SponsorAskInfoViewController.swift */; };
 		C7006F312BFA597100AB1E82 /* EventEnrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7006F302BFA597100AB1E82 /* EventEnrollViewController.swift */; };
 		C7043D4D2BC2D90000DC5C6A /* UMCpractice1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7043D4C2BC2D90000DC5C6A /* UMCpractice1ViewController.swift */; };
@@ -74,24 +74,22 @@
 		C79D4B652BE4BF99003E78E5 /* MyCouponTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79D4B642BE4BF99003E78E5 /* MyCouponTableViewCell.swift */; };
 		C79D4B672BE4BFA9003E78E5 /* MyEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79D4B662BE4BFA9003E78E5 /* MyEventTableViewCell.swift */; };
 		C7A9CB402BDF9E0C001803DA /* ScissorsRockPaperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A9CB3F2BDF9E0C001803DA /* ScissorsRockPaperViewController.swift */; };
+		C7BA82782C26B47000420128 /* SponsorDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BA82772C26B46F00420128 /* SponsorDateViewController.swift */; };
+		C7BA827A2C26B51400420128 /* CouponDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BA82792C26B51400420128 /* CouponDateViewController.swift */; };
 		C7C4D30C2C218750006CAA19 /* SponsorActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C4D30B2C218750006CAA19 /* SponsorActivityViewController.swift */; };
 		C7C4D30E2C218781006CAA19 /* EventActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C4D30D2C218781006CAA19 /* EventActivityViewController.swift */; };
 		C7C4D3102C218834006CAA19 /* EventActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C4D30F2C218834006CAA19 /* EventActivityTableViewCell.swift */; };
 		C7C4D3122C218FBF006CAA19 /* StoreAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C4D3112C218FBF006CAA19 /* StoreAddressViewController.swift */; };
 		C7C556492C06CA89004E3752 /* EventRecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C556482C06CA89004E3752 /* EventRecommendViewController.swift */; };
 		C7C5564B2C06CA95004E3752 /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C5564A2C06CA95004E3752 /* EventListViewController.swift */; };
-		C7E82E6E2C2344A9006A1DEB /* KakaoSDK in Frameworks */ = {isa = PBXBuildFile; productRef = C7E82E6D2C2344A9006A1DEB /* KakaoSDK */; };
-		C7E82E702C2344A9006A1DEB /* KakaoSDKAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C7E82E6F2C2344A9006A1DEB /* KakaoSDKAuth */; };
-		C7E82E722C2344A9006A1DEB /* KakaoSDKCert in Frameworks */ = {isa = PBXBuildFile; productRef = C7E82E712C2344A9006A1DEB /* KakaoSDKCert */; };
-		C7E82E742C2344A9006A1DEB /* KakaoSDKCertCore in Frameworks */ = {isa = PBXBuildFile; productRef = C7E82E732C2344A9006A1DEB /* KakaoSDKCertCore */; };
-		C7E82E762C2344A9006A1DEB /* KakaoSDKCommon in Frameworks */ = {isa = PBXBuildFile; productRef = C7E82E752C2344A9006A1DEB /* KakaoSDKCommon */; };
-		C7E82E782C2344A9006A1DEB /* KakaoSDKFriend in Frameworks */ = {isa = PBXBuildFile; productRef = C7E82E772C2344A9006A1DEB /* KakaoSDKFriend */; };
-		C7E82E7A2C2344A9006A1DEB /* KakaoSDKFriendCore in Frameworks */ = {isa = PBXBuildFile; productRef = C7E82E792C2344A9006A1DEB /* KakaoSDKFriendCore */; };
-		C7E82E7C2C2344A9006A1DEB /* KakaoSDKNavi in Frameworks */ = {isa = PBXBuildFile; productRef = C7E82E7B2C2344A9006A1DEB /* KakaoSDKNavi */; };
-		C7E82E7E2C2344A9006A1DEB /* KakaoSDKShare in Frameworks */ = {isa = PBXBuildFile; productRef = C7E82E7D2C2344A9006A1DEB /* KakaoSDKShare */; };
-		C7E82E802C2344A9006A1DEB /* KakaoSDKTalk in Frameworks */ = {isa = PBXBuildFile; productRef = C7E82E7F2C2344A9006A1DEB /* KakaoSDKTalk */; };
-		C7E82E822C2344A9006A1DEB /* KakaoSDKTemplate in Frameworks */ = {isa = PBXBuildFile; productRef = C7E82E812C2344A9006A1DEB /* KakaoSDKTemplate */; };
-		C7E82E842C2344A9006A1DEB /* KakaoSDKUser in Frameworks */ = {isa = PBXBuildFile; productRef = C7E82E832C2344A9006A1DEB /* KakaoSDKUser */; };
+		C7D59B452C273B2B009C1497 /* EventDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D59B442C273B2B009C1497 /* EventDetailCollectionViewCell.swift */; };
+		C7D59B472C273B3A009C1497 /* CouponDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D59B462C273B3A009C1497 /* CouponDetailCollectionViewCell.swift */; };
+		C7D59B492C273B90009C1497 /* MyEventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D59B482C273B90009C1497 /* MyEventDetailViewController.swift */; };
+		C7D59B4B2C273B9F009C1497 /* MyCouponDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D59B4A2C273B9F009C1497 /* MyCouponDetailViewController.swift */; };
+		C7D59B4D2C273BAE009C1497 /* MyEventInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D59B4C2C273BAE009C1497 /* MyEventInfoViewController.swift */; };
+		C7D59B4F2C273BC3009C1497 /* MyCouponInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D59B4E2C273BC3009C1497 /* MyCouponInfoViewController.swift */; };
+		C7D59B512C273C6F009C1497 /* CouponImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D59B502C273C6F009C1497 /* CouponImageCollectionViewCell.swift */; };
+		C7D59B532C273C7B009C1497 /* StoreImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D59B522C273C7B009C1497 /* StoreImageCollectionViewCell.swift */; };
 		C7F22A842BB81CAB006B86C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F22A832BB81CAB006B86C2 /* AppDelegate.swift */; };
 		C7F22A862BB81CAB006B86C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F22A852BB81CAB006B86C2 /* SceneDelegate.swift */; };
 		C7F22A882BB81CAB006B86C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F22A872BB81CAB006B86C2 /* ViewController.swift */; };
@@ -105,9 +103,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3757150C910394F25F2CFEC2 /* Pods-ConneCo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConneCo.release.xcconfig"; path = "Target Support Files/Pods-ConneCo/Pods-ConneCo.release.xcconfig"; sourceTree = "<group>"; };
-		72495B1F4C79D1052C5C6835 /* Pods_ConneCo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConneCo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF5ABCD57BB627FFB83B86E5 /* Pods-ConneCo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConneCo.debug.xcconfig"; path = "Target Support Files/Pods-ConneCo/Pods-ConneCo.debug.xcconfig"; sourceTree = "<group>"; };
+		0DDAB9EF9E2DEB91DC6B8CB0 /* Pods_ConneCo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConneCo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49E40E8697D7C219031795D6 /* Pods-ConneCo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConneCo.release.xcconfig"; path = "Target Support Files/Pods-ConneCo/Pods-ConneCo.release.xcconfig"; sourceTree = "<group>"; };
+		B82A3F3CCDBB1E71EEB59EEC /* Pods-ConneCo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConneCo.debug.xcconfig"; path = "Target Support Files/Pods-ConneCo/Pods-ConneCo.debug.xcconfig"; sourceTree = "<group>"; };
 		C7006F2E2BFA596400AB1E82 /* SponsorAskInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsorAskInfoViewController.swift; sourceTree = "<group>"; };
 		C7006F302BFA597100AB1E82 /* EventEnrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventEnrollViewController.swift; sourceTree = "<group>"; };
 		C7043D4C2BC2D90000DC5C6A /* UMCpractice1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMCpractice1ViewController.swift; sourceTree = "<group>"; };
@@ -167,7 +165,6 @@
 		C7893CBB2BFBA4DA00EAE77E /* EventAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventAPI.swift; sourceTree = "<group>"; };
 		C7893CBD2BFBA4E300EAE77E /* GoogleLoginAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleLoginAPI.swift; sourceTree = "<group>"; };
 		C7893CBF2BFBA4ED00EAE77E /* StoreAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreAPI.swift; sourceTree = "<group>"; };
-		C78B57782C23FA5100BEBF4D /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		C78B57792C24065700BEBF4D /* KakaoAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoAuth.swift; sourceTree = "<group>"; };
 		C78CAE652BFB5748004583D3 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		C79D4B602BE4BF38003E78E5 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
@@ -175,12 +172,22 @@
 		C79D4B642BE4BF99003E78E5 /* MyCouponTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCouponTableViewCell.swift; sourceTree = "<group>"; };
 		C79D4B662BE4BFA9003E78E5 /* MyEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEventTableViewCell.swift; sourceTree = "<group>"; };
 		C7A9CB3F2BDF9E0C001803DA /* ScissorsRockPaperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScissorsRockPaperViewController.swift; sourceTree = "<group>"; };
+		C7BA82772C26B46F00420128 /* SponsorDateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsorDateViewController.swift; sourceTree = "<group>"; };
+		C7BA82792C26B51400420128 /* CouponDateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponDateViewController.swift; sourceTree = "<group>"; };
 		C7C4D30B2C218750006CAA19 /* SponsorActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsorActivityViewController.swift; sourceTree = "<group>"; };
 		C7C4D30D2C218781006CAA19 /* EventActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventActivityViewController.swift; sourceTree = "<group>"; };
 		C7C4D30F2C218834006CAA19 /* EventActivityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventActivityTableViewCell.swift; sourceTree = "<group>"; };
 		C7C4D3112C218FBF006CAA19 /* StoreAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreAddressViewController.swift; sourceTree = "<group>"; };
 		C7C556482C06CA89004E3752 /* EventRecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRecommendViewController.swift; sourceTree = "<group>"; };
 		C7C5564A2C06CA95004E3752 /* EventListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewController.swift; sourceTree = "<group>"; };
+		C7D59B442C273B2B009C1497 /* EventDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailCollectionViewCell.swift; sourceTree = "<group>"; };
+		C7D59B462C273B3A009C1497 /* CouponDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponDetailCollectionViewCell.swift; sourceTree = "<group>"; };
+		C7D59B482C273B90009C1497 /* MyEventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEventDetailViewController.swift; sourceTree = "<group>"; };
+		C7D59B4A2C273B9F009C1497 /* MyCouponDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCouponDetailViewController.swift; sourceTree = "<group>"; };
+		C7D59B4C2C273BAE009C1497 /* MyEventInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEventInfoViewController.swift; sourceTree = "<group>"; };
+		C7D59B4E2C273BC3009C1497 /* MyCouponInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCouponInfoViewController.swift; sourceTree = "<group>"; };
+		C7D59B502C273C6F009C1497 /* CouponImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		C7D59B522C273C7B009C1497 /* StoreImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		C7F22A802BB81CAB006B86C2 /* ConneCo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConneCo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F22A832BB81CAB006B86C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7F22A852BB81CAB006B86C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -200,38 +207,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DED54F1BAD90A7982C0337D /* Pods_ConneCo.framework in Frameworks */,
-				C7E82E782C2344A9006A1DEB /* KakaoSDKFriend in Frameworks */,
-				C7E82E6E2C2344A9006A1DEB /* KakaoSDK in Frameworks */,
-				C7E82E7C2C2344A9006A1DEB /* KakaoSDKNavi in Frameworks */,
-				C7E82E742C2344A9006A1DEB /* KakaoSDKCertCore in Frameworks */,
-				C7E82E822C2344A9006A1DEB /* KakaoSDKTemplate in Frameworks */,
-				C7E82E7A2C2344A9006A1DEB /* KakaoSDKFriendCore in Frameworks */,
-				C7E82E702C2344A9006A1DEB /* KakaoSDKAuth in Frameworks */,
-				C7E82E842C2344A9006A1DEB /* KakaoSDKUser in Frameworks */,
-				C7E82E802C2344A9006A1DEB /* KakaoSDKTalk in Frameworks */,
-				C7E82E7E2C2344A9006A1DEB /* KakaoSDKShare in Frameworks */,
-				C7E82E762C2344A9006A1DEB /* KakaoSDKCommon in Frameworks */,
-				C7E82E722C2344A9006A1DEB /* KakaoSDKCert in Frameworks */,
+				02109FA217FE0BFD9AB32033 /* Pods_ConneCo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		45EB2CBF7F45EE6FF69BD4D4 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				72495B1F4C79D1052C5C6835 /* Pods_ConneCo.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		BE0BFEB5B944536399BBFB07 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BF5ABCD57BB627FFB83B86E5 /* Pods-ConneCo.debug.xcconfig */,
-				3757150C910394F25F2CFEC2 /* Pods-ConneCo.release.xcconfig */,
+				B82A3F3CCDBB1E71EEB59EEC /* Pods-ConneCo.debug.xcconfig */,
+				49E40E8697D7C219031795D6 /* Pods-ConneCo.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -255,10 +242,14 @@
 				C7296C7C2C19865C0022C5E3 /* CouponListViewController.swift */,
 				C72FD0582BF3C2680030A834 /* CouponListTableViewCell.swift */,
 				C738DF392BEFC48900BA2BE6 /* CouponDetailViewController.swift */,
+				C7D59B502C273C6F009C1497 /* CouponImageCollectionViewCell.swift */,
 				C72FD0542BF3C2330030A834 /* StoreDetailViewController.swift */,
+				C7D59B522C273C7B009C1497 /* StoreImageCollectionViewCell.swift */,
 				C72FD05A2BF3C28F0030A834 /* StoreCouponListTableViewCell.swift */,
 				C70D88422BF516F100205D9B /* CouponEnrollViewController.swift */,
+				C7BA82792C26B51400420128 /* CouponDateViewController.swift */,
 				C70D88442BF5173D00205D9B /* SponsorApplyInfoViewController.swift */,
+				C7BA82772C26B46F00420128 /* SponsorDateViewController.swift */,
 			);
 			path = CouponScreen;
 			sourceTree = "<group>";
@@ -321,6 +312,12 @@
 				C75B46692C205A78001F0EFD /* NewApplyCouponTableViewCell.swift */,
 				C75B46612C2054D0001F0EFD /* CompleteApplyCouponViewController.swift */,
 				C75B466B2C205DE5001F0EFD /* CompleteApplyCouponTableViewCell.swift */,
+				C7D59B482C273B90009C1497 /* MyEventDetailViewController.swift */,
+				C7D59B442C273B2B009C1497 /* EventDetailCollectionViewCell.swift */,
+				C7D59B4C2C273BAE009C1497 /* MyEventInfoViewController.swift */,
+				C7D59B4A2C273B9F009C1497 /* MyCouponDetailViewController.swift */,
+				C7D59B462C273B3A009C1497 /* CouponDetailCollectionViewCell.swift */,
+				C7D59B4E2C273BC3009C1497 /* MyCouponInfoViewController.swift */,
 			);
 			path = MypageScreen;
 			sourceTree = "<group>";
@@ -397,7 +394,7 @@
 				C7F22A822BB81CAB006B86C2 /* ConneCo */,
 				C7F22A812BB81CAB006B86C2 /* Products */,
 				BE0BFEB5B944536399BBFB07 /* Pods */,
-				45EB2CBF7F45EE6FF69BD4D4 /* Frameworks */,
+				FA42A4BA00490E22CD8E60BE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -428,9 +425,16 @@
 				C7F22A912BB81CAE006B86C2 /* Info.plist */,
 				C7F22A9B2BB8272B006B86C2 /* MainTabViewController.swift */,
 				C74F0C192BE25BD3006F3EEF /* TabbarShadow.swift */,
-				C78B57782C23FA5100BEBF4D /* Config.xcconfig */,
 			);
 			path = ConneCo;
+			sourceTree = "<group>";
+		};
+		FA42A4BA00490E22CD8E60BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0DDAB9EF9E2DEB91DC6B8CB0 /* Pods_ConneCo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -440,31 +444,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7F22A942BB81CAE006B86C2 /* Build configuration list for PBXNativeTarget "ConneCo" */;
 			buildPhases = (
-				D4A4B160DD08DEAE277C5B21 /* [CP] Check Pods Manifest.lock */,
+				3CC1DA49F3137FBB9DFFFDE6 /* [CP] Check Pods Manifest.lock */,
 				C7F22A7C2BB81CAB006B86C2 /* Sources */,
 				C7F22A7D2BB81CAB006B86C2 /* Frameworks */,
 				C7F22A7E2BB81CAB006B86C2 /* Resources */,
-				F959A2B39CA62FEBDAC9865D /* [CP] Embed Pods Frameworks */,
+				26964B235D60F553A261167E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = ConneCo;
-			packageProductDependencies = (
-				C7E82E6D2C2344A9006A1DEB /* KakaoSDK */,
-				C7E82E6F2C2344A9006A1DEB /* KakaoSDKAuth */,
-				C7E82E712C2344A9006A1DEB /* KakaoSDKCert */,
-				C7E82E732C2344A9006A1DEB /* KakaoSDKCertCore */,
-				C7E82E752C2344A9006A1DEB /* KakaoSDKCommon */,
-				C7E82E772C2344A9006A1DEB /* KakaoSDKFriend */,
-				C7E82E792C2344A9006A1DEB /* KakaoSDKFriendCore */,
-				C7E82E7B2C2344A9006A1DEB /* KakaoSDKNavi */,
-				C7E82E7D2C2344A9006A1DEB /* KakaoSDKShare */,
-				C7E82E7F2C2344A9006A1DEB /* KakaoSDKTalk */,
-				C7E82E812C2344A9006A1DEB /* KakaoSDKTemplate */,
-				C7E82E832C2344A9006A1DEB /* KakaoSDKUser */,
-			);
 			productName = ConneCo;
 			productReference = C7F22A802BB81CAB006B86C2 /* ConneCo.app */;
 			productType = "com.apple.product-type.application";
@@ -485,7 +475,7 @@
 				};
 			};
 			buildConfigurationList = C7F22A7B2BB81CAB006B86C2 /* Build configuration list for PBXProject "ConneCo" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -493,9 +483,6 @@
 				Base,
 			);
 			mainGroup = C7F22A772BB81CAB006B86C2;
-			packageReferences = (
-				C7E82E6C2C2344A9006A1DEB /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */,
-			);
 			productRefGroup = C7F22A812BB81CAB006B86C2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -524,7 +511,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		D4A4B160DD08DEAE277C5B21 /* [CP] Check Pods Manifest.lock */ = {
+		26964B235D60F553A261167E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ConneCo/Pods-ConneCo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3CC1DA49F3137FBB9DFFFDE6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -544,23 +546,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F959A2B39CA62FEBDAC9865D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ConneCo/Pods-ConneCo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ConneCo/Pods-ConneCo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ConneCo/Pods-ConneCo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -602,6 +587,7 @@
 				C7893CC02BFBA4ED00EAE77E /* StoreAPI.swift in Sources */,
 				C745A1072C20042100E9D51A /* MyEventViewController.swift in Sources */,
 				C75B46642C20597A001F0EFD /* SponsorActivityTableViewCell.swift in Sources */,
+				C7D59B4F2C273BC3009C1497 /* MyCouponInfoViewController.swift in Sources */,
 				C7893CBE2BFBA4E300EAE77E /* GoogleLoginAPI.swift in Sources */,
 				C788F1B82BFC594500472F31 /* KakaoLoginAPI.swift in Sources */,
 				C7006F2F2BFA596400AB1E82 /* SponsorAskInfoViewController.swift in Sources */,
@@ -613,9 +599,14 @@
 				C75B466A2C205A78001F0EFD /* NewApplyCouponTableViewCell.swift in Sources */,
 				C745A1032C2003FF00E9D51A /* MyStoreViewController.swift in Sources */,
 				C745A1052C20041200E9D51A /* MyCouponViewController.swift in Sources */,
+				C7D59B532C273C7B009C1497 /* StoreImageCollectionViewCell.swift in Sources */,
+				C7D59B4D2C273BAE009C1497 /* MyEventInfoViewController.swift in Sources */,
+				C7D59B452C273B2B009C1497 /* EventDetailCollectionViewCell.swift in Sources */,
 				C7043D4D2BC2D90000DC5C6A /* UMCpractice1ViewController.swift in Sources */,
 				C7A9CB402BDF9E0C001803DA /* ScissorsRockPaperViewController.swift in Sources */,
+				C7D59B492C273B90009C1497 /* MyEventDetailViewController.swift in Sources */,
 				C7360ECA2BE7533A0039BA32 /* EventPickViewController.swift in Sources */,
+				C7BA82782C26B47000420128 /* SponsorDateViewController.swift in Sources */,
 				C7C5564B2C06CA95004E3752 /* EventListViewController.swift in Sources */,
 				C75B465C2C2047D8001F0EFD /* CompleteApplyEventViewController.swift in Sources */,
 				C72FD05F2BF3C34B0030A834 /* EventListTableViewCell.swift in Sources */,
@@ -628,6 +619,7 @@
 				C7581EB12BD8F05A00997F8D /* EventViewController.swift in Sources */,
 				C7F22A842BB81CAB006B86C2 /* AppDelegate.swift in Sources */,
 				C7C4D30C2C218750006CAA19 /* SponsorActivityViewController.swift in Sources */,
+				C7D59B4B2C273B9F009C1497 /* MyCouponDetailViewController.swift in Sources */,
 				C745A1012C1FFE8B00E9D51A /* ActivityViewController.swift in Sources */,
 				C75B46622C2054D0001F0EFD /* CompleteApplyCouponViewController.swift in Sources */,
 				C72FD05B2BF3C28F0030A834 /* StoreCouponListTableViewCell.swift in Sources */,
@@ -635,15 +627,18 @@
 				C7F22A862BB81CAB006B86C2 /* SceneDelegate.swift in Sources */,
 				C78B577A2C24065700BEBF4D /* KakaoAuth.swift in Sources */,
 				C74F0C1C2BE26968006F3EEF /* LoginViewController.swift in Sources */,
+				C7BA827A2C26B51400420128 /* CouponDateViewController.swift in Sources */,
 				C788F1B62BFC55A400472F31 /* EventPickAPI.swift in Sources */,
 				C75B46682C205A18001F0EFD /* CompleteApplyEventTableViewCell.swift in Sources */,
 				C7581EAD2BD8F04400997F8D /* MypageViewController.swift in Sources */,
 				C72FD0572BF3C2590030A834 /* CouponRecommendTableViewCell.swift in Sources */,
 				C7F2826A2C06D1A000E1659C /* EventImageCollectionViewCell.swift in Sources */,
 				C7893CBA2BFBA4CF00EAE77E /* CouponAPI.swift in Sources */,
+				C7D59B512C273C6F009C1497 /* CouponImageCollectionViewCell.swift in Sources */,
 				C738DF3A2BEFC48900BA2BE6 /* CouponDetailViewController.swift in Sources */,
 				C75B466C2C205DE5001F0EFD /* CompleteApplyCouponTableViewCell.swift in Sources */,
 				C7296C7B2C19864D0022C5E3 /* CouponRecommendViewController.swift in Sources */,
+				C7D59B472C273B3A009C1497 /* CouponDetailCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -671,7 +666,7 @@
 /* Begin XCBuildConfiguration section */
 		C7F22A922BB81CAE006B86C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C78B57782C23FA5100BEBF4D /* Config.xcconfig */;
+			baseConfigurationReference = B82A3F3CCDBB1E71EEB59EEC /* Pods-ConneCo.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -735,7 +730,7 @@
 		};
 		C7F22A932BB81CAE006B86C2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C78B57782C23FA5100BEBF4D /* Config.xcconfig */;
+			baseConfigurationReference = 49E40E8697D7C219031795D6 /* Pods-ConneCo.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -792,7 +787,7 @@
 		};
 		C7F22A952BB81CAE006B86C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C78B57782C23FA5100BEBF4D /* Config.xcconfig */;
+			baseConfigurationReference = B82A3F3CCDBB1E71EEB59EEC /* Pods-ConneCo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -806,6 +801,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -821,7 +817,7 @@
 		};
 		C7F22A962BB81CAE006B86C2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C78B57782C23FA5100BEBF4D /* Config.xcconfig */;
+			baseConfigurationReference = 49E40E8697D7C219031795D6 /* Pods-ConneCo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -835,6 +831,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -870,80 +867,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		C7E82E6C2C2344A9006A1DEB /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/kakao/kakao-ios-sdk";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		C7E82E6D2C2344A9006A1DEB /* KakaoSDK */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C7E82E6C2C2344A9006A1DEB /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
-			productName = KakaoSDK;
-		};
-		C7E82E6F2C2344A9006A1DEB /* KakaoSDKAuth */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C7E82E6C2C2344A9006A1DEB /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
-			productName = KakaoSDKAuth;
-		};
-		C7E82E712C2344A9006A1DEB /* KakaoSDKCert */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C7E82E6C2C2344A9006A1DEB /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
-			productName = KakaoSDKCert;
-		};
-		C7E82E732C2344A9006A1DEB /* KakaoSDKCertCore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C7E82E6C2C2344A9006A1DEB /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
-			productName = KakaoSDKCertCore;
-		};
-		C7E82E752C2344A9006A1DEB /* KakaoSDKCommon */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C7E82E6C2C2344A9006A1DEB /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
-			productName = KakaoSDKCommon;
-		};
-		C7E82E772C2344A9006A1DEB /* KakaoSDKFriend */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C7E82E6C2C2344A9006A1DEB /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
-			productName = KakaoSDKFriend;
-		};
-		C7E82E792C2344A9006A1DEB /* KakaoSDKFriendCore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C7E82E6C2C2344A9006A1DEB /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
-			productName = KakaoSDKFriendCore;
-		};
-		C7E82E7B2C2344A9006A1DEB /* KakaoSDKNavi */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C7E82E6C2C2344A9006A1DEB /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
-			productName = KakaoSDKNavi;
-		};
-		C7E82E7D2C2344A9006A1DEB /* KakaoSDKShare */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C7E82E6C2C2344A9006A1DEB /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
-			productName = KakaoSDKShare;
-		};
-		C7E82E7F2C2344A9006A1DEB /* KakaoSDKTalk */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C7E82E6C2C2344A9006A1DEB /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
-			productName = KakaoSDKTalk;
-		};
-		C7E82E812C2344A9006A1DEB /* KakaoSDKTemplate */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C7E82E6C2C2344A9006A1DEB /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
-			productName = KakaoSDKTemplate;
-		};
-		C7E82E832C2344A9006A1DEB /* KakaoSDKUser */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C7E82E6C2C2344A9006A1DEB /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
-			productName = KakaoSDKUser;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C7F22A782BB81CAB006B86C2 /* Project object */;
 }

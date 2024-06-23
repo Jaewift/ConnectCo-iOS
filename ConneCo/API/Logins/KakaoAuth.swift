@@ -28,8 +28,8 @@ class KakaoAuthVM: ObservableObject {
                     // 카카오 계정으로 로그인
                     print("loginWithKakaoTalk() success.")
                     
-                    let idToken = oauthToken.idToken
-                    let accessToken = oauthToken.accessToken
+                    let idToken = oauthToken?.idToken
+                    let accessToken = oauthToken?.accessToken
 
                     //do something
                     _ = oauthToken

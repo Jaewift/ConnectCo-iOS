@@ -17,8 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         NMFAuthManager.shared().clientId = "tutl2xd8x5"
         
-        let nativeAppKey = Bundle.main.infoDictionary?["KAKAO_NATIVE_APP_KEY"] ?? ""
-        KakaoSDK.initSDK(appKey: nativeAppKey as! String)
+        KakaoSDK.initSDK(appKey: "a73e12a656f91dfc55abbc159ecc36f7")
         
         return true
     }
