@@ -76,6 +76,8 @@
 		C7A9CB402BDF9E0C001803DA /* ScissorsRockPaperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A9CB3F2BDF9E0C001803DA /* ScissorsRockPaperViewController.swift */; };
 		C7BA82782C26B47000420128 /* SponsorDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BA82772C26B46F00420128 /* SponsorDateViewController.swift */; };
 		C7BA827A2C26B51400420128 /* CouponDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BA82792C26B51400420128 /* CouponDateViewController.swift */; };
+		C7BF12352C2878FB004A4B03 /* PlaceInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BF12342C2878FB004A4B03 /* PlaceInfoViewController.swift */; };
+		C7BF12372C2884A1004A4B03 /* PlaceInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BF12362C2884A1004A4B03 /* PlaceInfoTableViewCell.swift */; };
 		C7C4D30C2C218750006CAA19 /* SponsorActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C4D30B2C218750006CAA19 /* SponsorActivityViewController.swift */; };
 		C7C4D30E2C218781006CAA19 /* EventActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C4D30D2C218781006CAA19 /* EventActivityViewController.swift */; };
 		C7C4D3102C218834006CAA19 /* EventActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C4D30F2C218834006CAA19 /* EventActivityTableViewCell.swift */; };
@@ -174,6 +176,8 @@
 		C7A9CB3F2BDF9E0C001803DA /* ScissorsRockPaperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScissorsRockPaperViewController.swift; sourceTree = "<group>"; };
 		C7BA82772C26B46F00420128 /* SponsorDateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsorDateViewController.swift; sourceTree = "<group>"; };
 		C7BA82792C26B51400420128 /* CouponDateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponDateViewController.swift; sourceTree = "<group>"; };
+		C7BF12342C2878FB004A4B03 /* PlaceInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceInfoViewController.swift; sourceTree = "<group>"; };
+		C7BF12362C2884A1004A4B03 /* PlaceInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceInfoTableViewCell.swift; sourceTree = "<group>"; };
 		C7C4D30B2C218750006CAA19 /* SponsorActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsorActivityViewController.swift; sourceTree = "<group>"; };
 		C7C4D30D2C218781006CAA19 /* EventActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventActivityViewController.swift; sourceTree = "<group>"; };
 		C7C4D30F2C218834006CAA19 /* EventActivityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventActivityTableViewCell.swift; sourceTree = "<group>"; };
@@ -327,6 +331,8 @@
 			children = (
 				C7F22A972BB81D75006B86C2 /* Map.storyboard */,
 				C78365A72BB96EAB00CE0196 /* MapViewController.swift */,
+				C7BF12342C2878FB004A4B03 /* PlaceInfoViewController.swift */,
+				C7BF12362C2884A1004A4B03 /* PlaceInfoTableViewCell.swift */,
 			);
 			path = MapScreen;
 			sourceTree = "<group>";
@@ -586,6 +592,7 @@
 				C72FD0632BF3C3880030A834 /* UniViewController.swift in Sources */,
 				C7893CC02BFBA4ED00EAE77E /* StoreAPI.swift in Sources */,
 				C745A1072C20042100E9D51A /* MyEventViewController.swift in Sources */,
+				C7BF12352C2878FB004A4B03 /* PlaceInfoViewController.swift in Sources */,
 				C75B46642C20597A001F0EFD /* SponsorActivityTableViewCell.swift in Sources */,
 				C7D59B4F2C273BC3009C1497 /* MyCouponInfoViewController.swift in Sources */,
 				C7893CBE2BFBA4E300EAE77E /* GoogleLoginAPI.swift in Sources */,
@@ -607,6 +614,7 @@
 				C7D59B492C273B90009C1497 /* MyEventDetailViewController.swift in Sources */,
 				C7360ECA2BE7533A0039BA32 /* EventPickViewController.swift in Sources */,
 				C7BA82782C26B47000420128 /* SponsorDateViewController.swift in Sources */,
+				C7BF12372C2884A1004A4B03 /* PlaceInfoTableViewCell.swift in Sources */,
 				C7C5564B2C06CA95004E3752 /* EventListViewController.swift in Sources */,
 				C75B465C2C2047D8001F0EFD /* CompleteApplyEventViewController.swift in Sources */,
 				C72FD05F2BF3C34B0030A834 /* EventListTableViewCell.swift in Sources */,
