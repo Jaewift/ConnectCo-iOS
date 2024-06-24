@@ -359,6 +359,9 @@
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="baseBackgroundColor" red="0.2895924151" green="0.60887163879999995" blue="0.97259002920000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="sponsor_Tapped:" destination="K2V-tP-44M" eventType="touchUpInside" id="j9t-rl-GD9"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZnJ-Oq-B6E">
                                                 <rect key="frame" x="194" y="676.66666666666663" width="5" height="30"/>
@@ -1110,6 +1113,9 @@
                         </constraints>
                     </view>
                     <size key="freeformSize" width="393" height="914"/>
+                    <connections>
+                        <outlet property="dateTextField" destination="Vmb-RV-emf" id="8Q5-SA-y2g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XwT-St-NhZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1157,6 +1163,9 @@
                                             <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="15"/>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="ok_Button:" destination="Loy-AW-H96" eventType="touchUpInside" id="eXH-Q3-oWT"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N0F-9y-K17">
                                         <rect key="frame" x="-1" y="315" width="157" height="43"/>
@@ -1223,6 +1232,7 @@
                     <connections>
                         <outlet property="CouponDatePicker" destination="Jo8-M1-Shy" id="FIM-tj-Bfp"/>
                         <outlet property="CouponDateView" destination="8SU-ya-3ZS" id="sHt-op-3YU"/>
+                        <outlet property="cancelButton" destination="N0F-9y-K17" id="dhi-gz-DCj"/>
                         <outlet property="timeLabel2" destination="GC3-3s-2aE" id="Twf-kd-QRo"/>
                         <outlet property="timeLabel3" destination="qzn-2H-Z3o" id="a8A-AR-6uJ"/>
                     </connections>
@@ -1307,6 +1317,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="ConneCo_Dropdown"/>
+                                <connections>
+                                    <action selector="event_Tapped:" destination="9xH-1T-DqS" eventType="touchUpInside" id="mXH-iD-dm3"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이벤트 정보 등록, 수정은 마이페이지에서 가능합니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYP-AT-Fo1">
                                 <rect key="frame" x="24" y="190" width="250" height="15"/>
@@ -1389,6 +1402,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="ConneCo_Day"/>
+                                <connections>
+                                    <action selector="date_Tapped:" destination="9xH-1T-DqS" eventType="touchUpInside" id="sRw-8c-h13"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="혜택 대상" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VRy-KP-MLt">
                                 <rect key="frame" x="23.999999999999996" y="480" width="59.666666666666657" height="20"/>
@@ -1557,10 +1573,10 @@
                                         <rect key="frame" x="207.99999999999977" y="54" width="100" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJw-3Y-5d9">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJw-3Y-5d9">
                                         <rect key="frame" x="236" y="17" width="71" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -1598,6 +1614,13 @@
                             <constraint firstItem="IcT-ao-1Mt" firstAttribute="centerX" secondItem="l6o-9b-jF8" secondAttribute="centerX" id="utI-h2-vU5"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="SponsorDatePicker" destination="lTy-Pd-ksn" id="v3R-E1-QC9"/>
+                        <outlet property="SponsorDateView" destination="IcT-ao-1Mt" id="X8k-Pz-grq"/>
+                        <outlet property="cancelButton" destination="F3c-WX-WOB" id="Zlb-XF-euL"/>
+                        <outlet property="timeLabel2" destination="WJw-3Y-5d9" id="vhJ-vG-E8B"/>
+                        <outlet property="timeLabel3" destination="QbA-U6-yKR" id="peL-XZ-Kmr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9gO-j0-e2w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -18,4 +18,8 @@ class ApplyEventViewController: UIViewController {
         newApplyView.alpha = 1
         CompleteApplyView.alpha = 0
     }
+    
+    @IBAction func back_Button(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
 }

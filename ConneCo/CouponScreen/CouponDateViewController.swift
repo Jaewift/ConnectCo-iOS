@@ -7,13 +7,20 @@
 
 import UIKit
 
+protocol SampleProtocol2:AnyObject {
+    func timeSend(data: String)
+}
+
 class CouponDateViewController: UIViewController {
     
     @IBOutlet weak var CouponDateView: UIView!
     @IBOutlet weak var CouponDatePicker: UIPickerView!
     
+    @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var timeLabel2: UILabel!
     @IBOutlet weak var timeLabel3: UILabel!
+    
+    weak var delegate: SampleProtocol2?
     
     var year = "2024"
     var month = "01"
@@ -29,12 +36,23 @@ class CouponDateViewController: UIViewController {
         CouponDateView.layer.cornerRadius = 10
         CouponDateView.clipsToBounds = true
         
+        cancelButton.layer.cornerRadius = 0
+        cancelButton.layer.borderWidth = 1
+        cancelButton.layer.borderColor = UIColor.black.cgColor
+        
         CouponDatePicker.delegate = self
         CouponDatePicker.dataSource = self
     }
     
+    @IBAction func ok_Button(_ sender: Any) {
+        if let text2 = timeLabel3.text {
+            delegate?.timeSend(data: text2)
+        }
+        self.presentingViewController?.dismiss(animated: false, completion: nil)
+    }
+    
     @IBAction func back_Button(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
+        self.presentingViewController?.dismiss(animated: true, completion: nil)
     }
 }
 

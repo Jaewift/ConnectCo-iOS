@@ -66,6 +66,10 @@ class StoreEnrollViewController: UIViewController, SampleProtocol4, UITextFieldD
         openAlbum()
     }
     
+    @IBAction func Image_Delete(_ sender: Any) {
+        firstImageView.image = UIImage(named: "ConneCo_Store_Default")
+    }
+    
     @IBAction func addressButton(_ sender: Any) {
         guard let svc2 = self.storyboard?.instantiateViewController(identifier: "StoreAddressVC") as? StoreAddressViewController else {
             return
@@ -81,6 +85,10 @@ class StoreEnrollViewController: UIViewController, SampleProtocol4, UITextFieldD
             APIStorePost.instance.SendingPostReborn(parameters: parmeterDatas) { result in self.storeData = result }
             self.presentingViewController?.dismiss(animated: true, completion: nil)
         }
+    }
+    
+    @IBAction func back_Button(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
     }
 }
 

@@ -36,6 +36,12 @@ class CouponDetailViewController: UIViewController {
         self.navigationController?.pushViewController(rvc, animated: true)
     }
     
+    @IBAction func sponsor_Tapped(_ sender: Any) {
+        guard let rvc = self.storyboard?.instantiateViewController(withIdentifier: "SponsorApplyInfoVC") as? SponsorApplyInfoViewController else {return}
+        
+        self.navigationController?.pushViewController(rvc, animated: true)
+    }
+    
     @IBAction func back_Button(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }

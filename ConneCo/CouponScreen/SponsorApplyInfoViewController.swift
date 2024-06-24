@@ -27,6 +27,20 @@ class SponsorApplyInfoViewController: UIViewController {
         navigationController?.setNavigationBarHidden(false, animated: false)
     }
     
+    @IBAction func event_Tapped(_ sender: Any) {
+        let something4 = UIStoryboard.init(name: "Event", bundle: nil)
+        guard let rvc = something4.instantiateViewController(withIdentifier: "SponsorAskInfoVC") as? SponsorAskInfoViewController else {return}
+        
+        // 화면이동
+        self.navigationController?.pushViewController(rvc, animated: true)
+    }
+    
+    @IBAction func date_Tapped(_ sender: Any) {
+        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "SponsorDateVC") as? SponsorDateViewController else { return }
+        nextVC.modalPresentationStyle = .overCurrentContext
+        self.present(nextVC, animated: false, completion: nil)
+    }
+    
     @IBAction func back_Button(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }

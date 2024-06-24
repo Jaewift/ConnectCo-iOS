@@ -7,7 +7,13 @@
 
 import UIKit
 
-class CouponEnrollViewController: UIViewController {
+class CouponEnrollViewController: UIViewController, SampleProtocol2 {
+    
+    @IBOutlet weak var dateTextField: UITextField!
+    
+    func timeSend(data: String) {
+        dateTextField.text = "  \(data)"
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +36,7 @@ class CouponEnrollViewController: UIViewController {
     @IBAction func Date_Tapped(_ sender: Any) {
         guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "CouponDateVC") as? CouponDateViewController else { return }
         nextVC.modalPresentationStyle = .overCurrentContext
+        nextVC.delegate = self
         self.present(nextVC, animated: false, completion: nil)
     }
     
