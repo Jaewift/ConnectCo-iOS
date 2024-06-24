@@ -32,6 +32,10 @@ class CouponDateViewController: UIViewController {
         CouponDatePicker.delegate = self
         CouponDatePicker.dataSource = self
     }
+    
+    @IBAction func back_Button(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
 }
 
 extension CouponDateViewController: UIPickerViewDelegate, UIPickerViewDataSource {

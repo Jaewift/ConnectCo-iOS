@@ -26,7 +26,7 @@ class EventViewController: UIViewController {
     }
     
     @IBAction func Event_Tapped(_ sender: Any) {
-        guard let rvc = self.storyboard?.instantiateViewController(withIdentifier: "EventDetailVC") as? EventDetailViewController else {return}
+        guard let rvc = self.storyboard?.instantiateViewController(withIdentifier: "EventEnrollVC") as? EventEnrollViewController else {return}
         
         self.navigationController?.pushViewController(rvc, animated: true)
     }

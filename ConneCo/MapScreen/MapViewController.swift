@@ -49,7 +49,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
             if CLLocationManager.locationServicesEnabled() {
                 print("위치 서비스 On 상태")
                 self.locationManager.startUpdatingLocation()
-                print(self.locationManager.location?.coordinate)
+                print(self.locationManager.location?.coordinate ?? 0)
                 self.lati = self.locationManager.location?.coordinate.latitude ?? 0
                 self.longti = self.locationManager.location?.coordinate.longitude ?? 0
                 
@@ -57,10 +57,15 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
                 cameraUpdate.animation = .easeIn
                 mapView.moveCamera(cameraUpdate)
                 
-                let marker = NMFMarker()
-                marker.iconImage = NMFOverlayImage(name: "ConneCo_marker_event")
-                marker.position = NMGLatLng(lat: self.lati, lng: self.longti)
-                marker.mapView = mapView
+                let eventmarker = NMFMarker()
+                eventmarker.iconImage = NMFOverlayImage(name: "ConneCo_marker_event")
+                eventmarker.position = NMGLatLng(lat: self.lati + 0.002, lng: self.longti + 0.002)
+                eventmarker.mapView = mapView
+                
+                let couponmarker = NMFMarker()
+                couponmarker.iconImage = NMFOverlayImage(name: "ConneCo_marker_coupon")
+                couponmarker.position = NMGLatLng(lat: self.lati - 0.002, lng: self.longti - 0.002)
+                couponmarker.mapView = mapView
             } else {
                 print("위치 서비스 Off 상태")
             }

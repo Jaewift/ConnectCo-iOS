@@ -36,6 +36,12 @@ class EventDetailViewController: UIViewController {
         self.navigationController?.pushViewController(rvc, animated: true)
     }
     
+    @IBAction func Ask_Tapped(_ sender: Any) {
+        guard let rvc = self.storyboard?.instantiateViewController(withIdentifier: "SponsorInfoVC") as? SponsorInfoViewController else {return}
+        
+        self.navigationController?.pushViewController(rvc, animated: true)
+    }
+    
     @IBAction func back_Tapped(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }

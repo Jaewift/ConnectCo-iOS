@@ -32,4 +32,8 @@ class CouponEnrollViewController: UIViewController {
         nextVC.modalPresentationStyle = .overCurrentContext
         self.present(nextVC, animated: false, completion: nil)
     }
+    
+    @IBAction func back_Button(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
 }

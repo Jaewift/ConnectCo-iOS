@@ -10,3 +10,20 @@ import UIKit
 class CouponImageCollectionViewCell: UICollectionViewCell {
     
 }
+
+extension CouponDetailViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell: CouponImageCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "CouponImage_CollectionViewCell", for: indexPath) as! CouponImageCollectionViewCell
+        
+        return cell
+    }
+}

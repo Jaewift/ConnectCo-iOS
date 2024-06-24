@@ -10,6 +10,7 @@ import NMapsMap
 
 class StoreDetailViewController: UIViewController {
     
+    @IBOutlet weak var StoreImageCV: UICollectionView!
     @IBOutlet weak var StoreCouponListTableView: UITableView!
     @IBOutlet weak var StoreMapView: UIView!
     
@@ -18,6 +19,9 @@ class StoreDetailViewController: UIViewController {
 
         let mapView = NMFMapView(frame: self.StoreMapView.frame)
         view.addSubview(mapView)
+        
+        self.StoreImageCV.delegate = self
+        self.StoreImageCV.dataSource = self
         
         StoreCouponListTableView.rowHeight = UITableView.automaticDimension
         StoreCouponListTableView.estimatedRowHeight = UITableView.automaticDimension
@@ -31,15 +35,19 @@ class StoreDetailViewController: UIViewController {
         StoreCouponListTableView.contentInset = UIEdgeInsets(top: 5, left: 0, bottom: 0, right: 0)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.setNavigationBarHidden(true, animated: false)
     }
-    */
 
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        navigationController?.setNavigationBarHidden(false, animated: false)
+    }
+
+    @IBAction func back_Button(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
 }

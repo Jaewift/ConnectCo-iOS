@@ -25,7 +25,7 @@ class PlaceInfoTableViewCell: UITableViewCell {
 extension PlaceInfoViewController: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 5
+        return 2
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
