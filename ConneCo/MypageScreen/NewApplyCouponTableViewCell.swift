@@ -24,6 +24,11 @@ class NewApplyCouponTableViewCell: UITableViewCell {
 
 extension NewApplyCouponViewController: UITableViewDelegate, UITableViewDataSource {
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "MyCouponDetailVC") as? MyCouponDetailViewController else { return }
+        self.navigationController?.pushViewController(nextVC, animated: true)
+    }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 3
     }

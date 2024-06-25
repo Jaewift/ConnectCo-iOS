@@ -9,9 +9,16 @@ import UIKit
 
 class MypageViewController: UIViewController {
     
+    @IBOutlet weak var ActivityView: UIView!
+    @IBOutlet weak var PickView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        ActivityView.layer.cornerRadius = 10
+        ActivityView.clipsToBounds = true
+        PickView.layer.cornerRadius = 10
+        PickView.clipsToBounds = true
     }
     
     override func viewWillAppear(_ animated: Bool) {

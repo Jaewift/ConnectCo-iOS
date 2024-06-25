@@ -7,7 +7,13 @@
 
 import UIKit
 
-class SponsorApplyInfoViewController: UIViewController {
+class SponsorApplyInfoViewController: UIViewController, SampleProtocol5 {
+    
+    @IBOutlet weak var dateTextField: UITextField!
+    
+    func timeSend(data: String) {
+        dateTextField.text = "  \(data)"
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +44,7 @@ class SponsorApplyInfoViewController: UIViewController {
     @IBAction func date_Tapped(_ sender: Any) {
         guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "SponsorDateVC") as? SponsorDateViewController else { return }
         nextVC.modalPresentationStyle = .overCurrentContext
+        nextVC.delegate = self
         self.present(nextVC, animated: false, completion: nil)
     }
     

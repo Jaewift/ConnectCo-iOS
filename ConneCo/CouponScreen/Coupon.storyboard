@@ -1504,6 +1504,9 @@
                             <constraint firstItem="R8J-ef-F5c" firstAttribute="top" secondItem="W3E-do-uFY" secondAttribute="bottom" constant="40" id="vuU-G2-yPZ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dateTextField" destination="I5T-JO-8Mu" id="qsw-oW-jSu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9vc-ss-nuo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1551,6 +1554,9 @@
                                             <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="15"/>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="ok_Button:" destination="a8N-3P-WZ9" eventType="touchUpInside" id="eYx-ZW-Z5e"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F3c-WX-WOB">
                                         <rect key="frame" x="-1" y="315" width="157" height="43"/>
@@ -1589,12 +1595,12 @@
                                     <constraint firstItem="JxK-L4-lRQ" firstAttribute="leading" secondItem="IcT-ao-1Mt" secondAttribute="leading" constant="23" id="067-2p-Z9I"/>
                                     <constraint firstItem="lTy-Pd-ksn" firstAttribute="leading" secondItem="IcT-ao-1Mt" secondAttribute="leading" id="3qB-2k-z2W"/>
                                     <constraint firstItem="YqA-Du-xag" firstAttribute="leading" secondItem="F3c-WX-WOB" secondAttribute="trailing" id="4aP-7D-Cg5"/>
+                                    <constraint firstItem="F3c-WX-WOB" firstAttribute="top" secondItem="lTy-Pd-ksn" secondAttribute="bottom" constant="16" id="4ng-Ya-7mY"/>
+                                    <constraint firstItem="YqA-Du-xag" firstAttribute="top" secondItem="lTy-Pd-ksn" secondAttribute="bottom" constant="16" id="6KT-8F-t9W"/>
                                     <constraint firstItem="igF-0B-dZK" firstAttribute="top" secondItem="JxK-L4-lRQ" secondAttribute="bottom" constant="5" id="CxZ-ia-Y4d"/>
                                     <constraint firstAttribute="height" constant="357" id="ElT-Hq-yim"/>
                                     <constraint firstItem="F3c-WX-WOB" firstAttribute="leading" secondItem="IcT-ao-1Mt" secondAttribute="leading" constant="-1" id="L3e-Ql-a0k"/>
                                     <constraint firstItem="lTy-Pd-ksn" firstAttribute="top" secondItem="igF-0B-dZK" secondAttribute="bottom" constant="8" id="OIh-9d-dn7"/>
-                                    <constraint firstItem="YqA-Du-xag" firstAttribute="top" secondItem="lTy-Pd-ksn" secondAttribute="bottom" constant="16" id="TgQ-Zw-83z"/>
-                                    <constraint firstItem="F3c-WX-WOB" firstAttribute="top" secondItem="lTy-Pd-ksn" secondAttribute="bottom" constant="16" id="YRT-ed-hg4"/>
                                     <constraint firstAttribute="trailing" secondItem="YqA-Du-xag" secondAttribute="trailing" id="bIT-JB-Ovs"/>
                                     <constraint firstItem="JxK-L4-lRQ" firstAttribute="top" secondItem="IcT-ao-1Mt" secondAttribute="top" constant="20" id="bkY-4k-gx8"/>
                                     <constraint firstItem="igF-0B-dZK" firstAttribute="leading" secondItem="IcT-ao-1Mt" secondAttribute="leading" constant="23" id="buJ-SR-LEe"/>
@@ -1624,7 +1630,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9gO-j0-e2w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4850" y="-4"/>
+            <point key="canvasLocation" x="4849.6183206106871" y="-4.2253521126760569"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8bM-z6-07k">

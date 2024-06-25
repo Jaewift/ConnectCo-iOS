@@ -45,8 +45,8 @@ class CouponDateViewController: UIViewController {
     }
     
     @IBAction func ok_Button(_ sender: Any) {
-        if let text2 = timeLabel3.text {
-            delegate?.timeSend(data: text2)
+        if let text = timeLabel3.text {
+            delegate?.timeSend(data: text)
         }
         self.presentingViewController?.dismiss(animated: false, completion: nil)
     }

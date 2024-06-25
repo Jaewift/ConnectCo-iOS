@@ -41,7 +41,7 @@ extension EventActivityViewController: UITableViewDelegate, UITableViewDataSourc
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: EventListTableViewCell = tableView.dequeueReusableCell(withIdentifier: "EventList_TableViewCell", for: indexPath) as! EventListTableViewCell
+        let cell: EventActivityTableViewCell = tableView.dequeueReusableCell(withIdentifier: "EventActivity_TableViewCell", for: indexPath) as! EventActivityTableViewCell
         
         return cell
     }

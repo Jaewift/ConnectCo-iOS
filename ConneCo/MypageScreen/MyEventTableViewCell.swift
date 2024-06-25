@@ -24,6 +24,11 @@ class MyEventTableViewCell: UITableViewCell {
 
 extension MyEventViewController: UITableViewDelegate, UITableViewDataSource {
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "ApplyEventVC") as? ApplyEventViewController else { return }
+        self.navigationController?.pushViewController(nextVC, animated: true)
+    }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 3
     }

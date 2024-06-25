@@ -68,6 +68,9 @@ class StoreEnrollViewController: UIViewController, SampleProtocol4, UITextFieldD
     
     @IBAction func Image_Delete(_ sender: Any) {
         firstImageView.image = UIImage(named: "ConneCo_Store_Default")
+        CameraButton.isEnabled = true
+        CameraButton.isHidden = false
+        ImageLabel1.isHidden = false
     }
     
     @IBAction func addressButton(_ sender: Any) {

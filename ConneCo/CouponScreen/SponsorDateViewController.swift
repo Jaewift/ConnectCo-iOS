@@ -7,15 +7,20 @@
 
 import UIKit
 
+protocol SampleProtocol5:AnyObject {
+    func timeSend(data: String)
+}
+
 class SponsorDateViewController: UIViewController {
     
     @IBOutlet weak var SponsorDateView: UIView!
     @IBOutlet weak var SponsorDatePicker: UIPickerView!
     
     @IBOutlet weak var cancelButton: UIButton!
-    
     @IBOutlet weak var timeLabel2: UILabel!
     @IBOutlet weak var timeLabel3: UILabel!
+    
+    weak var delegate: SampleProtocol5?
     
     var year = "2024"
     var month = "01"
@@ -37,6 +42,13 @@ class SponsorDateViewController: UIViewController {
         
         SponsorDatePicker.delegate = self
         SponsorDatePicker.dataSource = self
+    }
+    
+    @IBAction func ok_Button(_ sender: Any) {
+        if let text = timeLabel3.text {
+            delegate?.timeSend(data: text)
+        }
+        self.presentingViewController?.dismiss(animated: false, completion: nil)
     }
     
     @IBAction func back_Button(_ sender: Any) {
