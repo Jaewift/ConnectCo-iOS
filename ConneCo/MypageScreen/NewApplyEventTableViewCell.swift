@@ -26,7 +26,7 @@ extension NewApplyEventViewController: UITableViewDelegate, UITableViewDataSourc
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "MyEventDetailVC") as? MyEventDetailViewController else { return }
-        self.navigationController?.pushViewController(nextVC, animated: true)
+        self.present(nextVC, animated: true)
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {

@@ -25,6 +25,9 @@ class SponsorDateViewController: UIViewController {
     var year = "2024"
     var month = "01"
     var day = "01"
+    var year2 = "2024"
+    var month2 = "01"
+    var day2 = "01"
     
     var pickerYear = ["2030", "2029", "2028", "2027", "2026", "2025", "2024"]
     var pickerMonth = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"]
@@ -59,7 +62,7 @@ class SponsorDateViewController: UIViewController {
 extension SponsorDateViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 3
+        return 6
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
@@ -70,6 +73,12 @@ extension SponsorDateViewController: UIPickerViewDelegate, UIPickerViewDataSourc
         case 1:
             return pickerMonth.count
         case 2:
+            return pickerDay.count
+        case 3:
+            return pickerYear.count
+        case 4:
+            return pickerMonth.count
+        case 5:
             return pickerDay.count
         default:
             return 0
@@ -84,6 +93,12 @@ extension SponsorDateViewController: UIPickerViewDelegate, UIPickerViewDataSourc
         case 1:
             return "\(pickerMonth[row])"
         case 2:
+            return "\(pickerDay[row])"
+        case 3:
+            return "\(pickerYear[row])"
+        case 4:
+            return "\(pickerMonth[row])"
+        case 5:
             return "\(pickerDay[row])"
         default:
             return ""
@@ -111,6 +126,18 @@ extension SponsorDateViewController: UIPickerViewDelegate, UIPickerViewDataSourc
             label?.text = pickerDay[row] + "일"
             label?.font = UIFont(name:"AppleSDGothicNeo-Bold", size:20)
             return label!
+        case 3:
+            label?.text = pickerYear[row] + "년"
+            label?.font = UIFont(name:"AppleSDGothicNeo-Bold", size:20)
+            return label!
+        case 4:
+            label?.text = pickerMonth[row] + "월"
+            label?.font = UIFont(name:"AppleSDGothicNeo-Bold", size:20)
+            return label!
+        case 5:
+            label?.text = pickerDay[row] + "일"
+            label?.font = UIFont(name:"AppleSDGothicNeo-Bold", size:20)
+            return label!
         default:
             return label!
         }
@@ -125,12 +152,18 @@ extension SponsorDateViewController: UIPickerViewDelegate, UIPickerViewDataSourc
             month = pickerMonth[row]
         case 2:
             day = pickerDay[row]
+        case 3:
+            year2 = pickerYear[row]
+        case 4:
+            month2 = pickerMonth[row]
+        case 5:
+            day2 = pickerDay[row]
         default:
             timeLabel2.text = "2024 년 01 월 01 일"
-            timeLabel3.text = "2024/01/01"
+            timeLabel3.text = "2024/01/01 - 2024/01/01"
         }
         
-        timeLabel3.text = "\(year)/\(month)/\(day)"
+        timeLabel3.text = "\(year)/\(month)/\(day) - \(year2)/\(month2)/\(day2)"
         timeLabel2.text = "\(year) 년 \(month) 월 \(day) 일"
     }
 }

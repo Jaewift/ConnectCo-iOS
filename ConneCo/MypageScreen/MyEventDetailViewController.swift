@@ -28,6 +28,6 @@ class MyEventDetailViewController: UIViewController {
     }
     
     @IBAction func back_Button(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
+        self.presentingViewController?.dismiss(animated: true)
     }
 }

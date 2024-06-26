@@ -166,6 +166,9 @@
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" image="ConneCo_Back_White"/>
+                                                        <connections>
+                                                            <action selector="back_Button:" destination="ueY-wh-xpE" eventType="touchUpInside" id="pwm-hz-qCY"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.2895924151" green="0.60887163879999995" blue="0.97259002920000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -479,7 +482,7 @@
                                                     <constraint firstAttribute="height" constant="45" id="rXv-3D-mj6"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="협찬 제안">
+                                                <buttonConfiguration key="configuration" style="filled" title="작성 완료">
                                                     <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="16"/>
                                                     <color key="baseBackgroundColor" red="0.2895924151" green="0.60887163879999995" blue="0.97259002920000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </buttonConfiguration>

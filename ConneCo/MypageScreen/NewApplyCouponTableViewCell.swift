@@ -26,7 +26,7 @@ extension NewApplyCouponViewController: UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "MyCouponDetailVC") as? MyCouponDetailViewController else { return }
-        self.navigationController?.pushViewController(nextVC, animated: true)
+        self.present(nextVC, animated: true)
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {

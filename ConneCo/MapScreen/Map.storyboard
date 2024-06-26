@@ -32,9 +32,6 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="ConneCo_search"/>
-                                        <connections>
-                                            <action selector="place_Tapped:" destination="Ppb-8e-gTu" eventType="touchUpInside" id="I02-RY-4mm"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QpJ-PN-adI">
                                         <rect key="frame" x="338" y="49" width="35" height="35"/>
@@ -91,8 +88,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="내주변" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PmY-CE-qYd">
-                                <rect key="frame" x="24" y="40" width="52" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="내 주변" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PmY-CE-qYd">
+                                <rect key="frame" x="24.000000000000004" y="40" width="57.333333333333343" height="24"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -145,6 +142,12 @@
                                                 <constraint firstItem="uaf-Ys-eBj" firstAttribute="top" secondItem="ba2-tG-iL2" secondAttribute="bottom" constant="5" id="zvP-Lc-WEC"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="placeDate" destination="kPo-Gl-MVm" id="i5u-sH-WJx"/>
+                                            <outlet property="placeImage" destination="1DJ-vU-SoT" id="OQC-4y-dLG"/>
+                                            <outlet property="placeName" destination="ba2-tG-iL2" id="e0H-t4-Ftf"/>
+                                            <outlet property="placeTitle" destination="uaf-Ys-eBj" id="BjR-uq-rmY"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

@@ -86,6 +86,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         couponButton = createButton(title: "쿠폰보기")
         
         allButton.addTarget(self, action: #selector(buttonTapped(_:)), for: .touchUpInside)
+        allButton.addTarget(self, action: #selector(couponTapped(_:)), for: .touchUpInside)
         eventButton.addTarget(self, action: #selector(buttonTapped(_:)), for: .touchUpInside)
         couponButton.addTarget(self, action: #selector(buttonTapped(_:)), for: .touchUpInside)
         
@@ -147,7 +148,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         sender.setTitleColor(.black, for: .normal)
     }
     
-    @IBAction func place_Tapped(_ sender: Any) {
+    @objc func couponTapped(_ sender: UIButton) {
         guard let bottomSheetVC = self.storyboard?.instantiateViewController(withIdentifier: "PlaceInfoVC") as? PlaceInfoViewController else {return}
         guard let sheet = bottomSheetVC.presentationController as? UISheetPresentationController else {
             return
