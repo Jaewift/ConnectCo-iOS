@@ -8,7 +8,12 @@
 import UIKit
 
 class MyCouponTableViewCell: UITableViewCell {
-
+    
+    @IBOutlet weak var couponImage: UIImageView!
+    @IBOutlet weak var couponStore: UILabel!
+    @IBOutlet weak var couponName: UILabel!
+    @IBOutlet weak var couponDate: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -30,7 +35,7 @@ extension MyCouponViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return couponImages.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -47,6 +52,13 @@ extension MyCouponViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: MyCouponTableViewCell = tableView.dequeueReusableCell(withIdentifier: "MyCoupon_TableViewCell", for: indexPath) as! MyCouponTableViewCell
+        
+        cell.selectionStyle = .none
+        
+        cell.couponImage.image = UIImage(named: couponImages[indexPath.section])
+        cell.couponStore.text = "\(couponStores[indexPath.section])"
+        cell.couponName.text = "\(couponNames[indexPath.section])"
+        cell.couponDate.text = "\(couponDates[indexPath.section])"
         
         return cell
     }

@@ -11,10 +11,10 @@ class PlaceInfoViewController: UIViewController {
     
     @IBOutlet weak var PlaceTableView: UITableView!
     
-    var placeImages = ["ConneCo_Store", "ConneCo_Uni"]
-    var placeNames = ["호말", "한양대학교"]
-    var placeTitles = ["마들렌 무료 제공 쿠폰", "한양 패스 행사"]
-    var placeDates = ["신청마감일: 2023.12.29", "이벤트 기간: 2024.06.27~2024.07.27"]
+    var placeImages = ["ConneCo_Cookie", "ConneCo_Drink"]
+    var placeNames = ["호말", "호말"]
+    var placeTitles = ["쿠키 무료 제공 쿠폰", "전 음료 10%할인 쿠폰"]
+    var placeDates = ["신청마감일: 2023.12.29", "신청마감일: 2023.12.29"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

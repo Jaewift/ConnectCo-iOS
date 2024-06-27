@@ -1166,6 +1166,12 @@
                                                 <constraint firstItem="3rN-v7-Gis" firstAttribute="top" secondItem="llh-0A-4xU" secondAttribute="bottom" constant="5" id="iJJ-af-oB0"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="eventDate" destination="Ttl-wE-9Z8" id="CuC-Yh-cYG"/>
+                                            <outlet property="eventImage" destination="uJ2-BC-fDv" id="4A7-sR-MIF"/>
+                                            <outlet property="eventName" destination="3rN-v7-Gis" id="sSa-eY-sIv"/>
+                                            <outlet property="eventUni" destination="llh-0A-4xU" id="Tvr-a6-W42"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -1678,6 +1684,12 @@
                                                 <constraint firstItem="XI5-Z9-KcM" firstAttribute="centerY" secondItem="EhV-3D-LHN" secondAttribute="centerY" id="p54-q3-tOR"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="eventDate" destination="Mys-AA-u1H" id="zGX-Ul-Qq4"/>
+                                            <outlet property="eventImage" destination="XI5-Z9-KcM" id="bME-Jx-Ti9"/>
+                                            <outlet property="eventName" destination="r4h-dz-zp3" id="s3V-A3-WlS"/>
+                                            <outlet property="eventUni" destination="Kgm-Et-80W" id="h6d-pj-7nw"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -1755,6 +1767,12 @@
                                                 <constraint firstItem="V7n-Yh-pto" firstAttribute="leading" secondItem="i1e-Hz-MiH" secondAttribute="trailing" constant="23" id="xY7-jz-1Rg"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="eventDate" destination="V7n-Yh-pto" id="6tX-sS-jSA"/>
+                                            <outlet property="eventImage" destination="i1e-Hz-MiH" id="afq-bQ-Mim"/>
+                                            <outlet property="eventName" destination="Ccf-9C-wzL" id="Nkk-RG-Kyv"/>
+                                            <outlet property="eventUni" destination="3dc-QV-lZc" id="wjh-M7-CxU"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

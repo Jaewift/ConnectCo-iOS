@@ -295,30 +295,8 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gHb-k4-Nzc">
                                                 <rect key="frame" x="0.0" y="197" width="393" height="165"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나의 가게" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BFS-fe-dyG">
-                                                        <rect key="frame" x="24" y="20" width="67.333333333333329" height="21.666666666666671"/>
-                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="18"/>
-                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJn-UV-c1a">
-                                                        <rect key="frame" x="290" y="20" width="79" height="24"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="79" id="4i7-ud-chd"/>
-                                                            <constraint firstAttribute="height" constant="24" id="VoT-6g-WNi"/>
-                                                        </constraints>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="+ 가게 추가" cornerStyle="capsule">
-                                                            <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="12"/>
-                                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <color key="baseBackgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        </buttonConfiguration>
-                                                        <connections>
-                                                            <action selector="Store_Add:" destination="xQc-Cc-MFK" eventType="touchUpInside" id="nou-we-F5G"/>
-                                                        </connections>
-                                                    </button>
                                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pRV-Bs-iHL">
-                                                        <rect key="frame" x="0.0" y="58.66666666666665" width="393" height="106.33333333333331"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="393" height="165"/>
                                                         <connections>
                                                             <segue destination="amG-bP-x0e" kind="embed" id="pke-SA-Wx0"/>
                                                         </connections>
@@ -327,14 +305,10 @@
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstItem="pRV-Bs-iHL" firstAttribute="leading" secondItem="gHb-k4-Nzc" secondAttribute="leading" id="Af6-RO-Ju5"/>
-                                                    <constraint firstItem="BFS-fe-dyG" firstAttribute="leading" secondItem="gHb-k4-Nzc" secondAttribute="leading" constant="24" id="Ex5-36-ynC"/>
+                                                    <constraint firstItem="pRV-Bs-iHL" firstAttribute="top" secondItem="gHb-k4-Nzc" secondAttribute="top" id="KoA-pF-iJ7"/>
                                                     <constraint firstAttribute="height" constant="165" id="Kp7-eM-jCf"/>
-                                                    <constraint firstItem="pRV-Bs-iHL" firstAttribute="top" secondItem="BFS-fe-dyG" secondAttribute="bottom" constant="17" id="S3n-EQ-dXy"/>
-                                                    <constraint firstItem="EJn-UV-c1a" firstAttribute="top" secondItem="gHb-k4-Nzc" secondAttribute="top" constant="20" id="bm1-Cj-jSL"/>
                                                     <constraint firstAttribute="trailing" secondItem="pRV-Bs-iHL" secondAttribute="trailing" id="e2T-i0-dog"/>
-                                                    <constraint firstAttribute="trailing" secondItem="EJn-UV-c1a" secondAttribute="trailing" constant="24" id="pnI-Ix-OIz"/>
                                                     <constraint firstAttribute="bottom" secondItem="pRV-Bs-iHL" secondAttribute="bottom" id="qv4-C5-hDk"/>
-                                                    <constraint firstItem="BFS-fe-dyG" firstAttribute="top" secondItem="gHb-k4-Nzc" secondAttribute="top" constant="20" id="uTU-P1-JaL"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="taR-ru-ZfB">
@@ -881,7 +855,7 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="  가게의 이름을 입력해주세요!" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AHx-ZP-gY5">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="  가게의 이름을 입력해주세요!" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AHx-ZP-gY5">
                                 <rect key="frame" x="24" y="228" width="345" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="d6P-hf-0sS"/>
@@ -906,7 +880,7 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="  지번, 도로명, 건물명으로 검색" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kEC-sW-lsD">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="  지번, 도로명, 건물명으로 검색" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kEC-sW-lsD">
                                 <rect key="frame" x="24" y="313" width="345" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="gMj-WI-0Z6"/>
@@ -937,7 +911,7 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="  가게 연락처를 입력해주세요!" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TGp-qj-ua1">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="  가게 연락처를 입력해주세요!" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TGp-qj-ua1">
                                 <rect key="frame" x="24" y="398" width="345" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="irA-jI-qAc"/>
@@ -950,7 +924,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="  가게의 운영시간을 입력해주세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2uC-1Y-mDG">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="  가게의 운영시간을 입력해주세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2uC-1Y-mDG">
                                 <rect key="frame" x="24" y="483" width="345" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="rPO-EO-D38"/>
@@ -977,7 +951,7 @@
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Rp6-vJ-ZgK">
                                 <rect key="frame" x="24" y="568" width="345" height="58"/>
-                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="58" id="QSM-8b-ylo"/>
                                 </constraints>
@@ -1098,12 +1072,16 @@
                         <outlet property="CameraButton" destination="gjr-Gq-5yg" id="rKE-3y-0Ie"/>
                         <outlet property="ImageLabel1" destination="e2l-QR-yQO" id="1Rw-3W-6vB"/>
                         <outlet property="addressTextField" destination="kEC-sW-lsD" id="418-WS-4g3"/>
+                        <outlet property="descriptionTextField" destination="Rp6-vJ-ZgK" id="cjf-YW-3f5"/>
                         <outlet property="fifthImageView" destination="gME-eI-klX" id="C9i-Bq-ZnZ"/>
                         <outlet property="firstImageView" destination="Y2i-mb-QM0" id="MOI-C2-jIs"/>
                         <outlet property="fourthImageView" destination="uNA-hr-vwi" id="CsM-JD-E7R"/>
                         <outlet property="searchButton" destination="eJQ-ZS-GlA" id="cvh-Bq-ecA"/>
                         <outlet property="secondImageView" destination="4it-0A-NNg" id="z52-nt-Bj1"/>
+                        <outlet property="storeNameTextField" destination="AHx-ZP-gY5" id="vwi-vw-FHg"/>
+                        <outlet property="storeNumberTextField" destination="TGp-qj-ua1" id="sky-jf-2AP"/>
                         <outlet property="thirdImageView" destination="g2s-Df-LcX" id="p17-h3-s9m"/>
+                        <outlet property="workingHourTextField" destination="2uC-1Y-mDG" id="7XL-H5-nlM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LTi-th-pz3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1375,6 +1353,7 @@
                     </view>
                     <connections>
                         <outlet property="kakaoLogin" destination="Bxd-ag-1MR" id="6Pf-DQ-pAV"/>
+                        <outlet property="logoutButton" destination="v2Q-eS-nVP" id="j4c-OF-rZb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jXS-Ec-yFQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1635,11 +1614,11 @@
             <objects>
                 <viewController storyboardIdentifier="MyStoreVC" id="amG-bP-x0e" customClass="MyStoreViewController" customModule="ConneCo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="G1j-oa-9eH">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="106.33333333333333"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="165"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="nRc-Pc-BjQ">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="106.33333333333333"/>
+                                <rect key="frame" x="0.0" y="60.666666666666664" width="393" height="104.33333333333334"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyStore_TableViewCell" rowHeight="81" id="1YY-Yx-sK5" customClass="MyStoreTableViewCell" customModule="ConneCo" customModuleProvider="target">
@@ -1686,16 +1665,48 @@
                                                 <constraint firstItem="uSq-et-zMB" firstAttribute="leading" secondItem="htg-1R-Ew8" secondAttribute="trailing" constant="20" id="yFS-op-4Ef"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="storeAddress" destination="kMJ-1z-0hZ" id="mXA-jz-a8t"/>
+                                            <outlet property="storeDescription" destination="uSq-et-zMB" id="dfc-1a-9uA"/>
+                                            <outlet property="storeImage" destination="htg-1R-Ew8" id="AvT-gK-LEe"/>
+                                            <outlet property="storeName" destination="mcU-cJ-R4d" id="9NT-Gj-VG1"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나의 가게" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VQQ-gz-2DU">
+                                <rect key="frame" x="24" y="22" width="67.333333333333329" height="21.666666666666671"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="18"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YeF-E2-Csr">
+                                <rect key="frame" x="290" y="20" width="79" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="79" id="ALy-0T-yoJ"/>
+                                    <constraint firstAttribute="height" constant="24" id="Dib-NC-Htr"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="+ 가게 추가" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="12"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="store_Add:" destination="amG-bP-x0e" eventType="touchUpInside" id="C68-X1-RtN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jnb-AF-Bpz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="YeF-E2-Csr" firstAttribute="top" secondItem="G1j-oa-9eH" secondAttribute="top" constant="20" id="0IK-Di-ZRK"/>
+                            <constraint firstAttribute="trailing" secondItem="YeF-E2-Csr" secondAttribute="trailing" constant="24" id="9eO-6w-Os6"/>
+                            <constraint firstItem="nRc-Pc-BjQ" firstAttribute="top" secondItem="VQQ-gz-2DU" secondAttribute="bottom" constant="17" id="9fy-IX-SxP"/>
+                            <constraint firstItem="VQQ-gz-2DU" firstAttribute="leading" secondItem="G1j-oa-9eH" secondAttribute="leading" constant="24" id="AXO-t5-3ru"/>
                             <constraint firstItem="nRc-Pc-BjQ" firstAttribute="leading" secondItem="G1j-oa-9eH" secondAttribute="leading" id="Y74-Ie-sbz"/>
+                            <constraint firstItem="VQQ-gz-2DU" firstAttribute="top" secondItem="G1j-oa-9eH" secondAttribute="top" constant="22" id="o80-ps-CAe"/>
                             <constraint firstAttribute="trailing" secondItem="nRc-Pc-BjQ" secondAttribute="trailing" id="s8C-ft-FSu"/>
-                            <constraint firstItem="nRc-Pc-BjQ" firstAttribute="top" secondItem="G1j-oa-9eH" secondAttribute="top" id="tQ7-zE-QfN"/>
                             <constraint firstAttribute="bottom" secondItem="nRc-Pc-BjQ" secondAttribute="bottom" id="uIH-Cj-W5B"/>
                         </constraints>
                     </view>
@@ -1763,6 +1774,12 @@
                                                 <constraint firstItem="OCu-hc-ncx" firstAttribute="leading" secondItem="VZe-eT-xgS" secondAttribute="trailing" constant="20" id="z5J-5R-yKp"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="couponDate" destination="OCu-hc-ncx" id="mmm-d2-Rzz"/>
+                                            <outlet property="couponImage" destination="VZe-eT-xgS" id="jsY-wW-dgL"/>
+                                            <outlet property="couponName" destination="Pgw-gL-hzb" id="zsw-GF-8Y2"/>
+                                            <outlet property="couponStore" destination="M2G-EV-bJU" id="d8V-CJ-4dy"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

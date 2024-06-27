@@ -52,7 +52,7 @@ class CouponDateViewController: UIViewController {
     }
     
     @IBAction func back_Button(_ sender: Any) {
-        self.presentingViewController?.dismiss(animated: true, completion: nil)
+        self.presentingViewController?.dismiss(animated: false, completion: nil)
     }
 }
 

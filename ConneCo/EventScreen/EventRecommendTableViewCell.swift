@@ -8,7 +8,12 @@
 import UIKit
 
 class EventRecommendTableViewCell: UITableViewCell {
-
+    
+    @IBOutlet weak var eventImage: UIImageView!
+    @IBOutlet weak var eventUni: UILabel!
+    @IBOutlet weak var eventName: UILabel!
+    @IBOutlet weak var eventDate: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -50,6 +55,13 @@ extension EventRecommendViewController: UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: EventRecommendTableViewCell = tableView.dequeueReusableCell(withIdentifier: "EventRecommend_TableViewCell", for: indexPath) as! EventRecommendTableViewCell
+        
+        cell.selectionStyle = .none
+        
+        cell.eventImage.image = UIImage(named: eventImages[indexPath.section])
+        cell.eventUni.text = "\(eventUnis[indexPath.section])"
+        cell.eventName.text = "\(eventNames[indexPath.section])"
+        cell.eventDate.text = "\(eventDates[indexPath.section])"
         
         return cell
     }

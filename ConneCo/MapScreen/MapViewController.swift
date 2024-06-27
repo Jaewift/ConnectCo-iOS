@@ -58,7 +58,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
                 mapView.moveCamera(cameraUpdate)
                 
                 let eventmarker = NMFMarker()
-                eventmarker.iconImage = NMFOverlayImage(name: "ConneCo_marker_event")
+                eventmarker.iconImage = NMFOverlayImage(name: "ConneCo_marker_coupon")
                 eventmarker.position = NMGLatLng(lat: self.lati + 0.002, lng: self.longti + 0.002)
                 eventmarker.mapView = mapView
                 

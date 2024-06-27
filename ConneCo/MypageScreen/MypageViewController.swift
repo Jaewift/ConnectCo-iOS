@@ -33,12 +33,6 @@ class MypageViewController: UIViewController {
         navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     
-    @IBAction func Store_Add(_ sender: Any) {
-        guard let rvc = self.storyboard?.instantiateViewController(withIdentifier: "StoreEnrollVC") as? StoreEnrollViewController else {return}
-        
-        self.navigationController?.pushViewController(rvc, animated: true)
-    }
-    
     @IBAction func Activity_Tapped(_ sender: Any) {
         guard let rvc = self.storyboard?.instantiateViewController(withIdentifier: "ActivityVC") as? ActivityViewController else {return}
         

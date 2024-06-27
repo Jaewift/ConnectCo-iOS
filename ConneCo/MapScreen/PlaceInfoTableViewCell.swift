@@ -14,8 +14,6 @@ class PlaceInfoTableViewCell: UITableViewCell {
     @IBOutlet weak var placeTitle: UILabel!
     @IBOutlet weak var placeDate: UILabel!
     
-    var index: Int = 0
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -32,19 +30,19 @@ class PlaceInfoTableViewCell: UITableViewCell {
 extension PlaceInfoViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if (indexPath.section == 0) {
+//        if (indexPath.section == 0) {
             let something4 = UIStoryboard.init(name: "Mypage", bundle: nil)
             guard let rvc = something4.instantiateViewController(withIdentifier: "MyCouponDetailVC") as? MyCouponDetailViewController else {return}
             
             // 화면이동
             self.present(rvc, animated: true)
-        } else {
-            let something4 = UIStoryboard.init(name: "Mypage", bundle: nil)
-            guard let rvc = something4.instantiateViewController(withIdentifier: "MyEventDetailVC") as? MyEventDetailViewController else {return}
-            
-            // 화면이동
-            self.present(rvc, animated: true)
-        }
+//        } else {
+//            let something4 = UIStoryboard.init(name: "Mypage", bundle: nil)
+//            guard let rvc = something4.instantiateViewController(withIdentifier: "MyEventDetailVC") as? MyEventDetailViewController else {return}
+//            
+//            // 화면이동
+//            self.present(rvc, animated: true)
+//        }
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -65,6 +63,8 @@ extension PlaceInfoViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: PlaceInfoTableViewCell = tableView.dequeueReusableCell(withIdentifier: "PlaceInfo_TableViewCell", for: indexPath) as! PlaceInfoTableViewCell
+        
+        cell.selectionStyle = .none
         
         cell.placeImage.image = UIImage(named: placeImages[indexPath.section])
         cell.placeName.text = "\(placeNames[indexPath.section])"

@@ -8,7 +8,12 @@
 import UIKit
 
 class UniEventListTableViewCell: UITableViewCell {
-
+    
+    @IBOutlet weak var eventImage: UIImageView!
+    @IBOutlet weak var eventUni: UILabel!
+    @IBOutlet weak var eventName: UILabel!
+    @IBOutlet weak var eventDate: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -25,7 +30,7 @@ class UniEventListTableViewCell: UITableViewCell {
 extension UniViewController: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return eventImages.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -42,6 +47,11 @@ extension UniViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: UniEventListTableViewCell = tableView.dequeueReusableCell(withIdentifier: "UniEventList_TableViewCell", for: indexPath) as! UniEventListTableViewCell
+        
+        cell.eventImage.image = UIImage(named: eventImages[indexPath.section])
+        cell.eventUni.text = "\(eventUnis[indexPath.section])"
+        cell.eventName.text = "\(eventNames[indexPath.section])"
+        cell.eventDate.text = "\(eventDates[indexPath.section])"
         
         return cell
     }

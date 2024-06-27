@@ -11,6 +11,11 @@ class CouponRecommendViewController: UIViewController {
     
     @IBOutlet weak var CouponRecommendTableView: UITableView!
     
+    var couponImages = ["ConneCo_Cookie", "ConneCo_Drink"]
+    var couponStores = ["호말", "호말"]
+    var couponNames = ["쿠키 무료 제공 쿠폰", "전 음료 10%할인 쿠폰"]
+    var couponDates = ["신청마감일: 2023.12.29", "신청마감일: 2023.12.29"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

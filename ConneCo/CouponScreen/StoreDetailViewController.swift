@@ -14,11 +14,16 @@ class StoreDetailViewController: UIViewController {
     @IBOutlet weak var StoreCouponListTableView: UITableView!
     @IBOutlet weak var StoreMapView: UIView!
     
+    var couponImages = ["ConneCo_Cookie", "ConneCo_Drink"]
+    var couponStores = ["호말", "호말"]
+    var couponNames = ["쿠키 무료 제공 쿠폰", "전 음료 10%할인 쿠폰"]
+    var couponDates = ["신청마감일: 2023.12.29", "신청마감일: 2023.12.29"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let mapView = NMFMapView(frame: self.StoreMapView.frame)
-        view.addSubview(mapView)
+//        let mapView = NMFMapView(frame: self.StoreMapView.frame)
+//        view.addSubview(mapView)
         
         self.StoreImageCV.delegate = self
         self.StoreImageCV.dataSource = self

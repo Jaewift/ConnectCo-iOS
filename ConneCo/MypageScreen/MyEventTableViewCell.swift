@@ -30,7 +30,7 @@ extension MyEventViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return 0
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -47,6 +47,8 @@ extension MyEventViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: MyEventTableViewCell = tableView.dequeueReusableCell(withIdentifier: "MyEvent_TableViewCell", for: indexPath) as! MyEventTableViewCell
+        
+        cell.selectionStyle = .none
         
         return cell
     }
