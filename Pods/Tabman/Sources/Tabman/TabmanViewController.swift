@@ -71,25 +71,20 @@ open class TabmanViewController: PageboyViewController, PageboyViewControllerDel
     private var barLayoutGuideTop: NSLayoutConstraint?
     private var barLayoutGuideBottom: NSLayoutConstraint?
     
-    @available(*, unavailable)
-    open override var delegate: PageboyViewControllerDelegate? {
-        didSet {}
-    }
-    
     // MARK: Init
     
     public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        commonInit()
+        initialize()
     }
     
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        commonInit()
+        initialize()
     }
     
-    private func commonInit() {
-        super.delegate = self
+    private func initialize() {
+        delegate = self
     }
     
     // MARK: Lifecycle
@@ -119,7 +114,7 @@ open class TabmanViewController: PageboyViewController, PageboyViewControllerDel
     ///
     /// - Returns: information about required insets for current state.
     open func calculateRequiredInsets() -> Insets {
-        return Insets.for(self)
+        return Insets.for(tabmanViewController: self)
     }
     
     // MARK: Pageboy
@@ -247,21 +242,31 @@ extension TabmanViewController {
         view.addSubview(topBarContainer)
         
         topBarContainer.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
+        var topConstraints = [
             topBarContainer.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            topBarContainer.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            topBarContainer.topAnchor.constraint(equalTo: view.safeAreaTopAnchor)
-        ])
+            topBarContainer.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+        ]
+        if #available(iOS 11, *) {
+            topConstraints.append(topBarContainer.topAnchor.constraint(equalTo: view.safeAreaTopAnchor))
+        } else {
+            topConstraints.append(topBarContainer.topAnchor.constraint(equalTo: topLayoutGuide.bottomAnchor))
+        }
+        NSLayoutConstraint.activate(topConstraints)
         
         bottomBarContainer.axis = .vertical
         view.addSubview(bottomBarContainer)
         
         bottomBarContainer.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
+        var bottomConstraints = [
             bottomBarContainer.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            bottomBarContainer.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            bottomBarContainer.bottomAnchor.constraint(equalTo: view.safeAreaBottomAnchor)
-        ])
+            bottomBarContainer.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+        ]
+        if #available(iOS 11, *) {
+            bottomConstraints.append(bottomBarContainer.bottomAnchor.constraint(equalTo: view.safeAreaBottomAnchor))
+        } else {
+            bottomConstraints.append(bottomBarContainer.bottomAnchor.constraint(equalTo: bottomLayoutGuide.topAnchor))
+        }
+        NSLayoutConstraint.activate(bottomConstraints)
     }
     
     private func layoutView(_ view: UIView,
@@ -362,8 +367,10 @@ internal extension TabmanViewController {
 
         // Don't inset TabmanViewController using AutoInsetter
         if viewController is TabmanViewController {
-            if viewController?.additionalSafeAreaInsets != insets.spec.additionalRequiredInsets {
-                viewController?.additionalSafeAreaInsets = insets.spec.additionalRequiredInsets
+            if #available(iOS 11, *) {
+                if viewController?.additionalSafeAreaInsets != insets.spec.additionalRequiredInsets {
+                    viewController?.additionalSafeAreaInsets = insets.spec.additionalRequiredInsets
+                }
             }
         } else {
             insetter.inset(viewController, requiredInsetSpec: insets.spec)

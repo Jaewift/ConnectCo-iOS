@@ -8,7 +8,12 @@
 import UIKit
 
 class MyStoreTableViewCell: UITableViewCell {
-
+    
+    @IBOutlet weak var storeImage: UIImageView!
+    @IBOutlet weak var storeName: UILabel!
+    @IBOutlet weak var storeDescription: UILabel!
+    @IBOutlet weak var storeAddress: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -22,10 +27,19 @@ class MyStoreTableViewCell: UITableViewCell {
 
 }
 
-extension MypageViewController: UITableViewDelegate, UITableViewDataSource {
+extension MyStoreViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let something4 = UIStoryboard.init(name: "Coupon", bundle: nil)
+        guard let rvc = something4.instantiateViewController(withIdentifier: "StoreDetailVC") as? StoreDetailViewController else {return}
+        
+        // 화면이동
+        self.navigationController?.pushViewController(rvc, animated: true)
+    }
+            
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -42,6 +56,13 @@ extension MypageViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: MyStoreTableViewCell = tableView.dequeueReusableCell(withIdentifier: "MyStore_TableViewCell", for: indexPath) as! MyStoreTableViewCell
+        
+        cell.selectionStyle = .none
+        
+        cell.storeImage.image = self.store_Image
+        cell.storeName.text = self.store_Name
+        cell.storeDescription.text = self.store_Description
+        cell.storeAddress.text = self.store_Address
         
         return cell
     }

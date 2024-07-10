@@ -38,7 +38,13 @@ open class TMTabItemBarButton: TMBarButton {
     
     /// Tint color of the button when unselected / normal.
     open override var tintColor: UIColor! {
-        didSet {}
+        didSet {
+            imageView.tintColor = tintColor
+            if !isSelected {
+                imageView.tintColor = tintColor
+                label.textColor = tintColor
+            }
+        }
     }
     /// Tint color of the button when selected.
     open var selectedTintColor: UIColor! {
@@ -106,9 +112,7 @@ open class TMTabItemBarButton: TMBarButton {
     public required init(for item: TMBarItemable, intrinsicSuperview: UIView?) {
         super.init(for: item, intrinsicSuperview: intrinsicSuperview)
 
-        // On iOS 13 the system dynamically adjusts tab bar item layouts based on orientation -
-        // Tabman mimics this here.
-        if #available(iOS 13, *) {
+        if #available(iOS 13.0, *) {
             makeComponentConstraints(for: UIDevice.current.orientation)
         }
     }
@@ -191,16 +195,6 @@ open class TMTabItemBarButton: TMBarButton {
             let interpolatedScale = 1.0 - ((1.0 - selectionState.rawValue) * (1.0 - Defaults.shrunkenImageScale))
             imageView.transform = CGAffineTransform(scaleX: interpolatedScale, y: interpolatedScale)
             selectedImageView.transform = CGAffineTransform(scaleX: interpolatedScale, y: interpolatedScale)
-        }
-    }
-
-    open override func tintColorDidChange() {
-        super.tintColorDidChange()
-        
-        imageView.tintColor = tintColor
-        if !isSelected {
-            imageView.tintColor = tintColor
-            label.textColor = tintColor
         }
     }
     

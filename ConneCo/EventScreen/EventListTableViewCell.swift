@@ -8,7 +8,12 @@
 import UIKit
 
 class EventListTableViewCell: UITableViewCell {
-
+    
+    @IBOutlet weak var eventImage: UIImageView!
+    @IBOutlet weak var eventUni: UILabel!
+    @IBOutlet weak var eventName: UILabel!
+    @IBOutlet weak var eventDate: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -19,5 +24,45 @@ class EventListTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+    }
+}
 
+extension EventListViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "EventDetailVC") as? EventDetailViewController else { return }
+        self.navigationController?.pushViewController(nextVC, animated: true)
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return eventImages.count
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 81
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        .leastNormalMagnitude
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell: EventListTableViewCell = tableView.dequeueReusableCell(withIdentifier: "EventList_TableViewCell", for: indexPath) as! EventListTableViewCell
+        
+        cell.selectionStyle = .none
+        
+        cell.eventImage.image = UIImage(named: eventImages[indexPath.section])
+        cell.eventUni.text = "\(eventUnis[indexPath.section])"
+        cell.eventName.text = "\(eventNames[indexPath.section])"
+        cell.eventDate.text = "\(eventDates[indexPath.section])"
+        
+        return cell
+    }
 }

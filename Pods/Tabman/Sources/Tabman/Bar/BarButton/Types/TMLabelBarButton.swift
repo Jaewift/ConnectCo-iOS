@@ -71,7 +71,11 @@ open class TMLabelBarButton: TMBarButton {
     }
     /// Color of the text when unselected / normal.
     open override var tintColor: UIColor! {
-        didSet {}
+        didSet {
+            if !isSelected {
+                label.textColor = tintColor
+            }
+        }
     }
     /// Color of the text when selected.
     open var selectedTintColor: UIColor! {
@@ -233,14 +237,6 @@ open class TMLabelBarButton: TMBarButton {
                     self.label.font = self.font
                 }, completion: nil)
             }
-        }
-    }
-
-    open override func tintColorDidChange() {
-        super.tintColorDidChange()
-
-        if !isSelected {
-            label.textColor = tintColor
         }
     }
     

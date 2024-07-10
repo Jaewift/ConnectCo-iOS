@@ -6,13 +6,19 @@
 //
 
 import UIKit
+import KakaoSDKAuth
+import KakaoSDKUser
 
 class LoginViewController: UIViewController {
-
+    
+    @IBOutlet weak var kakaoLogin: UIButton!
+    @IBOutlet weak var logoutButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        kakaoLogin.addTarget(self, action: #selector(kakao_Tapped), for: .touchUpInside)
+        logoutButton.addTarget(self, action: #selector(kakaoLogOut), for: .touchUpInside)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -31,5 +37,33 @@ class LoginViewController: UIViewController {
         guard let rvc = self.storyboard?.instantiateViewController(withIdentifier: "MypageVC") as? MypageViewController else {return}
         
         self.navigationController?.pushViewController(rvc, animated: true)
+    }
+    
+    @objc func kakao_Tapped() {
+        UserApi.shared.loginWithKakaoTalk {(oauthToken, error) in
+            if let error = error {
+                print(error)
+            }
+            else {
+                print("loginWithKakaoTalk() success.")
+                
+                guard let rvc = self.storyboard?.instantiateViewController(withIdentifier: "MypageVC") as? MypageViewController else {return}
+                
+                self.navigationController?.pushViewController(rvc, animated: true)
+                
+                _ = oauthToken
+            }
+        }
+    }
+    
+    @objc func kakaoLogOut() {
+        UserApi.shared.unlink {(error) in
+            if let error = error {
+                print(error)
+            }
+            else {
+                print("unlink() success.")
+            }
+        }
     }
 }

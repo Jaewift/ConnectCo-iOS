@@ -1,32 +1,52 @@
 PODS:
-  - Alamofire (5.9.1)
-  - NMapsGeometry (1.0.1)
-  - NMapsMap (3.18.0):
+  - Alamofire (5.6.4)
+  - KakaoSDKAuth (2.11.3):
+    - KakaoSDKCommon (= 2.11.3)
+  - KakaoSDKCommon (2.11.3):
+    - KakaoSDKCommon/Common (= 2.11.3)
+    - KakaoSDKCommon/Network (= 2.11.3)
+  - KakaoSDKCommon/Common (2.11.3)
+  - KakaoSDKCommon/Network (2.11.3):
+    - Alamofire (~> 5.1)
+    - KakaoSDKCommon/Common (= 2.11.3)
+  - KakaoSDKUser (2.11.3):
+    - KakaoSDKAuth (= 2.11.3)
+  - NMapsGeometry (1.0.2)
+  - NMapsMap (3.18.1):
     - NMapsGeometry
-  - Pageboy (4.2.0)
-  - Tabman (3.2.0):
-    - Pageboy (~> 4.2.0)
+  - Pageboy (3.7.0)
+  - Tabman (2.13.0):
+    - Pageboy (~> 3.7.0)
 
 DEPENDENCIES:
-  - Alamofire
+  - Alamofire (~> 5.6.4)
+  - KakaoSDKAuth (~> 2.11.3)
+  - KakaoSDKCommon (~> 2.11.3)
+  - KakaoSDKUser (~> 2.11.3)
   - NMapsMap
-  - Tabman (~> 3.2)
+  - Tabman (~> 2.9)
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - KakaoSDKAuth
+    - KakaoSDKCommon
+    - KakaoSDKUser
     - NMapsGeometry
     - NMapsMap
     - Pageboy
     - Tabman
 
 SPEC CHECKSUMS:
-  Alamofire: f36a35757af4587d8e4f4bfa223ad10be2422b8c
-  NMapsGeometry: 53c573ead66466681cf123f99f698dc8071a4b83
-  NMapsMap: 36dc18a1f5f315121b33fccd2398c7a702bf0fc8
-  Pageboy: 7f7886f61c76633df635861bf7839caf2cabdb3e
-  Tabman: 49f9181a2bfe5c29d002864dac2de8e0b7ea9180
+  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
+  KakaoSDKAuth: a64dde90516e18fdfc35b83bbad2677c3675c329
+  KakaoSDKCommon: b4235203f67a5b6ee2df75eaf9bbc863c6d92e09
+  KakaoSDKUser: 9a42e9b74855ce876b071c841418aa6726534010
+  NMapsGeometry: 4e02554fa9880ef02ed96b075dc84355d6352479
+  NMapsMap: e879088eeee2d1e3b97f0a609076e1824dce2cad
+  Pageboy: fe646118f7168960058bea7a96038386aa7c0da8
+  Tabman: 66ea44c44488327ec20f3c8dc5554a5d22f5908c
 
-PODFILE CHECKSUM: 346799ab2ab49c2bfadcfbc294b176212671fec4
+PODFILE CHECKSUM: 423296c5c33483191bb156c33e9ae907f38f526c
 
 COCOAPODS: 1.15.2

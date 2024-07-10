@@ -211,7 +211,6 @@ internal extension PageboyViewController {
         pageViewController.view.backgroundColor = .clear
         pageViewController.scrollView?.delaysContentTouches = delaysContentTouches
         pageViewController.scrollView?.isScrollEnabled = isScrollEnabled
-        pageViewController.scrollView?.isDirectionalLockEnabled = isDirectionalLockEnabled
         pageViewController.scrollView?.isUserInteractionEnabled = isUserInteractionEnabled
         
         reloadData(reloadViewControllers: reloadViewControllers)

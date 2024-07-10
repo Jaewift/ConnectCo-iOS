@@ -13,8 +13,8 @@ extension TabmanViewController {
     /// Object containing inset data that is required for all bars in a `TabmanViewController`.
     public struct Insets {
         
-        static func `for`(_ viewController: TabmanViewController) -> Insets {
-            return Insets(viewController: viewController)
+        static func `for`(tabmanViewController: TabmanViewController) -> Insets {
+            return Insets(tabmanViewController: tabmanViewController)
         }
         
         // MARK: Properties
@@ -35,11 +35,11 @@ extension TabmanViewController {
         
         // MARK: Init
         
-        private init(viewController: TabmanViewController) {
-            let safeAreaInsets = viewController.view.safeAreaInsets
-            let barInsets = UIEdgeInsets(top: viewController.topBarContainer.bounds.size.height,
+        private init(tabmanViewController: TabmanViewController) {
+            let safeAreaInsets = Insets.makeSafeAreaInsets(for: tabmanViewController)
+            let barInsets = UIEdgeInsets(top: tabmanViewController.topBarContainer.bounds.size.height,
                                          left: 0.0,
-                                         bottom: viewController.bottomBarContainer.bounds.size.height,
+                                         bottom: tabmanViewController.bottomBarContainer.bounds.size.height,
                                          right: 0.0)
             
             self.init(barInsets: barInsets, safeAreaInsets: safeAreaInsets)
@@ -48,6 +48,22 @@ extension TabmanViewController {
         public init(barInsets: UIEdgeInsets, safeAreaInsets: UIEdgeInsets) {
             self.barInsets = barInsets
             self.safeAreaInsets = safeAreaInsets
+        }
+        
+        // MARK: Utility
+        
+        public static func makeSafeAreaInsets(for viewController: UIViewController) -> UIEdgeInsets {
+            if #available(iOS 11, *) {
+                return viewController.view.safeAreaInsets
+            } else {
+                let topLayoutGuideLength = viewController.topLayoutGuide.length
+                let bottomLayoutGuideLength = viewController.bottomLayoutGuide.length
+                
+                return UIEdgeInsets(top: topLayoutGuideLength,
+                                    left: 0.0,
+                                    bottom: bottomLayoutGuideLength,
+                                    right: 0.0)
+            }
         }
     }
 }

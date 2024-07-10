@@ -8,22 +8,41 @@
 import UIKit
 
 class CouponDetailViewController: UIViewController {
-
+    
+    @IBOutlet weak var CouponImageCV: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.CouponImageCV.delegate = self
+        self.CouponImageCV.dataSource = self
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.setNavigationBarHidden(true, animated: false)
     }
-    */
 
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        navigationController?.setNavigationBarHidden(false, animated: false)
+    }
+    
+    @IBAction func Store_Tapped(_ sender: Any) {
+        guard let rvc = self.storyboard?.instantiateViewController(withIdentifier: "StoreDetailVC") as? StoreDetailViewController else {return}
+        
+        self.navigationController?.pushViewController(rvc, animated: true)
+    }
+    
+    @IBAction func sponsor_Tapped(_ sender: Any) {
+        guard let rvc = self.storyboard?.instantiateViewController(withIdentifier: "SponsorApplyInfoVC") as? SponsorApplyInfoViewController else {return}
+        
+        self.navigationController?.pushViewController(rvc, animated: true)
+    }
+    
+    @IBAction func back_Button(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
 }
